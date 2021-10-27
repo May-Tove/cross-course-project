@@ -27,34 +27,16 @@ header {
   justify-content: space-between;
 }
 
-.searchfield {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid white;
-  color: #fff;
-  max-width: 300px;
-}
-
-.searchfield p {
-  padding-left: 5px;
-}
-
-.search-icon {
-  color: #fff;
-  padding-right: 5px;
-  padding-bottom: 5px;
-}
-
 .active {
   text-decoration: underline;
 }
 
 nav {
-  margin-left: 25px;
+  margin-left: 0px;
   display: none;
-  top: 45px;
-  z-index: 1000;
-  right: 0px;
+  background-color: #fff;
+  width: 130px;
+  top: 60px;
 }
 
 nav ul {
@@ -72,6 +54,7 @@ nav li {
 
 #hamburger-menu:checked ~ nav {
   display: block;
+  position: absolute;
 }
 
 footer {
@@ -97,14 +80,14 @@ a {
   text-transform: uppercase;
   filter: drop-shadow(5px 5px 5px grey);
   color: #fff;
-  padding: 10px 10px;
-  margin: 5px 5px;
+  padding: 5px 10px;
 }
 
 .cta-homepage {
-  border: 2px solid white;
+  border: 1.5px solid white;
   background-color: transparent;
-  margin-left: 15px;
+  display: inline;
+  align-items: center;
 }
 
 /* Home Page */
@@ -119,7 +102,7 @@ a {
 .homepage h1 {
   color: #fff;
   text-transform: uppercase;
-  margin-top: 70px;
+  padding-top: 70px;
 }
 
 .homepage p {
@@ -129,7 +112,7 @@ a {
 }
 
 .welcome {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/pexels-yaroslav-shuraev-7165175-kopi.jpg);
   background-position: top;
   background-size: cover;
@@ -141,7 +124,7 @@ a {
   text-align: left;
   color: #fff;
   margin-top: 0px;
-  margin-left: 15px;
+  padding-top: 20px;
 }
 
 .product-image {
