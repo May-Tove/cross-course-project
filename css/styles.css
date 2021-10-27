@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
+  src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap)
+    format(woff2);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  filter: drop-shadow(5px 5px 5px grey);
+}
+
+.logo {
+  max-width: 100px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchfield {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  color: #fff;
+  max-width: 300px;
+}
+
+.searchfield p {
+  padding-left: 5px;
+}
+
+.search-icon {
+  color: #fff;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+nav {
+  margin-left: 25px;
+  display: none;
+  top: 45px;
+  z-index: 1000;
+  right: 0px;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: block;
+  padding: 20px 30px;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+footer {
+  background-color: #e4ebf2;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.welcome a {
+  color: #fff;
+}
+
+.cta {
+  background-color: #3080eb;
+  font-size: 0.7em;
+  border-radius: 50px;
+  text-transform: uppercase;
+  filter: drop-shadow(5px 5px 5px grey);
+  color: #fff;
+  padding: 10px 10px;
+  margin: 5px 5px;
+}
+
+.cta-homepage {
+  border: 2px solid white;
+  background-color: transparent;
+  margin-left: 15px;
+}
+
+/* Home Page */
+.homepage {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../images/home-background.jpg);
+  background-position: top;
+  background-size: cover;
+  min-height: 60vh;
+}
+
+.homepage h1 {
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 70px;
+}
+
+.homepage p {
+  color: #fff;
+  text-align: center;
+  font-size: 0.7em;
+}
+
+.welcome {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../images/pexels-yaroslav-shuraev-7165175-kopi.jpg);
+  background-position: top;
+  background-size: cover;
+  min-height: 35vh;
+}
+
+.welcome h2 {
+  font-weight: bold;
+  text-align: left;
+  color: #fff;
+  margin-top: 0px;
+  margin-left: 15px;
+}
+
+.product-image {
+  max-width: 100px;
+}
+
+.new-products {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}

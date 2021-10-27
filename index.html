@@ -1,10 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My first website</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Get durable and comfortable jackets for any adventure from Rainydays">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainydays | Home </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
+    <header>
+        <label for="hamburger-menu"><img src="images/menu.svg" alt="menu icon"></label>
+        <input type="checkbox" id="hamburger-menu">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Rainydays logo" class="logo"></a>
+        <img src="images/shopping-bag.svg" alt="shopping-bag icon" class="shopping-bag-icon">
+    </header>
+    <main>
+        <section class="homepage">
+            <div class="topnav">
+                <input type="text" placeholder="Search..">
+                <img src="images/search.svg" alt="search icon" class="search-icon">
+            </div>
+            <h1>Pushing The Comfort Zone</h1>
+            <p>Find the perfect jacket for any adventure.</p>
+        </section>
+        <section class="welcome">
+            <h2>Stay comfortable with quality jackets from Rainydays.</h2>
+            <a href="shop.html" class="cta cta-homepage">Shop women</a>
+            <a href="shop.html" class="cta cta-homepage">Shop men</a>
+        </section>
+        <section>
+            <h2>News</h2>
+            <div class="new-products">
+                <a href="shop.html"><img src="images/men.png" alt="Men's jacket for camping" class="product-image"></a>
+                <a href="shop.html">Camping</a>
+                <p>Men</p>
+                <p>1.300,- kr</p>
+            </div>
+            <div class="new-products">
+                <a href="shop.html"><img src="images/men.png" alt="Men's jacket for camping" class="product-image"></a>
+                <a href="shop.html">Camping</a>
+                <p>Men</p>
+                <p>1.300,- kr</p>
+            </div>
+            <div class="new-products">
+                <a href="shop.html"><img src="images/men.png" alt="Men's jacket for camping" class="product-image"></a>
+                <a href="shop.html">Camping</a>
+                <p>Men</p>
+                <p>1.300,- kr</p>
+            </div>
+            <div class="new-products">
+                <a href="shop.html"><img src="images/men.png" alt="Men's jacket for camping" class="product-image"></a>
+                <a href="shop.html">Camping</a>
+                <p>Men</p>
+                <p>1.300,- kr</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Follow us on social media:</p>
+        <img src="images/instagram.svg" alt="Instagram icon">
+        Copyright &copy;
+    </footer>
 </body>
 </html>
