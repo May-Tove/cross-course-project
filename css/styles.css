@@ -36,11 +36,12 @@ header {
 nav {
   display: none;
   background: #f8f8f8;
-  width: 200px;
+  left: 0px;
   top: 75px;
+  width: 130px;
   z-index: 1000;
   filter: drop-shadow(5px 5px 5px grey);
-  text-align: left;
+  text-transform: uppercase;
 }
 
 nav li {
@@ -163,18 +164,28 @@ a {
 
 @media (min-width: 800px) {
   .logo {
-    float: left;
-    padding-left: 20px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    max-width: 110px;
+  }
+
+  header {
+    margin-bottom: 5px;
   }
 
   nav {
     display: inline-block;
+    top: 10px;
     filter: none;
     background: none;
   }
 
   ul {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 200px;
   }
 
   label {
