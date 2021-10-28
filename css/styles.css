@@ -5,6 +5,11 @@
     format(woff2);
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
@@ -14,7 +19,6 @@ h1,
 h2 {
   font-family: "Playfair Display", serif;
   text-align: center;
-  filter: drop-shadow(5px 5px 5px grey);
 }
 
 .logo {
@@ -25,27 +29,23 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.active {
-  text-decoration: underline;
+  padding: 10px 20px 10px 20px;
+  z-index: 1000;
 }
 
 nav {
-  margin-left: 0px;
   display: none;
-  background-color: #fff;
-  width: 130px;
-  top: 60px;
-}
-
-nav ul {
-  padding: 0px;
+  background: #f8f8f8;
+  width: 200px;
+  top: 75px;
+  z-index: 1000;
+  filter: drop-shadow(5px 5px 5px grey);
+  text-align: left;
 }
 
 nav li {
   display: block;
-  padding: 20px 30px;
+  padding: 20px;
 }
 
 #hamburger-menu {
@@ -60,13 +60,17 @@ nav li {
 footer {
   background-color: #e4ebf2;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 }
 
 /* Links */
 a {
   text-decoration: none;
   color: black;
+}
+
+.active {
+  text-decoration: underline;
 }
 
 .welcome a {
@@ -83,32 +87,36 @@ a {
   padding: 5px 10px;
 }
 
-.cta-homepage {
+.cta-welcome {
   border: 1.5px solid white;
   background-color: transparent;
   display: inline;
   align-items: center;
 }
 
+.cta-shop-women {
+  margin-left: 20px;
+}
+
 /* Home Page */
-.homepage {
+.start {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../images/home-background.jpg);
-  background-position: top;
+  background-position: center;
   background-size: cover;
   min-height: 60vh;
 }
 
-.homepage h1 {
+.start h1 {
   color: #fff;
   text-transform: uppercase;
-  padding-top: 70px;
+  padding: 90px 0px 10px 0px;
+  filter: drop-shadow(5px 5px 5px grey);
 }
 
-.homepage p {
+.start p {
   color: #fff;
   text-align: center;
-  font-size: 0.7em;
 }
 
 .welcome {
@@ -119,20 +127,77 @@ a {
   min-height: 35vh;
 }
 
-.welcome h2 {
-  font-weight: bold;
+.welcome p {
+  font-size: 1.3em;
   text-align: left;
   color: #fff;
   margin-top: 0px;
-  padding-top: 20px;
+  padding: 20px 10px 10px 20px;
+  filter: drop-shadow(5px 5px 5px grey);
 }
 
-.product-image {
-  max-width: 100px;
+@media (min-width: 600px) {
+  .start {
+    min-height: 120vh;
+    background-position: center;
+  }
+
+  .start h1 {
+    padding-top: 170px;
+    font-size: 2em;
+  }
+
+  .welcome {
+    min-height: 60vh;
+  }
+
+  .welcome p {
+    padding-top: 50px;
+    padding-left: 30px;
+  }
+
+  .cta-shop-women {
+    margin-left: 30px;
+  }
 }
 
-.new-products {
-  display: grid;
-  grid-template-columns: 1fr;
-  text-align: center;
+@media (min-width: 800px) {
+  .logo {
+    float: left;
+    padding-left: 20px;
+  }
+
+  nav {
+    display: inline-block;
+    filter: none;
+    background: none;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  label {
+    display: none;
+  }
+
+  .welcome {
+    min-height: 90vh;
+    background-position: top;
+  }
+
+  .welcome p {
+    font-size: 2em;
+    padding-bottom: 30px;
+  }
+
+  .cta-welcome {
+    font-size: 1em;
+    margin-right: 10px;
+  }
+
+  .cta-welcome:hover {
+    border: none;
+    background-color: #527eb9;
+  }
 }
