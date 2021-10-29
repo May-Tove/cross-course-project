@@ -45,6 +45,12 @@ label {
   margin-right: 20px;
 }
 
+.search-icon {
+  position: absolute;
+  right: 60px;
+  top: 27px;
+}
+
 nav {
   display: none;
   background: #f8f8f8;
@@ -56,7 +62,7 @@ nav {
   text-transform: uppercase;
 }
 
-nav li {
+li {
   display: block;
   padding: 20px;
 }
@@ -65,7 +71,7 @@ nav li {
   display: none;
 }
 
-#hamburger-menu:checked ~ nav {
+#hamburger-menu:checked ~ .navbar {
   display: block;
   position: absolute;
 }
@@ -80,6 +86,10 @@ footer {
 a {
   text-decoration: none;
   color: black;
+}
+
+nav a {
+  font-weight: 500;
 }
 
 .active {
@@ -114,8 +124,8 @@ a {
 /* Home Page */
 .start {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(../images/home-background.jpg);
-  background-position: top;
+    url(../images/home-background2.jpg);
+  background-position: bottom;
   background-size: cover;
   min-height: 70vh;
 }
@@ -135,8 +145,8 @@ a {
 
 .welcome {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../images/pexels-yaroslav-shuraev-7165175-kopi.jpg);
-  background-position: top;
+    url(../images/welcome-background.jpg);
+  background-position: bottom;
   background-size: cover;
   min-height: 35vh;
 }
@@ -152,12 +162,11 @@ a {
 
 @media (min-width: 600px) {
   .start {
-    min-height: 120vh;
-    background-position: center;
+    min-height: 110vh;
   }
 
   .start h1 {
-    padding-top: 170px;
+    padding-top: 200px;
     font-size: 2em;
   }
 
@@ -175,23 +184,32 @@ a {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   .logo {
     position: absolute;
     top: 10px;
-    left: 20px;
+    left: 50px;
     max-width: 110px;
   }
 
+  .shopping-bag-icon {
+    margin-right: 50px;
+  }
+
+  .search-icon {
+    margin-right: 40px;
+  }
+
   nav {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     filter: none;
     background: none;
   }
 
   ul {
     display: flex;
-    padding-left: 200px;
   }
 
   label {
@@ -199,11 +217,13 @@ a {
   }
 
   .start {
-    min-height: 90vh;
+    min-height: 100vh;
+    background-position: bottom;
   }
 
   .start h1 {
-    font-size: 3em;
+    font-size: 2.5em;
+    padding-top: 200px;
   }
 
   .start p {
@@ -211,13 +231,13 @@ a {
   }
 
   .welcome {
-    min-height: 90vh;
-    background-position: top;
+    min-height: 80vh;
+    background-position: bottom;
   }
 
   .welcome p {
     font-size: 2em;
-    padding: 90px 90px 40px 90px;
+    padding: 70px 70px 30px 50px;
   }
 
   .cta-welcome {
@@ -226,11 +246,37 @@ a {
   }
 
   .cta-shop-women {
-    margin-left: 90px;
+    margin-left: 50px;
   }
 
   .cta-welcome:hover {
     border: none;
-    background-color: #527eb9;
+    background-color: #3080eb;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    max-width: 120px;
+  }
+  .start h1 {
+    font-size: 3em;
+    padding-top: 300px;
+  }
+
+  .welcome {
+    min-height: 90vh;
+  }
+
+  .welcome p {
+    padding: 90px 70px 30px 80px;
+  }
+
+  .cta {
+    padding: 10px 25px;
+  }
+
+  .cta-shop-women {
+    margin-left: 80px;
   }
 }
