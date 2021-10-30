@@ -37,27 +37,13 @@ header {
   filter: drop-shadow(3px 3px 3px grey);
 }
 
-label {
-  margin-left: 20px;
-}
-
-.shopping-bag-icon {
-  margin-right: 20px;
-}
-
-.search-icon {
-  position: absolute;
-  right: 60px;
-  top: 27px;
-}
-
 nav {
   display: none;
-  background: #f8f8f8;
   left: 0px;
-  top: 75px;
+  top: 80px;
   width: 130px;
   z-index: 1000;
+  background-color: #fff;
   filter: drop-shadow(3px 3px 3px grey);
   text-transform: uppercase;
 }
@@ -71,15 +57,34 @@ li {
   display: none;
 }
 
-#hamburger-menu:checked ~ .navbar {
+#hamburger-menu:checked ~ nav {
   display: block;
   position: absolute;
 }
 
 footer {
   background-color: #e4ebf2;
-  text-align: center;
-  padding: 20px;
+}
+
+.container {
+  background: pink;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.item {
+  background: lightblue;
+  margin: 5px;
+  width: 20%;
+}
+
+.shipping-info {
+  align-self: flex-end;
+}
+
+.copyright {
+  align-self: flex-end;
 }
 
 /* Links */
@@ -133,8 +138,8 @@ nav a {
 .start h1 {
   color: #fff;
   text-transform: uppercase;
-  padding-top: 150px;
-  padding-bottom: 10px;
+  padding-top: 40%;
+  padding-bottom: 2%;
   filter: drop-shadow(5px 5px 5px grey);
 }
 
@@ -155,7 +160,6 @@ nav a {
   font-size: 1.3em;
   text-align: left;
   color: #fff;
-  margin-top: 0px;
   padding: 20px 10px 10px 20px;
   filter: drop-shadow(5px 5px 5px grey);
 }
@@ -166,7 +170,7 @@ nav a {
   }
 
   .start h1 {
-    padding-top: 200px;
+    padding-top: 30%;
     font-size: 2em;
   }
 
@@ -185,25 +189,10 @@ nav a {
 }
 
 @media (min-width: 768px) {
-  .logo {
-    position: absolute;
-    top: 10px;
-    left: 50px;
-    max-width: 110px;
-  }
-
-  .shopping-bag-icon {
-    margin-right: 50px;
-  }
-
-  .search-icon {
-    margin-right: 40px;
-  }
-
   nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     filter: none;
     background: none;
   }
@@ -218,12 +207,10 @@ nav a {
 
   .start {
     min-height: 100vh;
-    background-position: bottom;
   }
 
   .start h1 {
     font-size: 2.5em;
-    padding-top: 200px;
   }
 
   .start p {
@@ -232,7 +219,6 @@ nav a {
 
   .welcome {
     min-height: 80vh;
-    background-position: bottom;
   }
 
   .welcome p {
