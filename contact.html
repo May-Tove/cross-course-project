@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Get durable and comfortable jackets for any adventure from Rainydays">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rainydays | Home </title>
+    <title>Rainydays | Contact </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
     <header>
@@ -29,6 +31,30 @@
             </div>
     </header>
     <main>
+        <section class="contact-header">
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you! Send us a message below or contact us directly by phone</p>
+            <p>+47 12345678</p>
+        </section>
+        <form method="post">
+            <div class="form-wrapper">
+              <section>
+                  <h2>Send us a message:</h2>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+             <section>
+                <label for="message">Message</label>
+                <textarea name="Message" id="message"></textarea>
+                <input type="submit" value="Submit" class="cta cta-submit">
+            </section>
+            </div>
+        </form>
     </main>
     <footer>
         Copyright &copy;

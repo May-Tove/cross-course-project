@@ -1,0 +1,121 @@
+@media (min-width: 600px) {
+  .start {
+    min-height: 110vh;
+  }
+
+  .start h1 {
+    padding-top: 30%;
+    font-size: 2em;
+  }
+
+  .welcome {
+    min-height: 60vh;
+  }
+
+  .welcome p {
+    padding-top: 50px;
+    padding-left: 30px;
+  }
+
+  .cta-shop-women {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    padding-left: 0px;
+  }
+
+  nav {
+    display: contents;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  label {
+    display: none;
+  }
+
+  .start {
+    min-height: 100vh;
+  }
+
+  .start h1 {
+    font-size: 2.5em;
+  }
+
+  .start p {
+    font-size: 1.5em;
+  }
+
+  .welcome {
+    min-height: 80vh;
+  }
+
+  .welcome p {
+    font-size: 2em;
+    padding: 70px 70px 30px 50px;
+  }
+
+  .cta-welcome {
+    font-size: 1em;
+    margin-right: 10px;
+  }
+
+  .cta-shop-women {
+    margin-left: 50px;
+  }
+
+  .cta-welcome:hover {
+    border: none;
+    background-color: #3080eb;
+  }
+
+  .new-products p {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    max-width: 120px;
+  }
+
+  li {
+    padding: 50px;
+  }
+
+  .start h1 {
+    font-size: 3em;
+    padding-top: 300px;
+  }
+
+  .welcome {
+    min-height: 90vh;
+  }
+
+  .welcome p {
+    padding: 90px 70px 30px 80px;
+  }
+
+  .cta {
+    padding: 10px 25px;
+  }
+
+  .cta-shop-women {
+    margin-left: 80px;
+  }
+
+  .news h2 {
+    font-size: 2em;
+    padding-top: 50px;
+  }
+
+  .new-products {
+    padding: 50px;
+    gap: 30px;
+  }
+}

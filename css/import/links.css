@@ -1,0 +1,47 @@
+/* Links */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav a {
+  font-weight: 500;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.welcome a {
+  color: #fff;
+}
+
+.cta {
+  background-color: #3080eb;
+  font-size: 0.8em;
+  border-radius: 50px;
+  text-transform: uppercase;
+  filter: drop-shadow(2px 2px 2px grey);
+  color: #fff;
+  padding: 5px 15px;
+  border: none;
+}
+
+.cta-welcome {
+  border: 1.5px solid white;
+  background-color: transparent;
+  display: inline;
+  align-items: center;
+}
+
+.cta-shop-women {
+  margin-left: 20px;
+}
+
+.cta:hover {
+  text-decoration: none;
+}
