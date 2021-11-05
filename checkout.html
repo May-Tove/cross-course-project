@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Get durable and comfortable jackets for any adventure from Rainydays">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainydays | Checkout </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <header>
+        <label for="hamburger-menu"><img src="images/menu.svg" alt="menu icon"></label>
+        <input type="checkbox" id="hamburger-menu">
+        <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Rainydays logo" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div>
+                <img src="images/search.svg" alt="search icon" class="search-icon">
+                <img src="images/shopping-bag.svg" alt="search icon" class="shopping-bag-icon">
+            </div>
+    </header>
+    <main>
+        <h1>Checkout</h1>
+        <section class="order-summary">
+            <h2>Order Summary</h2>
+        </section>
+        <section class="personal-details">
+            <h2>Your Details</h2>
+            <form method="post">
+                <div class="form-wrapper">
+                  <section>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+
+                 <section>
+                    <input type="submit" value="Submit" class="cta cta-submit">
+                </section>
+                </div>
+            </form>
+        </section>
+        <section class="shipping">
+            <h2>Shipping</h2>
+            <input type="checkbox">
+            <p>Standard Delivery</p>
+            <p>Free</p>
+            <p>Will be delivered to your nearest postal office within 3-5 working days.</p>
+        </section>
+        <section class="payment-details">
+            <h2>Payment Details</h2>
+        </section>
+        <h2>Total: 1.300kr</h2>
+        <a href="#" class="cta">Confirm Payment</a>
+    </main>
+    <footer>
+        Copyright &copy;
+    </footer>
+</body>
+</html>
