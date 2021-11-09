@@ -2,9 +2,17 @@ main {
   background: #f8f8f8;
 }
 
+h1 {
+  padding-top: 0px;
+}
+
 .product-nav {
-  padding-top: 30%;
+  padding-top: 130px;
   padding-left: 10%;
+}
+
+.product-nav a {
+  text-transform: uppercase;
 }
 
 .jacket-specific img {
@@ -16,7 +24,7 @@ main {
 .jacket-specific {
   display: flex;
   flex-direction: column;
-  padding: 10%;
+  padding: 20px 10% 20px 10%;
   gap: 10px;
 }
 
@@ -30,19 +38,11 @@ h2 {
   width: 20px;
   background-color: #1c96f4;
   border-radius: 50%;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 150px 100px;
+  margin-bottom: 20px;
 }
 
 .color p {
   margin-bottom: 5px;
-}
-
-select {
-  margin-top: 5px;
 }
 
 .jacket-specific select {
@@ -67,24 +67,31 @@ label:hover {
 }
 
 .cart {
-  border: 1px solid lightgray;
   border-radius: 5px;
   background: #fff;
   position: fixed;
-  align-self: center;
-  margin-top: 42px;
-  padding: 40px;
-  text-align: center;
+  width: 190px;
+  height: 370px;
+  top: 80px;
+  right: 0px;
+  padding: 30px;
+  box-shadow: 10px 5px 10px lightgray;
+}
+
+.cart h3,
+h4,
+p {
+  margin: 5px;
 }
 
 .cart .cta {
-  display: block;
-  margin: 10px;
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .cart img {
-  max-width: 50%;
-  align-self: center;
+  max-width: 100%;
 }
 
 #add-to-cart:checked ~ .cart {

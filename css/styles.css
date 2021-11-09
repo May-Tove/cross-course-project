@@ -19,6 +19,7 @@ body {
 
 h1 {
   text-transform: uppercase;
+  padding-top: 130px;
 }
 
 h1,
@@ -41,7 +42,7 @@ header {
   position: fixed;
   background: #fff;
   z-index: 1000;
-  filter: drop-shadow(2px 2px 2px grey);
+  box-shadow: 1px 1px 10px gray;
 }
 
 nav {
@@ -51,7 +52,7 @@ nav {
   width: 130px;
   z-index: 1000;
   background-color: #fff;
-  filter: drop-shadow(2px 2px 2px grey);
+  box-shadow: 5px 5px 10px gray;
   text-transform: uppercase;
 }
 
