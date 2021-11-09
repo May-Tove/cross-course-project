@@ -17,6 +17,10 @@ body {
   font-size: 0.8em;
 }
 
+h1 {
+  text-transform: uppercase;
+}
+
 h1,
 h2 {
   font-family: "Playfair Display", serif;

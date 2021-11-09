@@ -1,6 +1,80 @@
 main {
   background: #f8f8f8;
 }
-h1 {
+
+.product-nav {
   padding-top: 30%;
+  padding-left: 10%;
+}
+
+h1 {
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
+h2,
+h3 {
+  margin-top: 10%;
+}
+
+h1,
+h2 {
+  text-align: left;
+}
+
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section {
+  height: fit-content;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.content {
+  border-radius: 5px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 5px 10px 10px lightgray;
+}
+
+.summary-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.order-summary img {
+  max-width: 70px;
+}
+
+.shipping p {
+  padding: 5px;
+}
+
+.form-wrapper > * {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 10px 10px lightgray;
+}
+
+input,
+select {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  margin: 10px 10px 10px 0px;
+  padding: 10px;
+}
+
+.cta-payment {
+  background-color: #47b25b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
 }

@@ -31,9 +31,32 @@
             </div>
     </header>
     <main>
+        <div class="product-nav">
+            <a href="index.html">Home /</a>
+            <a href="men.html">Men /</a>
+            <a href="product.html">Camping jacket /</a>
+            <a href="checkout.html" class="active">Checkout</a>
+        </div>
         <h1>Checkout</h1>
         <section class="order-summary">
             <h2>Order Summary</h2>
+            <div class="content summary-content">
+                <div><img src="images/men.png" alt="Men's jacket"></div>
+                <div>
+                    <p>Camping jacket</p>
+                    <p>Size: S</p>
+                    <p>Color: Blue</p>
+                </div>
+                <div>
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="2">
+                </div>
+                <div><p>1.300 kr</p></div>
+                <div><p>Shipping</p></div>
+                <div><p>Free</p></div>
+                <div><p>Total</p></div>
+                <div><p>1.300 kr</p></div>
+            </div>
         </section>
         <section class="personal-details">
             <h2>Your Details</h2>
@@ -48,25 +71,40 @@
                     <input type="email" id="email" name="email">
                     <label for="phone">Phone Number</label>
                     <input type="tel" id="phone" name="phone">
-
-                 <section>
-                    <input type="submit" value="Submit" class="cta cta-submit">
-                </section>
+                    <label for="street">Street Address</label>
+                    <input type="street" name="" id="street">
+                    <label for="">Zip</label>
+                    <input type="text">
+                    <label for="">City</label>
+                    <input type="text" name="" id="">
                 </div>
             </form>
         </section>
         <section class="shipping">
             <h2>Shipping</h2>
-            <input type="checkbox">
-            <p>Standard Delivery</p>
-            <p>Free</p>
-            <p>Will be delivered to your nearest postal office within 3-5 working days.</p>
+            <div class="content">
+                <p>Standard Delivery</p>
+                <p>Free</p>
+                <p>Will be delivered to your nearest postal office within 3-5 working days.</p>
+            </div>
         </section>
         <section class="payment-details">
             <h2>Payment Details</h2>
+            <form method="post">
+                <div class="form-wrapper">
+                  <section>
+                    <label for="first-name">Credit Card Number</label>
+                    <input type="text" id="first-name" name="first-name">
+                    <label for="last-name">Expiration Date</label>
+                    <input type="text" id="last-name" name="last-name">
+                    <label for="email">CVC</label>
+                    <input type="email" id="email" name="email">
+                </div>
+            </form>
         </section>
-        <h2>Total: 1.300kr</h2>
-        <a href="#" class="cta">Confirm Payment</a>
+        </section>
+        <h3>Total: 1.300kr</h3>
+        <div><a href="#" class="cta cta-payment">Confirm Payment</a></div>
     </main>
     <footer>
         Copyright &copy;
