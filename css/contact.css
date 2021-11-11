@@ -21,8 +21,8 @@ p {
 
 p {
   text-align: center;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
   padding: 10px 0px 20px 0px;
 }
 
@@ -55,5 +55,4 @@ textarea {
 
 .cta-submit {
   margin-bottom: 10%;
-  font-size: 0.8em;
 }

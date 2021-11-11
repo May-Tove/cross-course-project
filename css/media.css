@@ -83,14 +83,7 @@
   /* About */
 
   .about {
-    min-height: 100vh;
-    background-position: center;
-  }
-
-  .about h1,
-  h2,
-  p {
-    font-size: 1.5em;
+    min-height: 95vh;
   }
 
   .about h1 {
@@ -105,6 +98,7 @@
 
   .about p {
     font-size: 1em;
+    max-width: 50%;
   }
 
   /* Shop */
