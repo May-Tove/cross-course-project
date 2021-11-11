@@ -41,15 +41,21 @@ section {
   box-shadow: 5px 10px 10px lightgray;
 }
 
+.order-summary img {
+  background: lightgray;
+  max-width: 100px;
+}
+
 .summary-content {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
 }
 
-.order-summary img {
-  max-width: 70px;
+.summary-content p {
+  margin: 5px;
+  width: 102px;
 }
 
 .shipping p {

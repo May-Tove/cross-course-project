@@ -26,6 +26,15 @@ h1 {
 .jacket-specific h1,
 h2 {
   text-align: left;
+  margin-bottom: 10px;
+}
+
+.jacket-specific h2 {
+  margin-top: 20px;
+}
+
+.jacket-specific p {
+  margin-bottom: 10px;
 }
 
 .color-circle {
@@ -44,16 +53,21 @@ h2 {
   margin-bottom: 20px;
 }
 
+.quantity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.quantity input {
+  padding: 10px;
+  width: 30px;
+  height: 5px;
+  margin: 5px;
+}
+
 .product-information {
   margin-top: 20px;
-}
-
-.product-information p {
-  padding-top: 10px;
-}
-
-.shipping-information p {
-  padding-top: 10px;
 }
 
 #add-to-cart,
@@ -70,7 +84,7 @@ label:hover {
   background: #fff;
   position: fixed;
   width: 190px;
-  height: 420px;
+  height: fit-content;
   top: 80px;
   right: 0px;
   padding: 30px;
