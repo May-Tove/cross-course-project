@@ -1,12 +1,5 @@
 @import "import/links.css";
 
-@font-face {
-  font-family: "Montserrat", sans-serif;
-  font-family: "Playfair Display", serif;
-  src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap)
-    format(woff2);
-}
-
 * {
   margin: 0px;
   padding: 0px;
@@ -17,6 +10,10 @@ body {
   font-size: 0.8em;
   height: 100vh;
   background: #f8f8f8;
+}
+
+img {
+  max-width: 100%;
 }
 
 h1 {

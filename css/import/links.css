@@ -16,10 +16,6 @@ a:hover {
   text-decoration: underline;
 }
 
-.welcome a {
-  color: #fff;
-}
-
 .cta {
   background-color: #3080eb;
   border-radius: 50px;
@@ -33,15 +29,22 @@ a:hover {
   font-size: 0.8em;
 }
 
+/* Home page*/
+
+.welcome a {
+  color: #fff;
+}
+
 .cta-welcome {
   border: 1.5px solid white;
   background-color: transparent;
   display: inline;
   align-items: center;
+  margin-left: 10%;
 }
 
-.cta-shop-women {
-  margin-left: 20px;
+.shop-link :last-child {
+  margin-left: 10px;
 }
 
 .cta:hover {

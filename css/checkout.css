@@ -1,10 +1,13 @@
+.checkout-main-content {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .product-nav {
   padding-top: 130px;
-  padding-left: 10%;
 }
 
 h1 {
-  padding-left: 10%;
   padding-top: 20px;
 }
 
@@ -20,14 +23,11 @@ h2 {
 
 h3 {
   margin-top: 30px;
-  margin-left: 10%;
   text-transform: uppercase;
 }
 
-section {
+.checkout-details {
   height: fit-content;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .content {
@@ -44,7 +44,7 @@ section {
 
 .summary-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   gap: 30px;
 }
@@ -82,5 +82,5 @@ select {
 .cta-payment {
   background-color: #47b25b;
   display: inline-block;
-  margin: 20px 0px 20px 10%;
+  margin: 20px 0px 20px 0px;
 }
