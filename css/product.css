@@ -1,5 +1,6 @@
 h1 {
   padding-top: 0px;
+  text-transform: capitalize;
 }
 
 .product-nav {
@@ -7,16 +8,10 @@ h1 {
   padding-left: 10%;
 }
 
-.jacket-specific img {
-  background: lightgray;
-  width: 100%;
-}
-
 .jacket-specific {
   display: flex;
   flex-direction: column;
   padding: 20px 10% 20px 10%;
-  gap: 10px;
 }
 
 .jacket-specific h1,
@@ -26,7 +21,7 @@ h2 {
 }
 
 .jacket-specific h2 {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .jacket-specific p {
@@ -38,7 +33,7 @@ h2 {
   width: 20px;
   background-color: #1c96f4;
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .color p {
@@ -46,13 +41,13 @@ h2 {
 }
 
 .jacket-specific select {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .quantity {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .quantity input {
@@ -60,10 +55,6 @@ h2 {
   width: 30px;
   height: 5px;
   margin: 5px;
-}
-
-.product-information {
-  margin-top: 20px;
 }
 
 #add-to-cart,
@@ -89,18 +80,6 @@ label:hover {
 
 .cart p {
   margin-bottom: 10px;
-}
-
-.cart .cta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-  margin-top: 5px;
-}
-
-.cart img {
-  max-width: 100%;
 }
 
 #add-to-cart:checked ~ .cart {

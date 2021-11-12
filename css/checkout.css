@@ -37,21 +37,36 @@ h3 {
   box-shadow: 5px 10px 10px lightgray;
 }
 
-.order-summary img {
-  background: lightgray;
-  max-width: 100px;
-}
-
 .summary-content {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
   align-items: center;
   gap: 30px;
 }
 
 .summary-content p {
   margin: 5px;
-  width: 102px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+}
+
+.quantity img {
+  max-width: 20px;
+}
+
+.quantity p {
+  margin: 15px;
+}
+
+.price-details {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid grey;
+  min-width: 100%;
+  padding-top: 10px;
 }
 
 .shipping p {
@@ -65,10 +80,6 @@ h3 {
   background: #fff;
   border-radius: 5px;
   box-shadow: 5px 10px 10px lightgray;
-}
-
-.message-box {
-  display: block;
 }
 
 input,

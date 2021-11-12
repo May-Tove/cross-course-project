@@ -50,3 +50,21 @@ a:hover {
 .cta:hover {
   text-decoration: none;
 }
+
+/* Shop */
+.shop-navigation a {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Product */
+.cart .cta {
+  margin-bottom: 20px;
+}
+
+/* Checkout */
+.cta-payment {
+  background-color: #47b25b;
+  display: inline-block;
+  margin: 20px 0px 20px 0px;
+}

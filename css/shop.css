@@ -1,6 +1,6 @@
 .shop {
   background: #e4ebf2;
-  min-height: 25vh;
+  min-height: 30vh;
 }
 
 .shop-navigation {
@@ -10,11 +10,6 @@
   gap: 20px;
 }
 
-.shop-navigation a {
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
 .new-products {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -22,9 +17,5 @@
   gap: 15px;
   margin-left: 10%;
   margin-right: 10%;
-}
-
-.new-products img {
-  max-width: 100%;
-  background: lightgray;
+  margin-bottom: 30px;
 }
