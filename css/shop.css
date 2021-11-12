@@ -1,17 +1,9 @@
 .shop {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../images/shop-background2.jpg);
-  background-position: top;
-  background-size: cover;
+  background: #e4ebf2;
   min-height: 25vh;
 }
 
-h1 {
-  color: #fff;
-}
-
 .shop-navigation {
-  background: #f8f8f8;
   display: flex;
   justify-content: center;
   padding: 30px;
@@ -24,19 +16,15 @@ h1 {
 }
 
 .new-products {
-  background: #f8f8f8;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-around;
   gap: 15px;
-  padding: 0px 30px 30px 30px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .new-products img {
   max-width: 100%;
   background: lightgray;
-}
-
-.new-products p {
-  font-size: 0.9em;
 }

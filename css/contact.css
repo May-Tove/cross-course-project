@@ -1,34 +1,19 @@
-main {
-  background: #f8f8f8;
-}
-
 .contact-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/contact-background1.jpg);
-  background-position: center;
-  background-size: cover;
+  background: #e4ebf2;
   min-height: 30vh;
-}
-
-.contact-header h1 {
-  padding-top: 130px;
-}
-
-h1,
-p {
-  color: #fff;
+  padding-bottom: 30px;
 }
 
 p {
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
-  padding: 10px 0px 20px 0px;
+  padding: 10px 0px 10px 0px;
 }
 
 .contactform-wrapper h2 {
   text-align: left;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .contactform-wrapper > * {
@@ -36,23 +21,24 @@ p {
   display: flex;
   flex-direction: column;
   margin-left: 10%;
+  margin-right: 10%;
 }
 
-textarea {
-  min-height: 100px;
-  min-width: 80%;
-}
-
-input,
-select,
 textarea {
   border: 1px solid #c4c4c4;
   border-radius: 5px;
-  margin: 10px 10px 10px 0px;
+  min-height: 100px;
+  min-width: 100%;
+}
+
+input,
+select {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  margin: 10px 0px 10px 0px;
   padding: 10px;
-  max-width: 80%;
 }
 
 .cta-submit {
-  margin-bottom: 10%;
+  margin-bottom: 30px;
 }
