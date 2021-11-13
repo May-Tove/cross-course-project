@@ -57,11 +57,6 @@ a:hover {
   font-weight: 500;
 }
 
-/* Product */
-.cart .cta {
-  margin-bottom: 20px;
-}
-
 /* Checkout */
 .cta-payment {
   background-color: #47b25b;

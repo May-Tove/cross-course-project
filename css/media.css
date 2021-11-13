@@ -15,10 +15,6 @@
     padding-top: 50px;
     padding-left: 30px;
   }
-
-  .cta-shop-women {
-    margin-left: 30px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -54,10 +50,6 @@
 
   .cta-welcome {
     margin-right: 10px;
-  }
-
-  .cta-shop-women {
-    margin-left: 50px;
   }
 
   .cta-welcome:hover {
@@ -116,6 +108,17 @@
     margin-left: 20%;
     margin-right: 20%;
   }
+
+  .short-form {
+    display: flex;
+    gap: 10px;
+  }
+
+  .short-checkout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -145,10 +148,6 @@
     padding: 10px 25px;
   }
 
-  .cta-shop-women {
-    margin-left: 80px;
-  }
-
   .news h2 {
     padding-top: 50px;
   }
@@ -156,5 +155,15 @@
   .new-products {
     padding: 50px;
     gap: 30px;
+  }
+
+  /* Checkout */
+  .checkout-main-content {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .summary-content {
+    gap: 40px;
   }
 }

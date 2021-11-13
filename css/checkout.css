@@ -26,10 +26,6 @@ h3 {
   text-transform: uppercase;
 }
 
-.checkout-details {
-  height: fit-content;
-}
-
 .content {
   border-radius: 5px;
   background: #fff;
@@ -37,11 +33,14 @@ h3 {
   box-shadow: 5px 10px 10px lightgray;
 }
 
+/* Order summary */
+
 .summary-content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 120px auto;
+  justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .summary-content p {
@@ -61,17 +60,12 @@ h3 {
   margin: 15px;
 }
 
-.price-details {
+.price-flex {
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid grey;
-  min-width: 100%;
-  padding-top: 10px;
 }
 
-.shipping p {
-  padding: 5px;
-}
+/* Forms */
 
 .form-wrapper > * {
   display: flex;
@@ -90,8 +84,13 @@ select {
   padding: 10px;
 }
 
-.cta-payment {
-  background-color: #47b25b;
-  display: inline-block;
-  margin: 20px 0px 20px 0px;
+.short-form input {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Shipping */
+
+.shipping p {
+  padding: 5px;
 }
