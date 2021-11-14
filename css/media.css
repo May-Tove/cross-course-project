@@ -72,21 +72,6 @@
     gap: 20px;
   }
 
-  /* Product Spesific page */
-  .jacket-specific {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-  }
-
-  .jacket-specific img {
-    width: 100%;
-  }
-
-  .jacket-specific h2 {
-    margin-top: 30px;
-  }
-
   /* Checkout */
   .checkout-main-content {
     margin-left: 20%;
@@ -139,6 +124,21 @@
   .new-products {
     padding: 50px;
     gap: 30px;
+  }
+
+  /* Product Spesific page */
+  .jacket-specific {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .jacket-specific img {
+    width: 100%;
+  }
+
+  .jacket-specific h2 {
+    margin-top: 30px;
   }
 
   /* Checkout */
