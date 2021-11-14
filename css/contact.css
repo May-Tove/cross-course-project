@@ -1,7 +1,17 @@
 .contact-header {
-  background: #e4ebf2;
-  height: 270px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/contact-background2.jpg);
+  background-position: top;
+  background-size: cover;
+  height: 275px;
   padding-bottom: 30px;
+}
+
+h1,
+h2,
+p,
+a {
+  color: #fff;
 }
 
 p {
@@ -14,6 +24,7 @@ p {
 .contactform-wrapper h2 {
   text-align: left;
   padding-bottom: 15px;
+  color: #000;
 }
 
 .contactform-wrapper > * {

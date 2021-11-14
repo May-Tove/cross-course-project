@@ -1,6 +1,13 @@
 .shop {
-  background: #e4ebf2;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/shop-background2.jpg);
+  background-position: top;
+  background-size: cover;
   height: 200px;
+}
+
+h1 {
+  color: #fff;
 }
 
 .shop-navigation {
