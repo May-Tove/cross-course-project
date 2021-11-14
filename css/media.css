@@ -43,6 +43,9 @@
   }
 
   /* About */
+  .about {
+    height: 100%;
+  }
   .about h1 {
     padding-top: 160px;
   }

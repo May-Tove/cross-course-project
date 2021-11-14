@@ -3,7 +3,6 @@ main {
     url(../images/about-background.jpg);
   background-position: bottom;
   background-size: cover;
-  min-height: 90vh;
   padding-left: 10%;
 }
 
