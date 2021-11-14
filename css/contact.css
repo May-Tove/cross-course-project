@@ -3,14 +3,13 @@
     url(../images/contact-background2.jpg);
   background-position: top;
   background-size: cover;
-  height: 275px;
+  height: 250px;
   padding-bottom: 30px;
 }
 
 h1,
 h2,
-p,
-a {
+p {
   color: #fff;
 }
 
