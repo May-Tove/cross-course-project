@@ -18,6 +18,14 @@
 }
 
 @media (min-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
   .logo {
     padding-left: 0px;
   }
@@ -35,21 +43,21 @@
   }
 
   /* Homepage */
-
   .start {
-    min-height: 100vh;
+    min-height: 60vh;
   }
 
   .welcome {
-    min-height: 80vh;
+    min-height: 45vh;
   }
 
   .welcome p {
-    padding: 70px 70px 30px 50px;
+    padding: 70px 0px 30px 10%;
+    font-size: 1.5em;
   }
 
   .cta-welcome {
-    margin-right: 10px;
+    margin-right: 5px;
   }
 
   .cta-welcome:hover {
