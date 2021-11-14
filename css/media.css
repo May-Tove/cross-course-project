@@ -1,14 +1,6 @@
 @media (min-width: 600px) {
-  .start {
-    min-height: 90vh;
-  }
-
   .start h1 {
     padding-top: 30%;
-  }
-
-  .welcome {
-    min-height: 60vh;
   }
 
   .welcome p {
@@ -43,14 +35,6 @@
   }
 
   /* Homepage */
-  .start {
-    min-height: 60vh;
-  }
-
-  .welcome {
-    min-height: 45vh;
-  }
-
   .welcome p {
     padding: 70px 0px 30px 10%;
     font-size: 1.5em;
@@ -62,7 +46,7 @@
 
   .cta-welcome:hover {
     border: none;
-    background-color: #3080eb;
+    background-color: #273e62;
   }
 
   /* About */
@@ -90,6 +74,11 @@
   }
 
   /* Shop */
+  .product-main-content {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
   .new-products {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -139,17 +128,17 @@
   }
 
   /* Homepage */
+  .start {
+    height: 800px;
+  }
 
   .start h1 {
     padding-top: 300px;
   }
 
   .welcome {
-    min-height: 90vh;
-  }
-
-  .welcome p {
-    padding: 90px 70px 30px 80px;
+    height: 550px;
+    background-position: center;
   }
 
   .cta {
@@ -167,8 +156,8 @@
 
   /* Checkout */
   .checkout-main-content {
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 30%;
+    margin-right: 30%;
   }
 
   .summary-content {
