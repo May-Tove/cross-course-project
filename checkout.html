@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Get durable and comfortable jackets for any adventure from Rainydays">
+    <meta name="description" content="Complete your order, free delivery within 3-5 working days.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rainydays | Checkout </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,18 +32,20 @@
     </header>
     <main>
         <div class="checkout-main-content">
-            <div class="product-nav">
+            <section class="product-nav">
                 <a href="index.html">Home /</a>
                 <a href="men.html">Men /</a>
                 <a href="product.html">Camping jacket /</a>
                 <a href="checkout.html" class="active">Checkout</a>
-            </div>
+            </section>
             <div class="checkout-details">
                 <h1>Checkout</h1>
                 <section class="order-summary">
                     <h2>Order Summary</h2>
                     <div class="content summary-content">
-                        <div><img src="images/jacket.jpg" alt="Men's jacket"></div>
+                        <div>
+                            <img src="images/jacket.jpg" alt="Men's jacket">
+                        </div>
                         <div>
                             <p>Camping jacket</p>
                             <p>Size: S</p>
@@ -55,6 +57,7 @@
                                 <a href="#"><img src="images/qyt++@2x.png" alt="Plus icon"></a>
                             </div>
                         </div>
+                    </div>
                 </section>
                 <section class="personal-details">
                     <h2>Your Details</h2>
@@ -71,12 +74,12 @@
                             <input type="street" name="street" id="street">
                             <div class="short-form">
                                 <div class="short-checkout">
-                                    <label for="">Zip</label>
-                                    <input type="text">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" name="zip" id="zip">
                                 </div>
                                 <div class="short-checkout">
-                                    <label for="">City</label>
-                                    <input type="text" name="City" id="City">
+                                    <label for="city">City</label>
+                                    <input type="text" name="city" id="city">
                                 </div>
                             </div>
                         </div>
@@ -95,25 +98,27 @@
                     <form method="post">
                         <div class="form-wrapper">
                           <section>
-                            <label for="credit-card-number">Credit Card Number</label>
-                            <input type="text" id="credit-card-number" name="credit-card-number">
-                            <div class="short-form">
-                                <div class="short-checkout">
-                                    <label for="expiration-date">Expiration Date</label>
-                                    <input type="text" id="expiration-date" name="expiration-date">
+                             <label for="credit-card-number">Credit Card Number</label>
+                             <input type="text" id="credit-card-number" name="credit-card-number">
+                                <div class="short-form">
+                                    <div class="short-checkout">
+                                        <label for="expiration-date">Expiration Date</label>
+                                        <input type="text" id="expiration-date" name="expiration-date">
+                                    </div>
+                                    <div class="short-checkout">
+                                        <label for="cvc">CVC</label>
+                                        <input type="text" id="cvc" name="cvc">
+                                    </div>
                                 </div>
-                                <div class="short-checkout">
-                                    <label for="cvc">CVC</label>
-                                    <input type="text" id="cvc" name="cvc">
-                                </div>
-                            </div>
+                            </section>
                         </div>
-                    </form>
+                    </form>  
                 </section>
+                <section>
+                    <h3>Total: 1.300kr</h3>
+                    <a href="#" class="cta cta-payment">Confirm Payment</a>
                 </section>
-            <h3>Total: 1.300kr</h3>
-            <a href="#" class="cta cta-payment">Confirm Payment</a>
-            </div>
+            </div>    
         </div>
     </main>
     <footer>

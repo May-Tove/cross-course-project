@@ -39,10 +39,6 @@ select {
   padding: 10px;
 }
 
-.cta-submit {
-  margin-bottom: 30px;
-}
-
 #submit:hover {
   cursor: pointer;
 }

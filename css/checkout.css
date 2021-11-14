@@ -3,8 +3,16 @@
   margin-right: 10%;
 }
 
-.product-nav {
+.product-nav > * {
+  display: inline-block;
   padding-top: 130px;
+  width: fit-content;
+  background-color: #f8f8f8;
+  box-shadow: 0px 0px 0px;
+}
+
+.product-nav a {
+  text-transform: capitalize;
 }
 
 h1 {
@@ -86,7 +94,6 @@ select {
 
 .short-form input {
   display: flex;
-  flex-direction: column;
 }
 
 /* Shipping */

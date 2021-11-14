@@ -43,11 +43,6 @@
   }
 
   /* About */
-
-  .about {
-    min-height: 95vh;
-  }
-
   .about h1 {
     padding-top: 160px;
   }
@@ -72,7 +67,7 @@
     margin-right: 20%;
   }
 
-  .new-products {
+  .list-of-products {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
