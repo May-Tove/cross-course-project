@@ -1,14 +1,3 @@
-@media (min-width: 600px) {
-  .start h1 {
-    padding-top: 30%;
-  }
-
-  .welcome p {
-    padding-top: 50px;
-    padding-left: 30px;
-  }
-}
-
 @media (min-width: 768px) {
   h1 {
     font-size: 2em;
@@ -35,6 +24,10 @@
   }
 
   /* Homepage */
+  .welcome {
+    height: 400px;
+  }
+
   .welcome p {
     padding: 70px 0px 30px 10%;
     font-size: 1.5em;
@@ -82,7 +75,6 @@
   .new-products {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    padding: 0px 30px 30px 30px;
   }
 
   /* Product Spesific page */
@@ -156,8 +148,8 @@
 
   /* Checkout */
   .checkout-main-content {
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 25%;
+    margin-right: 25%;
   }
 
   .summary-content {
