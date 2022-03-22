@@ -12,7 +12,7 @@
 
 .contact-intro, .contact-form{
   background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8));
-  max-width: 600px;
+  max-width: 650px;
   width: 100%;
   padding: 40px;
 }

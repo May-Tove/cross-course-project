@@ -1,3 +1,4 @@
+// showing menu when clicked on mobile version
 const showMenu = () => {
   const hamburger = document.querySelector(".hamburger");
   const mainMenu = document.querySelector(".nav-links");
@@ -21,3 +22,28 @@ const showMenu = () => {
 };
 
 showMenu();
+
+// show cart when clicked
+const showCart = () => {
+  const cart = document.querySelector(".shopping-bag-icon");
+  const cartItems = document.querySelector(".cart");
+  const cartOverlay = document.querySelector(".cart-overlay");
+
+  //toggle nav
+  cart.addEventListener("click", () => {
+    cartItems.classList.toggle("showCart");
+    cartOverlay.classList.toggle("transparentBackground");
+  });
+};
+
+showCart();
+
+// search input
+const searchIcon = document.querySelector(".search-icon");
+const searchInput = document.querySelector("#search-input");
+const searchButton = document.querySelector(".search-btn");
+
+searchIcon.onclick = function () {
+  searchInput.style.display = "block";
+  searchButton.style.display = "block";
+};
