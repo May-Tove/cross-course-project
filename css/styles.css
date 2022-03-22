@@ -1,13 +1,14 @@
 @import "import/links.css";
+@import "import/variables.css";
 
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8em;
   background: #f8f8f8;
 }
 
@@ -21,7 +22,6 @@ img {
 
 h1 {
   text-transform: uppercase;
-  padding-top: 130px;
 }
 
 h2 {
@@ -34,50 +34,104 @@ h2 {
   text-align: center;
 }
 
-.logo {
-  max-width: 100px;
-  padding-left: 24px;
-}
-
-header {
+/* Navigation */
+.navbar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   width: 100%;
   height: 80px;
   position: fixed;
-  background: #fff;
+  background-color: #e4ebf2;  
   z-index: 1000;
-  box-shadow: 1px 1px 10px gray;
 }
 
-nav {
-  display: none;
-  left: 0px;
-  top: 80px;
-  width: 130px;
-  z-index: 1000;
-  background-color: #fff;
-  box-shadow: 5px 5px 10px gray;
-  text-transform: uppercase;
+.navbar-center{
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
 }
 
-li {
-  display: block;
-  padding: 30px;
-}
-
-#hamburger-menu {
-  display: none;
-}
-
-#hamburger-menu:checked ~ nav {
-  display: block;
+.nav-links{
   position: absolute;
+  left: 0;
+  top: 72px;
+  height: 92vh;
+  background-color: #e4ebf2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 70%;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in;
+  text-align: center;
 }
+
+.nav-links li{
+  list-style: none;
+  opacity: 0;
+
+}
+
+.hamburger{
+  cursor: pointer;
+}
+
+.show{
+  transform: translateX(0%);
+}
+
+.logo {
+  max-width: 110px;
+}
+
+/* Cart */
+.cart-icon{
+  cursor: pointer;
+}
+
+/* search input */
+/*.search-wrapper{
+  position: absolute;
+  top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(228, 235, 242);
+  padding: 10px;
+  border-top: 1px solid rgb(153, 180, 205);
+}
+
+.search-wrapper input{
+  padding: 10px;
+  width: 400px;
+  background-color: rgba(65, 119, 173, 0.3);
+  outline: 0;
+  border: 0;
+  border-radius: 50px;
+}*/
+
+/* Footer */
 
 footer {
   background-color: #e4ebf2;
   padding: 30px 0px 30px 0px;
   text-align: center;
+  margin-top: 5rem;
+}
+
+
+@keyframes navLinkFade{
+  from{
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+  to{
+      opacity: 1;
+      transform: translateX(0px);
+  }
 }

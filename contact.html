@@ -24,49 +24,64 @@
 </script>
 </head>
 <body>
-    <header>
-        <label for="hamburger-menu" class="hamburger"><img src="images/menu.svg" alt="menu icon"></label>
-        <input type="checkbox" id="hamburger-menu">
-        <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Rainydays logo" class="logo"></a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                </ul>
-            </nav>
-            <div>
-                <img src="images/search.svg" alt="search icon" class="search-icon">
-                <img src="images/shopping-bag.svg" alt="search icon" class="shopping-bag-icon">
+    <header class="navbar">
+        <div class="navbar-center">
+            <div class="hamburger" id="hamburger">
+                <img src="images/menu.svg" alt="menu icon">
             </div>
+            <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Rainydays logo" class="logo"></a>
+                <nav class="main-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html"  class="active">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="cart-icon">
+                    <img src="images/shopping-bag.svg" alt="search icon" class="shopping-bag-icon">
+                </div>
+        </div>
+        <div class="search-wrapper">
+            <label for="search"></label>
+            <input type="search" name="search" id="search" placeholder="Search...">
+        </div>
     </header>
     <main>
-        <section class="contact-header">
-            <h1>Contact Us</h1>
-            <p>We would love to hear from you! Send us a message below or contact us directly. Open from Mon-Fri, 09:00 - 16:00.</p>
-            <p>+47 12345678</p>
-        </section>
-        <form method="post">
-            <div class="contactform-wrapper">
-              <section>
-                  <h2>Send us a message:</h2>
-                <label for="first-name">First Name</label>
-                <input type="text" id="first-name" name="first-name">
-                <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" name="last-name">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone">
-             <section class="message-box">
-                <div><label for="message">Message</label></div>
-                <div><textarea name="Message" id="message"></textarea></div>
-                <div><input type="submit" value="Submit" id="submit" class="cta cta-submit"></div>
+        <div class="contact-container">
+            <section class="contact-intro">
+                <h1>Get in touch with us</h1>
+                <p>We would love to hear from you! Come visit us at our location or send us a message below. Our opening hours are between 09:00 - 16:00 Mon - Sat</p>
+                <span>Trondheim</span>
+                <span>90802292</span>
+                <span><i class="fa-regular fa-envelope"></i>contact@rainydays.com</span>
             </section>
-            </div>
-        </form>
+            <form class="contact-form">
+                <div class="input-group">
+                    <label for="name">Full name *</label>
+                    <input type="text" name="name" id="name">
+                    <div class="form-error" id="name-error">Please enter your name</div>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email *</label>
+                    <input type="email" name="email" id="email" >
+                    <div class="form-error" id="email-error">Please enter a valid email address</div>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone number *</label>
+                    <input type="tel" name="phone" id="phone" >
+                    <div class="form-error" id="phone-error">Please enter a valid phone number</div>
+                </div>
+                <div class="input-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message"></textarea >
+                    <div class="form-error" id="message-error">Field must contain a message</div>
+                </div>
+                <button class="submit-btn">Submit</button>
+            </form>
+        </div>
     </main>
+    <script src="js/contact.js"></script>
     <footer>
         Copyright &copy;
     </footer>

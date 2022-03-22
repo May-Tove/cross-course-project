@@ -4,52 +4,38 @@ a {
   color: black;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 nav a {
   font-weight: 500;
 }
 
-.active {
-  text-decoration: underline;
+.nav-links a{
+  transition: 0.3s ease;
 }
 
+.active, .nav-links a:hover {
+  color: var(--mainColor);
+}
+
+/* Call to action buttons */
 .cta {
-  background-color: #273e62;
-  border-radius: 50px;
+  background-color: var(--mainColor);
   text-transform: uppercase;
-  color: #fff;
-  padding: 5px 20px;
-  border: none;
+  color: var(--mainWhiteColor);
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  border: 1px solid var(--mainColor);
+  transition: var(--buttonTransition);
+  cursor: pointer;
 }
 
-.cta a {
-  font-size: 0.8em;
+.cta:hover{
+  background: transparent;
+  color: var(--mainColor);
+  text-decoration: none;
 }
 
 /* Home page*/
 
-.welcome a {
-  color: #fff;
-}
-
-.cta-welcome {
-  border: 1.5px solid white;
-  background-color: transparent;
-  display: inline;
-  align-items: center;
-  margin-left: 10%;
-}
-
-.shop-link :last-child {
-  margin-left: 10px;
-}
-
-.cta:hover {
-  text-decoration: none;
-}
 
 /* Shop */
 .shop-navigation a {

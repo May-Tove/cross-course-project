@@ -24,25 +24,31 @@
 </script>
 </head>
 <body>
-    <header>
-        <label for="hamburger-menu" class="hamburger"><img src="images/menu.svg" alt="menu icon"></label>
-        <input type="checkbox" id="hamburger-menu">
-        <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Rainydays logo" class="logo"></a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html" class="active">Shop</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div>
-                <img src="images/search.svg" alt="search icon" class="search-icon">
-                <img src="images/shopping-bag.svg" alt="search icon" class="shopping-bag-icon">
+    <header class="navbar">
+        <div class="navbar-center">
+            <div class="hamburger" id="hamburger">
+                <img src="images/menu.svg" alt="menu icon">
             </div>
+            <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Rainydays logo" class="logo"></a>
+                <nav class="main-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html"  class="active">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="cart-icon">
+                    <img src="images/shopping-bag.svg" alt="search icon" class="shopping-bag-icon">
+                </div>
+        </div>
+        <div class="search-wrapper">
+            <label for="search"></label>
+            <input type="search" name="search" id="search" placeholder="Search...">
+        </div>
     </header>
     <main>
-        <div class="checkout-main-content">
+        <div class="checkout-container">
             <section class="product-nav">
                 <a href="index.html">Home /</a>
                 <a href="men.html">Men /</a>
@@ -72,27 +78,41 @@
                 </section>
                 <section class="personal-details">
                     <h2>Your Details</h2>
-                    <form method="post">
+                    <form class="info-form">
                         <div class="form-wrapper">
-                          <section>
-                            <label for="full-name">Full Name</label>
-                            <input type="text" id="full-name" name="full-name">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone">
-                            <label for="street">Street Address</label>
-                            <input type="street" name="street" id="street">
+                              <div class="input-group">
+                                <label for="full-name">Full Name</label>
+                                <input type="text" id="full-name" name="full-name" required>
+                                <div class="form-error" id="name-error">Please enter your name</div>
+                              </div>
+                              <div class="input-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email">
+                                <div class="form-error" id="email-error">Please enter a valid email address</div>
+                              </div>
+                              <div class="input-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                                <div class="form-error" id="phone-error">Please enter a valid phone number</div>
+                              </div>
+                              <div class="input-group">
+                                <label for="address">Street Address</label>
+                                <input type="text" name="address" id="address" required>
+                                <div class="form-error" id="address-error">Please enter your street address</div>
+                              </div>
                             <div class="short-form">
-                                <div class="short-checkout">
+                                <div class="input-group short-checkout">
                                     <label for="zip">Zip</label>
-                                    <input type="text" name="zip" id="zip">
+                                    <input type="text" name="zip" id="zip" required>
+                                    <div class="form-error" id="zip-error">Zip must be 4 digits</div>
                                 </div>
-                                <div class="short-checkout">
+                                <div class="input-group short-checkout">
                                     <label for="city">City</label>
-                                    <input type="text" name="city" id="city">
+                                    <input type="text" name="city" id="city" required>
+                                    <div class="form-error" id="city-error">Please enter your city</div>
                                 </div>
                             </div>
+                            <button type="submit" class="cta" id="confirm-detail-btn">Confirm details</button>
                         </div>
                     </form>
                 </section>
@@ -106,32 +126,35 @@
                 </section>
                 <section class="payment-details">
                     <h2>Payment Details</h2>
-                    <form method="post">
+                    <form class="payment-form">
                         <div class="form-wrapper">
-                          <section>
-                             <label for="credit-card-number">Credit Card Number</label>
-                             <input type="text" id="credit-card-number" name="credit-card-number">
+                          <div class="input-group">
+                             <label for="credit-card">Credit Card Number</label>
+                             <input type="text" id="credit-card" name="credit-card" placeholder="xxxx xxxx xxxx xxxx" required>
+                             <div class="form-error" id="card-error">Credit card number must contain 16 digits</div>
+                             </div>
                                 <div class="short-form">
-                                    <div class="short-checkout">
-                                        <label for="expiration-date">Expiration Date</label>
-                                        <input type="text" id="expiration-date" name="expiration-date">
+                                    <div class="short-checkout input-group">
+                                        <label for="expiration">Expiration Date</label>
+                                        <input type="text" id="expiration" name="expiration" placeholder="MM/YY" required>
+                                        <div class="form-error" id="expiration-error">Credit card number must contain MM/YY</div>
                                     </div>
-                                    <div class="short-checkout">
+                                    <div class="short-checkout input-group">
                                         <label for="cvc">CVC</label>
-                                        <input type="text" id="cvc" name="cvc">
+                                        <input type="text" id="cvc" name="cvc" placeholder="xxx" required>
+                                        <div class="form-error" id="cvc-error">CVC must contain 3 digits</div>
                                     </div>
                                 </div>
-                            </section>
+                                <h3>Total: 1.300kr</h3>
+                                <button type="submit" class="cta cta-payment" id="#confirm-payment-btn">Confirm payment</button>
                         </div>
+                        <div class="confirm-order"></div>
                     </form>  
-                </section>
-                <section>
-                    <h3>Total: 1.300kr</h3>
-                    <a href="#" class="cta cta-payment">Confirm Payment</a>
                 </section>
             </div>    
         </div>
     </main>
+    <script src="js/checkout.js"></script>
     <footer>
         Copyright &copy;
     </footer>

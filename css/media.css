@@ -1,46 +1,42 @@
-@media (min-width: 768px) {
-  h1 {
-    font-size: 2em;
-  }
+@media (min-width: 769px) {
+
 
   h2 {
     font-size: 1.5em;
   }
 
-  .logo {
-    padding-left: 0px;
-  }
-
-  nav {
-    display: contents;
-  }
-
-  ul {
-    display: flex;
-  }
-
-  .hamburger {
+  .hamburger{
     display: none;
-  }
+}  
+
+.nav-links{
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links li{
+    opacity: 1;
+    position: relative;
+    padding: 30px;
+}
+
+.nav-links a.active::after,
+.nav-links a:hover::after{
+  content: "";
+  width: 30%;
+  height: 3px;
+  background: var(--mainColor);
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  border-radius: 5px;
+
+}
 
   /* Homepage */
-  .welcome {
-    height: 400px;
-  }
 
-  .welcome p {
-    padding: 70px 0px 30px 10%;
-    font-size: 1.5em;
-  }
-
-  .cta-welcome {
-    margin-right: 5px;
-  }
-
-  .cta-welcome:hover {
-    border: none;
-    background-color: #273e62;
-  }
 
   /* About */
   .about {
@@ -85,7 +81,7 @@
 
   .short-form {
     display: flex;
-    gap: 10px;
+    gap: 20px;
   }
 
   .short-checkout {
@@ -104,32 +100,6 @@
     padding: 50px;
   }
 
-  /* Homepage */
-  .start {
-    height: 800px;
-  }
-
-  .start h1 {
-    padding-top: 300px;
-  }
-
-  .welcome {
-    height: 550px;
-    background-position: center;
-  }
-
-  .cta {
-    padding: 10px 25px;
-  }
-
-  .news h2 {
-    padding-top: 50px;
-  }
-
-  .new-products {
-    padding: 50px;
-    gap: 30px;
-  }
 
   /* Product Spesific page */
   .jacket-specific {
@@ -147,10 +117,6 @@
   }
 
   /* Checkout */
-  .checkout-main-content {
-    margin-left: 25%;
-    margin-right: 25%;
-  }
 
   .summary-content {
     gap: 40px;

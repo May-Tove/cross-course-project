@@ -1,38 +1,76 @@
-.start {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../images/home-background2.jpg);
+.home-hero {
+  min-height: 130vh;
+  background: url(../images/home-background2.jpg);
   background-position: bottom;
   background-size: cover;
-  height: 600px;
+  display: flex;
+  justify-content: center;
+  padding-top: 12rem;
 }
 
-.start h1 {
-  color: #fff;
-  padding-top: 180px;
-}
-
-.start p {
-  color: #fff;
+.hero-container{
   text-align: center;
-  margin-top: 10px;
 }
 
-.welcome {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/welcome-background.jpg);
-  background-position: bottom;
-  background-size: cover;
-  height: 250px;
+.hero-container h1{
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.welcome p {
-  color: #fff;
-  padding-left: 10%;
-  padding-top: 5%;
-  padding-bottom: 20px;
+.hero-container p{
+  margin-bottom: 2rem;
 }
 
-.new-products {
+/* New products */
+
+.products {
+  padding: 4rem 0;
+}
+
+.section-title h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-transform: capitalize;
+}
+
+.popular-products {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-img {
+  display: block;
+  width: 100%;
+  min-height: 12rem;
+  transition: var(--mainTransition);
+}
+
+.product h3 {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.product h4 {
+  margin-top: 0.7rem;
+  color: var(--mainColor);
+  text-align: center;
+}
+
+/*.new-products {
   display: flex;
   justify-content: space-around;
   margin-left: 10%;
@@ -44,4 +82,4 @@
 .news h2 {
   margin: 30px;
   text-transform: uppercase;
-}
+}*/

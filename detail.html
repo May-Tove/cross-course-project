@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/detail.css">
     <link rel="stylesheet" href="css/media.css">
     <!-- Hotjar Tracking Code for https://optimistic-mirzakhani-245dcf.netlify.app/ -->
 <script>
@@ -24,24 +24,35 @@
 </script>
 </head>
 <body>
-    <header>
-        <label for="hamburger-menu" class="hamburger"><img src="images/menu.svg" alt="menu icon"></label>
-        <input type="checkbox" id="hamburger-menu">
-        <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Rainydays logo" class="logo"></a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html" class="active">Shop</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div>
-                <img src="images/search.svg" alt="search icon" class="search-icon">
-                <img src="images/shopping-bag.svg" alt="search icon" class="shopping-bag-icon">
+    <header class="navbar">
+        <div class="navbar-center">
+            <div class="hamburger" id="hamburger">
+                <img src="images/menu.svg" alt="menu icon">
             </div>
+            <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Rainydays logo" class="logo"></a>
+                <nav class="main-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html"  class="active">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="cart-icon">
+                    <img src="images/shopping-bag.svg" alt="search icon" class="shopping-bag-icon">
+                </div>
+        </div>
+        <div class="search-wrapper">
+            <label for="search"></label>
+            <input type="search" name="search" id="search" placeholder="Search...">
+        </div>
     </header>
     <main class="product-main-content">
+        <div class="detail-container">
+            <div class="detail-result">
+
+            </div>
+        </div>
         <section class="product-nav">
             <nav>
                 <a href="index.html">Home /</a>
@@ -97,6 +108,7 @@
             </section>
         </section>
     </main>
+    <script src="js/detail.js"></script>
     <footer>
         Copyright &copy;
     </footer>

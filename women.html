@@ -24,22 +24,28 @@
 </script>
 </head>
 <body>
-    <header>
-        <label for="hamburger-menu" class="hamburger"><img src="images/menu.svg" alt="menu icon"></label>
-        <input type="checkbox" id="hamburger-menu">
-        <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Rainydays logo" class="logo"></a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html" class="active">Shop</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div>
-                <img src="images/search.svg" alt="search icon" class="search-icon">
-                <img src="images/shopping-bag.svg" alt="search icon" class="shopping-bag-icon">
+    <header class="navbar">
+        <div class="navbar-center">
+            <div class="hamburger" id="hamburger">
+                <img src="images/menu.svg" alt="menu icon">
             </div>
+            <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Rainydays logo" class="logo"></a>
+                <nav class="main-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html"  class="active">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="cart-icon">
+                    <img src="images/shopping-bag.svg" alt="search icon" class="shopping-bag-icon">
+                </div>
+        </div>
+        <div class="search-wrapper">
+            <label for="search"></label>
+            <input type="search" name="search" id="search" placeholder="Search...">
+        </div>
     </header>
     <main>
         <section class="shop">
