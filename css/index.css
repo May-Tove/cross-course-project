@@ -1,11 +1,11 @@
 .home-hero {
-  min-height: 130vh;
+  min-height: 125vh;
   background: url(../images/home-background2.jpg);
   background-position: bottom;
   background-size: cover;
   display: flex;
   justify-content: center;
-  padding-top: 12rem;
+  padding-top: 10rem;
 }
 
 .hero-container{

@@ -30,21 +30,42 @@
                 <img src="images/menu.svg" alt="menu icon">
             </div>
             <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Rainydays logo" class="logo"></a>
-                <nav class="main-menu">
-                    <ul class="nav-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="shop.html"  class="active">Shop</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="cart-icon">
-                    <img src="images/shopping-bag.svg" alt="search icon" class="shopping-bag-icon">
+            <nav class="main-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <img src="images/search.svg" alt="" class="search-icon">
+                <img src="images/shopping-bag.svg" alt="shopping bag icon" class="shopping-bag-icon">
+            </div>
+            <div class="cart-overlay">
+                <div class="cart">
+                    <h2>Your shopping bag</h2>
+                    <div class="specific-product">
+                        <img src="images/jacket.jpg" alt="">
+                        <h3>Jacket</h3>
+                        <p>$90</p>
+                        <div>
+                            <label for="quantity"></label>
+                            <input type="number" name="quantity" id="quantity">
+                        </div>
+                        <button>remove</button>
+                    </div>
+                    <div class="cart-bottom">
+                        <div class="total"><h4>Total: $90</h4></div>
+                    <a href="checkout.html" class="cta cart-cta">Go to checkout</a>
+                    </div>
                 </div>
+            </div>
         </div>
         <div class="search-wrapper">
-            <label for="search"></label>
-            <input type="search" name="search" id="search" placeholder="Search...">
+            <label for="search-input"></label>
+            <input type="search" name="search" id="search-input" placeholder="Search...">
+            <button class="search-btn">Search</button>
         </div>
     </header>
     <main>
@@ -97,6 +118,7 @@
             </div>
         </section>
     </main>
+    <script src="js/script.js"></script>
     <footer>
         Copyright &copy;
     </footer>

@@ -133,6 +133,7 @@ h2 {
   justify-content: center;
   align-items: center;
   top: 80px;
+  background-color: #e4ebf2;
 }
 
 
@@ -141,6 +142,8 @@ h2 {
   padding: 10px;
   outline: 0;
   border: 0;
+  width: 40%;
+  margin: 10px 0px;
   display: none;
 }
 
@@ -157,6 +160,11 @@ h2 {
 
 .search-icon{
   cursor: pointer;
+}
+
+input.showSearch,
+button.showSearch{
+  display: block;
 }
 
 .nav-icons{

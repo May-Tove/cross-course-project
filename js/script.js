@@ -38,12 +38,22 @@ const showCart = () => {
 
 showCart();
 
-// search input
-const searchIcon = document.querySelector(".search-icon");
-const searchInput = document.querySelector("#search-input");
-const searchButton = document.querySelector(".search-btn");
+//show search input
 
-searchIcon.onclick = function () {
+const showSearch = () => {
+  const searchIcon = document.querySelector(".search-icon");
+  const searchInput = document.querySelector("#search-input");
+  const searchButton = document.querySelector(".search-btn");
+
+  searchIcon.addEventListener("click", () => {
+    searchInput.classList.toggle("showSearch");
+    searchButton.classList.toggle("showSearch");
+  });
+};
+
+showSearch();
+
+/*searchIcon.onclick = function () {
   searchInput.style.display = "block";
   searchButton.style.display = "block";
-};
+};*/

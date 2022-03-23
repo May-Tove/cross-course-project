@@ -69,31 +69,7 @@ h2 {
 }
 
 /* Add to bag */
-#add-to-cart,
-.cart {
-  display: none;
-}
 
 label:hover {
   cursor: pointer;
-}
-
-.cart {
-  border-radius: 5px;
-  background: #fff;
-  position: fixed;
-  width: 190px;
-  height: fit-content;
-  top: 80px;
-  right: 0px;
-  padding: 30px;
-  box-shadow: 10px 5px 10px lightgray;
-}
-
-.cart p {
-  margin-bottom: 10px;
-}
-
-#add-to-cart:checked ~ .cart {
-  display: block;
 }
