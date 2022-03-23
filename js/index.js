@@ -2,7 +2,8 @@ import { data } from "./jackets/products.js";
 
 const popularProducts = document.querySelector(".popular-products");
 const cart = document.querySelector(".cart");
-const CartList = document.querySelector(".specific-product");
+const CartList = document.querySelector(".cart-list");
+const totalContainer = document.querySelector(".total-container");
 let cartArray = [];
 
 // getting and displaying popular products
@@ -21,14 +22,39 @@ data.forEach(function (product) {
     </article>`;
 });
 
+//going to details page by clicking a product
+/*const product = document.querySelectorAll(".product");
+product.onclick = function (productDetails) {
+  const productDetails = data.find(productDetails.id);
+  console.log(productDetails);
+};*/
+
 // adding products to cart
 const addToCartButtons = document.querySelectorAll(".add-to-cart");
 addToCartButtons.forEach(function (button) {
   button.onclick = function (event) {
-    const productToAdd = data.find(
+    const itemToAdd = data.find(
       (item) => item.id === event.target.dataset.product
     );
-    cartArray.push(productToAdd);
-    console.log(productToAdd);
+    cartArray.push(itemToAdd);
+    showCartItems(cartArray);
+    localStorage.setItem("cartList", JSON.stringify(cartArray));
   };
 });
+
+function showCartItems(cartItems) {
+  cart.style.display = "block";
+  CartList.innerHTML = "";
+  let total = 0;
+
+  cartItems.forEach(function (cartElement) {
+    total += cartElement.price;
+
+    CartList.innerHTML += `<div class="cart-element">
+    <img src="${cartElement.image} alt="${cartElement.title}>
+      <h3>${cartElement.title}</h3>
+      <p>$${cartElement.price}</p>
+      </div>`;
+  });
+  totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
+}

@@ -21,7 +21,7 @@ nav a {
   background-color: var(--mainColor);
   text-transform: uppercase;
   color: var(--mainWhiteColor);
-  padding: 1rem 3rem;
+  padding: 1rem 2.5rem;
   font-size: 1rem;
   border: 1px solid var(--mainColor);
   transition: var(--buttonTransition);
@@ -34,6 +34,11 @@ nav a {
   text-decoration: none;
 }
 
+.add-to-cart{
+  padding: 0.5rem 1.5rem;
+  font-size: 0.8rem;
+}
+
 /* Home page*/
 
 
@@ -44,15 +49,6 @@ nav a {
 }
 
 /* Add to bag */
-.cart .cta {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15px;
-}
-
-.cart .cta:last-child {
-  margin-bottom: 0px;
-}
 
 /* Checkout */
 .cta-payment {

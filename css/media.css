@@ -43,20 +43,7 @@
 
 
   /* About */
-  .about {
-    height: 100%;
-  }
-  .about h1 {
-    padding-top: 160px;
-  }
 
-  .about h2 {
-    padding-top: 50px;
-  }
-
-  .about p {
-    max-width: 50%;
-  }
 
   /* Contact */
   .contactform-wrapper > * {

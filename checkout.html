@@ -80,22 +80,8 @@
                 <h1>Checkout</h1>
                 <section class="order-summary">
                     <h2>Order Summary</h2>
-                    <div class="content summary-content">
-                        <div>
-                            <img src="images/jacket.jpg" alt="Men's jacket">
-                        </div>
-                        <div>
-                            <p>Camping jacket</p>
-                            <p>Size: S</p>
-                            <p>Color: Blue</p>
-                            <p>Price: 1.300 kr</p>
-                            <div class="quantity">
-                                <a href="#"><img src="images/Qyt-@2x.png" alt="Minus icon"></a>
-                                <p>1</p>
-                                <a href="#"><img src="images/qyt++@2x.png" alt="Plus icon"></a>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="content summary-content"></div>
+                    <div class="total"></div>
                 </section>
                 <section class="personal-details">
                     <h2>Your Details</h2>
@@ -166,7 +152,7 @@
                                         <div class="form-error" id="cvc-error">CVC must contain 3 digits</div>
                                     </div>
                                 </div>
-                                <h3>Total: 1.300kr</h3>
+                                <div class="total"></div>
                                 <button type="submit" class="cta cta-payment" id="#confirm-payment-btn">Confirm payment</button>
                         </div>
                         <div class="confirm-order"></div>
@@ -175,8 +161,8 @@
             </div>    
         </div>
     </main>
-    <script src="js/checkout.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/checkout.js" type="module"></script>
+    <script src="js/script.js" type="module"></script>
     <footer>
         Copyright &copy;
     </footer>

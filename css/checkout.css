@@ -114,3 +114,21 @@ select {
   padding-bottom: 10px;
   margin-top: 3px;
 }
+
+.content{
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-element img{
+  max-width: 80px;
+}
+
+.cart-element{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+}

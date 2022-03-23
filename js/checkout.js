@@ -1,3 +1,21 @@
+// order summary
+const cartItems = JSON.parse(localStorage.getItem("cartList"));
+const orderSummary = document.querySelector(".summary-content");
+const totalContainer = document.querySelector(".total");
+console.log(cartItems);
+
+let total = 0;
+cartItems.forEach(function (cartElement) {
+  total += cartElement.price;
+
+  orderSummary.innerHTML += `<div class="cart-element">
+    <img src="${cartElement.image} alt="${cartElement.title}>
+      <h3>${cartElement.title}</h3>
+      <p>$${cartElement.price}</p>
+      </div>`;
+});
+totalContainer.innerHTML = `<h4>Total $${total}</h4>`;
+
 // details form
 const infoForm = document.querySelector(".info-form");
 
@@ -138,7 +156,7 @@ function validatePhoneNumber(phoneNumber) {
 }
 
 // confirmation that order is confirmed
-const confirmOrder = document.querySelector(".confirm-order");
+/*const confirmOrder = document.querySelector(".confirm-order");
 const openConfirmation = document.querySelector("#confirm-order-btn");
 const closeButton = document.querySelector(".close-btn");
 
@@ -148,9 +166,9 @@ openConfirmation.addEventListener("click", () => {
 
 closeButton.addEventListener("click", () => {
   confirmOrder.close();
-});
+});*/
 
-confirmButton.onclick = function () {
+/*confirmButton.onclick = function () {
   if (
     checkLength(fullName.value, 0) &&
     validateEmail(email.value) &&
@@ -172,4 +190,4 @@ confirmButton.onclick = function () {
     submitMessage.innerHTML = "";
   }
   form.reset();
-};
+};*/
