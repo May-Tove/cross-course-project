@@ -3,11 +3,12 @@
     url(../images/shop-background2.jpg);
   background-position: center;
   background-size: cover;
-  height: 200px;
+  height: 40vh;
 }
 
-h1 {
+.shop h1 {
   color: #fff;
+  padding-top: 150px;
 }
 
 .shop-navigation {
@@ -20,12 +21,55 @@ h1 {
   z-index: 0;
 }
 
+
+.products {
+  padding: 4rem 0;
+}
+
+.section-title h2 {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-transform: capitalize;
+}
+
 .list-of-products {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-around;
-  gap: 15px;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+}
+
+.product-img {
+  display: block;
+  background-size: cover;
+  width: 100%;
+  min-height: 12rem;
+}
+
+.product h3 {
+  text-transform: capitalize;
+  margin-top: 1rem;
+}
+
+.product h4 {
+  margin-top: 0.5rem;
+  color: var(--mainColor);
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+@media (min-width: 799px){
+  .list-of-products{
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
 }

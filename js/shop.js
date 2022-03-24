@@ -1,12 +1,12 @@
 import { data } from "./jackets/products.js";
 
-const popularProducts = document.querySelector(".popular-products");
+const allProducts = document.querySelector(".list-of-products");
 
 // getting and displaying popular products
 data.forEach(function (product) {
   const img = product.image.fields.file.url;
 
-  popularProducts.innerHTML += `<article class="product">
+  allProducts.innerHTML += `<article class="product">
     <a href="detail.html?id=${product.id}">
     <div class="img-container">
     <img src=${img} alt="${product.title}" class="product-img"/>

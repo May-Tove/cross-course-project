@@ -1,3 +1,5 @@
+import { data } from "./jackets/products.js";
+
 // showing menu when clicked on mobile version
 const showMenu = () => {
   const hamburger = document.querySelector(".hamburger");
@@ -37,6 +39,42 @@ const showCart = () => {
 };
 
 showCart();
+
+// adding products to cart
+const addToCartButtons = document.querySelectorAll(".add-to-cart");
+const cart = document.querySelector(".cart");
+const CartList = document.querySelector(".cart-list");
+const totalContainer = document.querySelector(".total-container");
+let cartArray = [];
+
+addToCartButtons.forEach(function (button) {
+  button.onclick = function (event) {
+    const itemToAdd = data.find(
+      (item) => item.id === event.target.dataset.product
+    );
+    cartArray.push(itemToAdd);
+    showCartItems(cartArray);
+    localStorage.setItem("cartList", JSON.stringify(cartArray));
+  };
+});
+
+function showCartItems(cartItems) {
+  cart.style.display = "block";
+  CartList.innerHTML = "";
+  let total = 0;
+
+  cartItems.forEach(function (cartElement) {
+    total += cartElement.price;
+    const cartImage = cartElement.image.fields.file.url;
+
+    CartList.innerHTML += `<div class="cart-element">
+    <div style="background-image: url${cartImage}" class="product-img"></div>
+      <h3>${cartElement.title}</h3>
+      <p>$${cartElement.price}</p>
+      </div>`;
+  });
+  totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
+}
 
 //show search input
 

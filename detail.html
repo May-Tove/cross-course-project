@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Comfertable jacket made in softshell, perfect for camping or other outdoor activites">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rainydays | Camping jacket </title>
+    <title class="page-title">Rainydays | product details </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
@@ -33,9 +33,9 @@
             <nav class="main-menu">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="nav-icons">
@@ -45,81 +45,36 @@
             <div class="cart-overlay">
                 <div class="cart">
                     <h2>Your shopping bag</h2>
-                    <div class="specific-product">
-                        <img src="images/jacket.jpg" alt="">
-                        <h3>Jacket</h3>
-                        <p>$90</p>
-                        <div>
-                            <label for="quantity"></label>
-                            <input type="number" name="quantity" id="quantity">
-                        </div>
-                        <button>remove</button>
-                    </div>
+                    <div class="cart-list"></div>
                     <div class="cart-bottom">
-                        <div class="total"><h4>Total: $90</h4></div>
-                    <a href="checkout.html" class="cta cart-cta">Go to checkout</a>
+                        <div class="total-container"></div>
+                    <div>
+                        <a href="checkout.html" class="cta cart-cta">Go to checkout</a>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="search-wrapper">
-            <label for="search-input"></label>
-            <input type="search" name="search" id="search-input" placeholder="Search...">
-            <button class="search-btn">Search</button>
-        </div>
+            <div class="search-wrapper">
+                <label for="search-input"></label>
+                <input type="search" name="search" id="search-input" placeholder="Search...">
+                <button class="search-btn">Search</button>
+            </div>
     </header>
     <main class="product-main-content">
-        <div class="detail-container">
-            <div class="detail-result">
-
-            </div>
-        </div>
         <section class="product-nav">
             <nav>
                 <a href="index.html">Home /</a>
-                <a href="men.html">Men /</a>
-                <a href="product.html" class="active">Camping jacket</a>
+                <a href="shop.html">Shop /</a>
+                <a href="product.html" class="active" id="active-detail"></a>
             </nav>
         </section>
-        <section class="jacket-specific">
-            <div><img src="images/jacket.jpg" alt="Men's jacket"></div>
-            <div>      
-                <div>
-                    <h1>Camping Jacket</h1>
-                    <p>1.300 kr</p>
-                </div>
-                <div>
-                    <div class="color">
-                        <p>Color: Blue</p>
-                    <div class="color-circle"></div>
-                </div>
-                <div class="size">
-                    <label for="size">Size:</label>
-                    <select name="size">
-                        <option>Select Size</option>
-                        <option>S</option>
-                        <option>M</option>
-                        <option>L</option>
-                    </select>
-                </div>
-            </div>
-            <div>
-                <label for="add-to-cart" class="cta" id="add-cart">Add to Bag</label>
-            </div>
-            <section>
-                <div>
-                    <h2>Product information</h2>
-                    <p>Jacket for men made in soft-shell is a lightweight and comfortable jacket made specifically for hiking and other outdoor activities.</p>
-                </div>
-                <div>
-                    <h2>Shipping information</h2>
-                    <p>Free shipping. Standard delivery, will be delivered to your closest postal office within 3-5 working days.</p>
-                </div>
-            </section>
-        </section>
+        <div class="detail-container">
+            <section class="detail-result"></section>
+        </div>
     </main>
     <script src="js/detail.js" type="module"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" type="module"></script>
     <footer>
         Copyright &copy;
     </footer>

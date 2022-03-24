@@ -5,7 +5,7 @@ export const data = [
     title: "hiking jacket",
     price: 70,
     description:
-      "jacket for men made in soft-shell is a lightweight and comfortable jacket made specifically for hiking and other outdoor activities",
+      "Lorem ipsum dolor sit amet spdoij pefijwepf jewpfijwepdojeoifjdøepfijweoifjwåefihj wefwe fweoifhjweof weofi foweifhowøehgfw øoefihweøofiwehoif hrofeiwh føoiw hfwoei fhoewifh wøoifhewøoifh røofi herogfhw roifh worguhwrøofuhwel iufhewøigu hrwøfu owhr foøwehwøeufhweluhrwlfuhnw ofnwrhof hrog høog hwrfio whefiweh føoirwhf øeoifh ewøoifhweøoifh weøoifgh weoøighwøgb we øvnwøowhfu bwøfu hwof hwow hføoiw hføoih øoweh eowøi",
     size: ["xs", "s", "m", "l", "xl"],
     color: ["blue", "red", "green", "yellow"],
   },
@@ -22,7 +22,7 @@ export const data = [
   {
     id: "3",
     image: { fields: { file: { url: "../images/jacket.jpg" } } },
-    title: "waterproof jacket",
+    title: "camping jacket",
     price: 83,
     description:
       "jacket for men made in soft-shell is a lightweight and comfortable jacket made specifically for hiking and other outdoor activities",
@@ -32,7 +32,7 @@ export const data = [
   {
     id: "4",
     image: { fields: { file: { url: "../images/jacket.jpg" } } },
-    title: "runner",
+    title: "puffer jacket",
     price: 65,
     description:
       "jacket for men made in soft-shell is a lightweight and comfortable jacket made specifically for hiking and other outdoor activities",
@@ -42,8 +42,8 @@ export const data = [
   {
     id: "5",
     image: { fields: { file: { url: "../images/jacket.jpg" } } },
-    title: "hiking jacket",
-    price: 70,
+    title: "puffer jacket",
+    price: 65,
     description:
       "jacket for men made in soft-shell is a lightweight and comfortable jacket made specifically for hiking and other outdoor activities",
     size: ["xs", "s", "m", "l", "xl"],
@@ -52,8 +52,28 @@ export const data = [
   {
     id: "6",
     image: { fields: { file: { url: "../images/jacket.jpg" } } },
-    title: "hiking jacket",
-    price: 73,
+    title: "puffer jacket",
+    price: 65,
+    description:
+      "jacket for men made in soft-shell is a lightweight and comfortable jacket made specifically for hiking and other outdoor activities",
+    size: ["xs", "s", "m", "l", "xl"],
+    color: ["blue", "red", "green", "yellow"],
+  },
+  {
+    id: "7",
+    image: { fields: { file: { url: "../images/jacket.jpg" } } },
+    title: "puffer jacket",
+    price: 65,
+    description:
+      "jacket for men made in soft-shell is a lightweight and comfortable jacket made specifically for hiking and other outdoor activities",
+    size: ["xs", "s", "m", "l", "xl"],
+    color: ["blue", "red", "green", "yellow"],
+  },
+  {
+    id: "8",
+    image: { fields: { file: { url: "../images/jacket.jpg" } } },
+    title: "puffer jacket",
+    price: 65,
     description:
       "jacket for men made in soft-shell is a lightweight and comfortable jacket made specifically for hiking and other outdoor activities",
     size: ["xs", "s", "m", "l", "xl"],
