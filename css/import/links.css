@@ -4,16 +4,17 @@ a {
   color: black;
 }
 
-nav a {
-  font-weight: 500;
-}
-
 .nav-links a{
+  font-weight: 500;
   transition: 0.3s ease;
 }
 
 .active, .nav-links a:hover {
-  color: var(--mainColor);
+  color: steelblue;
+}
+
+.breadcrumbs .active{
+  font-weight: bold;
 }
 
 /* Call to action buttons */

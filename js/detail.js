@@ -1,4 +1,4 @@
-import { data } from "./jackets/products.js";
+import { coats } from "./jackets/products.js";
 
 // showing product details
 const detailContainer = document.querySelector(".detail-result");
@@ -9,7 +9,7 @@ const querystring = document.location.search;
 const params = new URLSearchParams(querystring);
 const id = params.get("id");
 
-const product = data.find(function (product) {
+const product = coats.find(function (product) {
   if (product.id === id) {
     return true;
   }

@@ -1,9 +1,9 @@
-import { data } from "./jackets/products.js";
+import { coats } from "./jackets/products.js";
 
 const popularProducts = document.querySelector(".popular-products");
 
 // getting and displaying popular products
-data.forEach(function (product) {
+coats.forEach(function (product) {
   const img = product.image.fields.file.url;
 
   popularProducts.innerHTML += `<article class="product">
@@ -14,5 +14,6 @@ data.forEach(function (product) {
     <h3>${product.title}</h3>
     <h4>$${product.price}</h4>
     </a>
+    <button class="cta add-to-cart" data-product="${product.id}">Add to cart</button>
     </article>`;
 });

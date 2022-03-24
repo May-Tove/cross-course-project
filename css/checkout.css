@@ -57,6 +57,10 @@ h3 {
   align-items: center;
 }
 
+.summary-content p{
+  text-transform: capitalize;
+}
+
 .order-total h4{
   text-align: right;
 }
