@@ -78,9 +78,10 @@ textarea{
   padding: 40px;
 }
 
-.success-message h5,
+.success-message h2,
 .success-message p{
   background-color: #caeec2;
+  color: green;
   padding: 20px;
   width: 100%;
 }

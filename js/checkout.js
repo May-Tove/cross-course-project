@@ -5,21 +5,23 @@ const totalContainer = document.querySelector(".order-total");
 const confirmTotal = document.querySelector(".confirm-total");
 console.log(cartItems);
 
-let total = 0;
-cartItems.forEach(function (cartElement) {
-  total += cartElement.price;
-  const cartImage = cartElement.image.fields.file.url;
+if (cartItems) {
+  let total = 0;
+  cartItems.forEach(function (cartElement) {
+    total += cartElement.price;
+    const cartImage = cartElement.image.fields.file.url;
 
-  orderSummary.innerHTML += `
+    orderSummary.innerHTML += `
   <div class="cart-element">
     <div style="background-image: url(${cartImage})" class="product-img"></div>
     <p>${cartElement.title}</p>
     <p>$${cartElement.price}</p>
     </div>`;
-});
+  });
 
-totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
-confirmTotal.innerHTML = `<h3>Total: $${total}</h3>`;
+  totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
+  confirmTotal.innerHTML = `<h3>Total: $${total}</h3>`;
+}
 
 // details form
 const infoForm = document.querySelector(".info-form");
@@ -42,7 +44,7 @@ const zipError = document.querySelector("#zip-error");
 const city = document.querySelector("#city");
 const cityError = document.querySelector("#city-error");
 
-const confirmButton = document.querySelector("#confirm-payment-btn");
+const confirmButton = document.querySelector(".confirm");
 
 function validateForm(event) {
   event.preventDefault();
@@ -165,3 +167,29 @@ function validatePhoneNumber(phoneNumber) {
   const patternMatches = regEx.test(phoneNumber);
   return patternMatches;
 }
+
+//show order confirmation
+const orderConfirmed = document.querySelector(".order-confirmed");
+const messageOverlay = document.querySelector(".message-overlay");
+
+function showSuccess() {
+  if (
+    checkLength(fullName.value, 0) &&
+    validateEmail(email.value) &&
+    validatePhoneNumber(phoneNumber.value) &&
+    checkLength(address.value, 0) &&
+    checkLength(zip.value, 3) &&
+    checkLength(city.value, 0) &&
+    checkLength(creditCard.value, 15) &&
+    checkLength(expiration.value, 3) &&
+    checkLength(cvc.value, 2)
+  ) {
+    messageOverlay.style.visibility = "visible";
+    form.reset();
+  } else {
+    messageOverlay.style.visibility = "hidden";
+  }
+}
+showSuccess();
+
+confirmButton.addEventListener("click", showSuccess);

@@ -77,7 +77,7 @@ function showSuccess() {
     checkLength(message.value, 10)
   ) {
     successMessage.innerHTML = `
-    <h5>Your message has been sent!</h5>
+    <h2>Your message has been sent!</h2>
     <p>Thank you for contacting us, we will get back to you within 48h</p>`;
     form.reset();
   } else {

@@ -14,6 +14,5 @@ data.forEach(function (product) {
     <h3>${product.title}</h3>
     <h4>$${product.price}</h4>
     </a>
-    <button class="cta add-to-cart" data-product="${product.id}">Add to cart</button>
     </article>`;
 });
