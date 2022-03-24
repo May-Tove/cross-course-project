@@ -7,9 +7,10 @@ console.log(cartItems);
 let total = 0;
 cartItems.forEach(function (cartElement) {
   total += cartElement.price;
+  const cartImage = cartElement.image.fields.file.url;
 
   orderSummary.innerHTML += `<div class="cart-element">
-    <img src="${cartElement.image} alt="${cartElement.title}>
+  <div style="background-image: url(${cartImage})" class="product-img"></div>
       <h3>${cartElement.title}</h3>
       <p>$${cartElement.price}</p>
       </div>`;

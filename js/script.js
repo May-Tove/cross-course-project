@@ -68,9 +68,10 @@ function showCartItems(cartItems) {
     const cartImage = cartElement.image.fields.file.url;
 
     CartList.innerHTML += `<div class="cart-element">
-    <div style="background-image: url${cartImage}" class="product-img"></div>
+    <div style="background-image: url(${cartImage})" class="product-img"></div>
       <h3>${cartElement.title}</h3>
       <p>$${cartElement.price}</p>
+      <button>Remove</button>
       </div>`;
   });
   totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;

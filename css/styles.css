@@ -127,8 +127,16 @@ h2 {
 }
 
 /*cart*/
-.cart-element img{
-  max-width: 80px;
+.cart h2{
+  padding-bottom: 3rem;
+}
+
+.cart-element .product-img{
+  min-height: 100px;
+  min-width: 100px;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
 }
 
 .cart-element{
@@ -145,8 +153,8 @@ h2 {
   align-items: center;
   justify-content: center;
   gap: 50px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .cart-icon{
