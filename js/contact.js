@@ -76,7 +76,8 @@ function showSuccess() {
     validatePhoneNumber(phoneNumber.value) &&
     checkLength(message.value, 10)
   ) {
-    successMessage.innerHTML = `<p>Your message has been sent</p>
+    successMessage.innerHTML = `
+    <h5>Your message has been sent!</h5>
     <p>Thank you for contacting us, we will get back to you within 48h</p>`;
     form.reset();
   } else {

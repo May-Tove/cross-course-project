@@ -42,6 +42,8 @@ const zipError = document.querySelector("#zip-error");
 const city = document.querySelector("#city");
 const cityError = document.querySelector("#city-error");
 
+const confirmButton = document.querySelector("#confirm-payment-btn");
+
 function validateForm(event) {
   event.preventDefault();
 
@@ -94,7 +96,9 @@ function validateForm(event) {
   }
 }
 
-infoForm.addEventListener("submit", validateForm);
+confirmButton.addEventListener("click", validateForm);
+
+//infoForm.addEventListener("submit", validateForm);
 
 //Payment details form
 const paymentForm = document.querySelector(".payment-form");
@@ -135,7 +139,9 @@ function validatePaymentForm(event) {
   }
 }
 
-paymentForm.addEventListener("submit", validatePaymentForm);
+confirmButton.addEventListener("click", validatePaymentForm);
+
+//paymentForm.addEventListener("submit", validatePaymentForm);
 
 // Checking length of input
 function checkLength(value, len) {
