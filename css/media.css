@@ -59,10 +59,6 @@
 
 
   /* Checkout */
-  .checkout-main-content {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
 
   .short-form {
     display: flex;
@@ -70,8 +66,6 @@
   }
 
   .short-checkout {
-    display: flex;
-    flex-direction: column;
     width: 100%;
   }
 }
@@ -83,11 +77,5 @@
 
   li {
     padding: 50px;
-  }
-
-  /* Checkout */
-
-  .summary-content {
-    gap: 40px;
   }
 }

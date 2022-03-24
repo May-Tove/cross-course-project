@@ -1,7 +1,7 @@
 // order summary
 const cartItems = JSON.parse(localStorage.getItem("cartList"));
 const orderSummary = document.querySelector(".summary-content");
-const totalContainer = document.querySelector(".total");
+const totalContainer = document.querySelector(".order-total");
 console.log(cartItems);
 
 let total = 0;
@@ -15,7 +15,8 @@ cartItems.forEach(function (cartElement) {
       <p>$${cartElement.price}</p>
       </div>`;
 });
-totalContainer.innerHTML = `<h4>Total $${total}</h4>`;
+
+totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
 
 // details form
 const infoForm = document.querySelector(".info-form");

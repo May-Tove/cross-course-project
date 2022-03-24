@@ -13,15 +13,6 @@ h1, h2{
   text-align: left;
 }
 
-.cart h2{
-  text-align: center;
-}
-
-.product-nav{
-  padding-top: 130px;
-  text-transform: capitalize;
-}
-
 .detail-result div{
   display: flex;
   flex-direction: column;

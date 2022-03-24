@@ -33,6 +33,11 @@ h2 {
 }
 
 /* Navigation */
+.breadcrumbs{
+  padding-top: 130px;
+  text-transform: capitalize;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -95,7 +100,7 @@ h2 {
   position: absolute;
   right: 0;
   top: 0px;
-  height: 92vh;
+  height: 100vh;
   padding: 30px;
   background-color: #e4ebf2;
   display: flex;
@@ -129,13 +134,14 @@ h2 {
 /*cart*/
 .cart h2{
   padding-bottom: 3rem;
+  text-align: center;
 }
 
 .cart-element .product-img{
-  min-height: 100px;
-  min-width: 100px;
-  width: 100px;
-  height: 100px;
+  min-height: 80px;
+  min-width: 80px;
+  width: 80px;
+  height: 80px;
   background-size: cover;
 }
 
