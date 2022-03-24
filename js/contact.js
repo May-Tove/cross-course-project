@@ -13,6 +13,7 @@ const message = document.querySelector("#message");
 const messageError = document.querySelector("#message-error");
 
 const submitButton = document.querySelector(".submit-btn");
+const successMessage = document.querySelector(".success-message");
 
 form.addEventListener("submit", validateForm);
 
@@ -37,7 +38,7 @@ function validateForm(event) {
     phoneNumberError.style.display = "block";
   }
 
-  if (checkLength(message.value, 0) === true) {
+  if (checkLength(message.value, 10) === true) {
     messageError.style.display = "none";
   } else {
     messageError.style.display = "block";
@@ -66,3 +67,22 @@ function validatePhoneNumber(phoneNumber) {
   const patternMatches = regEx.test(phoneNumber);
   return patternMatches;
 }
+
+//Form submit success
+function showSuccess() {
+  if (
+    checkLength(fullName.value, 0) &&
+    validateEmail(email.value) &&
+    validatePhoneNumber(phoneNumber.value) &&
+    checkLength(message.value, 10)
+  ) {
+    successMessage.innerHTML = `<p>Your message has been sent</p>
+    <p>Thank you for contacting us, we will get back to you within 48h</p>`;
+    form.reset();
+  } else {
+    successMessage.innerHTML = "";
+  }
+}
+showSuccess();
+
+form.addEventListener("submit", showSuccess);

@@ -70,3 +70,16 @@ textarea{
   color: red;
   font-size: 14px;
 }
+
+.success-message{
+  background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8));
+  width: 100%;
+  max-width: 650px;
+}
+
+.success-message p{
+  background-color: #caeec2;
+  padding: 20px;
+  width: fit-content;
+  margin: 0 auto;
+}

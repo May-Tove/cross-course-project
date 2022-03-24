@@ -19,7 +19,7 @@ cartItems.forEach(function (cartElement) {
 });
 
 totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
-confirmTotal.innerHTML = `<h4>Total: $${total}</h4>`;
+confirmTotal.innerHTML = `<h3>Total: $${total}</h3>`;
 
 // details form
 const infoForm = document.querySelector(".info-form");
@@ -159,40 +159,3 @@ function validatePhoneNumber(phoneNumber) {
   const patternMatches = regEx.test(phoneNumber);
   return patternMatches;
 }
-
-// confirmation that order is confirmed
-/*const confirmOrder = document.querySelector(".confirm-order");
-const openConfirmation = document.querySelector("#confirm-order-btn");
-const closeButton = document.querySelector(".close-btn");
-
-openConfirmation.addEventListener("click", () => {
-  confirmOrder.showConfirmOrder();
-});
-
-closeButton.addEventListener("click", () => {
-  confirmOrder.close();
-});*/
-
-/*confirmButton.onclick = function () {
-  if (
-    checkLength(fullName.value, 0) &&
-    validateEmail(email.value) &&
-    validatePhoneNumber(phoneNumber.value) &&
-    checkLength(address.value, 0) &&
-    checkLength(zip.value, 3) &&
-    checkLength(city.value, 0) &&
-    checkLength(creditCard.value, 0) &&
-    checkLength(expiration.value, 0) &&
-    checkLength(cvc.value, 0)
-  ) {
-    confirmOrder.innerHTML = `<div>
-      <h2>Your order is confirmed</h2>
-      <p>Thank you for shopping at Rainydays, your order will be delivered within 2-3 working days</p>
-      <button class="cta close-btn">Home</button>
-      </div>`;
-    form.reset();
-  } else {
-    submitMessage.innerHTML = "";
-  }
-  form.reset();
-};*/
