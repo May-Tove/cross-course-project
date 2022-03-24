@@ -60,8 +60,31 @@ addToCartButton.onclick = function (product) {
   localStorage.setItem("cartList", JSON.stringify(cartArray));
 };
 
+// show cart when add to cart button is clicked
+const showCart = () => {
+  const addToCartButton = document.querySelector(".add-to-cart");
+  const cartItems = document.querySelector(".cart");
+  const cartOverlay = document.querySelector(".cart-overlay");
+
+  addToCartButton.addEventListener("click", () => {
+    cartItems.classList.add("showCart");
+    cartOverlay.classList.add("transparentBackground");
+  });
+};
+
+showCart();
+
+/*const showCart = () => {
+  addToCartButton.addEventListener("click", () => {
+    cartItems.classList.toggle("showCart");
+    cartOverlay.classList.toggle("transparentBackground");
+  });
+};
+
+showCart();*/
+
+// displaying products in cart
 function showCartItems(cartItems) {
-  cart.style.display = "block";
   CartList.innerHTML = "";
   let total = 0;
 

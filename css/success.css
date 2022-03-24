@@ -1,0 +1,22 @@
+.confirmation-container{
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 200px;
+}
+
+.confirmation-container img{
+    width: 100%;
+    max-width: 300px;
+}
+
+.navbar-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

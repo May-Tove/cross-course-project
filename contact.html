@@ -44,38 +44,43 @@
             </div>
             <div class="cart-overlay">
                 <div class="cart">
+                    <span class="close-cart">
+                        <img src="./images/Iconclose.svg" alt="">
+                    </span>
                     <h2>Your shopping bag</h2>
-                    <div class="specific-product">
-                        <img src="images/jacket.jpg" alt="">
-                        <h3>Jacket</h3>
-                        <p>$90</p>
-                        <div>
-                            <label for="quantity"></label>
-                            <input type="number" name="quantity" id="quantity">
-                        </div>
-                        <button>remove</button>
-                    </div>
+                    <div class="cart-list"></div>
                     <div class="cart-bottom">
-                        <div class="total"><h4>Total: $90</h4></div>
-                    <a href="checkout.html" class="cta cart-cta">Go to checkout</a>
+                        <div class="total-container"></div>
+                    <div>
+                        <a href="checkout.html" class="cta cart-cta">Go to checkout</a>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="search-wrapper">
-            <label for="search-input"></label>
-            <input type="search" name="search" id="search-input" placeholder="Search...">
-            <button class="search-btn">Search</button>
-        </div>
+            <div class="search-wrapper">
+                <label for="search-input"></label>
+                <input type="search" name="search" id="search-input" placeholder="Search...">
+                <button class="search-btn">Search</button>
+            </div>
     </header>
     <main>
         <div class="contact-container">
             <section class="contact-intro">
                 <h1>Get in touch with us</h1>
                 <p>We would love to hear from you! Come visit us at our location or send us a message below. Our opening hours are between 09:00 - 16:00 Mon - Sat</p>
-                <span>Trondheim</span>
-                <span>90802292</span>
-                <span><i class="fa-regular fa-envelope"></i>contact@rainydays.com</span>
+                <span>
+                    <img src="./images/Icon feather-map-pin.svg" alt="" class="contact-icon"> 
+                    <p>Trondheim</p>
+                </span>
+                <span>
+                    <img src="./images/Icon feather-phone.svg" alt="" class="contact-icon">
+                    <p>90802292</p> 
+                </span>
+                <span>
+                    <img src="./images/mailIcon.svg" alt="" class="contact-icon">
+                    <p>contact@rainydays.com</p> 
+                </span>
             </section>
             <form class="contact-form">
                 <div class="input-group">
@@ -98,7 +103,7 @@
                     <textarea id="message"></textarea >
                     <div class="form-error" id="message-error">Field must contain a message</div>
                 </div>
-                <button class="submit-btn">Submit</button>
+                <button class="cta">Submit</button>
             </form>
         </div>
     </main>

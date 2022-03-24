@@ -2,6 +2,7 @@
 const cartItems = JSON.parse(localStorage.getItem("cartList"));
 const orderSummary = document.querySelector(".summary-content");
 const totalContainer = document.querySelector(".order-total");
+const confirmTotal = document.querySelector(".confirm-total");
 console.log(cartItems);
 
 let total = 0;
@@ -9,14 +10,16 @@ cartItems.forEach(function (cartElement) {
   total += cartElement.price;
   const cartImage = cartElement.image.fields.file.url;
 
-  orderSummary.innerHTML += `<div class="cart-element">
-  <div style="background-image: url(${cartImage})" class="product-img"></div>
-      <h3>${cartElement.title}</h3>
-      <p>$${cartElement.price}</p>
-      </div>`;
+  orderSummary.innerHTML += `
+  <div class="cart-element">
+    <div style="background-image: url(${cartImage})" class="product-img"></div>
+    <p>${cartElement.title}</p>
+    <p>$${cartElement.price}</p>
+    </div>`;
 });
 
 totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
+confirmTotal.innerHTML = `<h4>Total: $${total}</h4>`;
 
 // details form
 const infoForm = document.querySelector(".info-form");

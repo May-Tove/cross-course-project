@@ -33,17 +33,21 @@ h3 {
 
 
 /* Order summary */
+.summary-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+}
 
 .summary-content {
   display: grid;
   grid-template-columns: 120px auto;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-}
-
-.summary-content p {
-  margin: 5px;
 }
 
 .order-total h4{
@@ -96,6 +100,11 @@ select {
 
 .short-form input {
   display: flex;
+}
+
+/* order confirmation */
+.confirm-order{
+  display: none;
 }
 
 /* Shipping */

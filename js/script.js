@@ -25,20 +25,33 @@ const showMenu = () => {
 
 showMenu();
 
-// show cart when clicked
+// show cart when icon is clicked
 const showCart = () => {
   const cart = document.querySelector(".shopping-bag-icon");
   const cartItems = document.querySelector(".cart");
   const cartOverlay = document.querySelector(".cart-overlay");
 
-  //toggle nav
   cart.addEventListener("click", () => {
-    cartItems.classList.toggle("showCart");
-    cartOverlay.classList.toggle("transparentBackground");
+    cartItems.classList.add("showCart");
+    cartOverlay.classList.add("transparentBackground");
   });
 };
 
 showCart();
+
+//close cart
+const closeCart = () => {
+  const closeCartButton = document.querySelector(".close-cart");
+  const cartItems = document.querySelector(".cart");
+  const cartOverlay = document.querySelector(".cart-overlay");
+
+  closeCartButton.addEventListener("click", () => {
+    cartItems.classList.remove("showCart");
+    cartOverlay.classList.remove("transparentBackground");
+  });
+};
+
+closeCart();
 
 // adding products to cart
 const addToCartButtons = document.querySelectorAll(".add-to-cart");

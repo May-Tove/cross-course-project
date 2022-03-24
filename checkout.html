@@ -44,6 +44,9 @@
             </div>
             <div class="cart-overlay">
                 <div class="cart">
+                    <span class="close-cart">
+                        <img src="./images/Iconclose.svg" alt="">
+                    </span>
                     <h2>Your shopping bag</h2>
                     <div class="cart-list"></div>
                     <div class="cart-bottom">
@@ -72,7 +75,13 @@
                 <h1>Checkout</h1>
                 <section class="order-summary">
                     <h2>Order Summary</h2>
-                    <div class="content summary-content"></div>
+                    <div class="content summary-content">
+                        <div class="summary-header">
+                            <h3>Image</h3>
+                            <h3>Product</h3>
+                            <h3>Price</h3>
+                        </div>
+                    </div>
                     <div class="content order-total"></div>
                 </section>
                 <section class="personal-details">
@@ -145,10 +154,14 @@
                                     </div>
                                 </div>
                                 <div class="order-total"></div>
-                                <button type="submit" class="cta cta-payment" id="#confirm-payment-btn">Confirm payment</button>
+                                <a href="success.html"><button type="submit" class="cta cta-payment" id="#confirm-payment-btn">Confirm payment</button></a>
                         </div>
-                        <div class="confirm-order"></div>
+                        <div class="confirm-order">
+                            <h1>Your order is confirmed</h1>
+                        </div>
                     </form>  
+                    <div class="confirm-total"></div>
+                    <a href="success.html"><button type="submit" class="cta cta-payment" id="#confirm-payment-btn">Confirm order</button></a>
                 </section>
             </div>    
         </div>
