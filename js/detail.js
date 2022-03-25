@@ -24,32 +24,31 @@ function displayDetails() {
   activePageNav.innerHTML = `${product.title}`;
 
   //display details
-  detailContainer.innerHTML = `
-    <div class="img-container">
-    <img src=${img} alt="${product.title}" class="product-img"/>
-    </div>
-    <div class="product-details">
-    <h1>${product.title}</h1>
-    <h2>$${product.price}</h2>
-    <select name="color" required>
-      <option>Select color</option>
-      <option>${product.color[0]}</option>
-      <option>${product.color[1]}</option>
-      <option>${product.color[2]}</option>
-      <option>${product.color[3]}</option>
-     </select> 
-    <select name="size" required>
-        <option>Select size</option>
-        <option>${product.size[0]}</option>
-        <option>${product.size[1]}</option>
-        <option>${product.size[2]}</option>
-        <option>${product.size[3]}</option>
-        <option>${product.size[4]}</option>
-    </select>
-    <button class="cta add-to-cart" data-product="${product.id}">Add to cart</button>
-    <h2>Product information</h2>
-    <p>${product.description}</p>
-    </div>`;
+  detailContainer.innerHTML = `<div class="img-container">
+                                    <img src=${img} alt="${product.title}" class="product-img"/>
+                                </div>
+                                <div class="product-details">
+                                    <h1>${product.title}</h1>
+                                    <h2>$${product.price}</h2>
+                                    <select name="color" required>
+                                        <option>Select color</option>
+                                        <option>${product.color[0]}</option>
+                                        <option>${product.color[1]}</option>
+                                        <option>${product.color[2]}</option>
+                                        <option>${product.color[3]}</option>
+                                    </select> 
+                                    <select name="size" required>
+                                        <option>Select size</option>
+                                        <option>${product.size[0]}</option>
+                                        <option>${product.size[1]}</option>
+                                        <option>${product.size[2]}</option>
+                                        <option>${product.size[3]}</option>
+                                        <option>${product.size[4]}</option>
+                                    </select>
+                                    <button class="cta add-to-cart" data-product="${product.id}">Add to cart</button>
+                                    <h2>Product information</h2>
+                                    <p>${product.description}</p>
+                                    </div>`;
 }
 
 displayDetails();
@@ -67,6 +66,8 @@ function showCart() {
 }
 
 showCart();
+
+// select tags need to be used
 
 // adding products to cart and showing cart
 const addToCartButton = document.querySelector(".add-to-cart");
@@ -91,10 +92,13 @@ function showCartItems(cartItems) {
     const cartImage = cartElement.image.fields.file.url;
 
     CartList.innerHTML += `<div class="cart-element">
-    <div style="background-image: url(${cartImage})" class="product-img"></div>
-      <h3>${cartElement.title}</h3>
-      <p>$${cartElement.price}</p>
-      </div>`;
+                            <div style="background-image: url(${cartImage})" class="product-img"></div>
+                            <div>
+                            <h3>${cartElement.title}</h3>
+                            <p>$${cartElement.price}</p>
+                            </div>
+                            <button>remove</button>
+                            </div>`;
   });
   totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
 }

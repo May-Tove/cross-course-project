@@ -26,6 +26,10 @@ h1 {
   color:steelblue;
 }
 
+h2, h3{
+  text-transform: capitalize;
+}
+
 h1,
 h2 {
   font-family: "Montserrat", serif;
@@ -154,11 +158,18 @@ h2 {
 }
 
 .cart-element{
-  display: flex;
+  /*display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
-  padding: 10px;
+  padding: 10px;*/
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  grid-column-gap: 1.5rem;
+  padding: 1rem 0rem;
+  border-bottom: 1px solid lightgray;
+
 }
 
 .cart-bottom{

@@ -1,5 +1,5 @@
 .home-hero {
-  min-height: 125vh;
+  min-height: 120vh;
   background: url(../images/home-background2.jpg);
   background-position: bottom;
   background-size: cover;
@@ -21,17 +21,10 @@
   font-size: 1.4rem;
 }
 
-/* New products */
-
-.products {
-  padding: 4rem 0;
-}
-
+/* Popular products */
 .section-title h2 {
-  text-align: center;
   margin-top: 5rem;
   margin-bottom: 5rem;
-  text-transform: capitalize;
 }
 
 .popular-products {
@@ -39,47 +32,65 @@
   margin: 0 auto;
   max-width: 1170px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-column-gap: 1.5rem;
   grid-row-gap: 2rem;
 }
 
-.product-img {
-  display: block;
-  background-size: cover;
-  width: 100%;
-  min-height: 12rem;
-}
-
-.product h3 {
-  text-transform: capitalize;
-  margin-top: 1rem;
+.product h3, .product h4{
+  margin-top: 0.5rem;
+  text-align: left;
 }
 
 .product h4 {
-  margin-top: 0.5rem;
   color: var(--mainColor);
 }
 
-.product{
+.shop-all-btn{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-  gap: 1rem;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 4rem;
 }
 
-/*.new-products {
-  display: flex;
-  justify-content: space-around;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 30px;
-  gap: 15px;
+/* Hover animation on product */
+.product-img {
+  opacity: 1;
+  transition: 0.6s ease;
 }
 
-.news h2 {
-  margin: 30px;
+.img-container{
+  position: relative;
+  transition: 0.6s ease;
+}
+
+.view-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  background-color: var(--mainColor);
   text-transform: uppercase;
-}*/
+  color: var(--mainWhiteColor);
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  transition: .6s ease;
+}
+
+.product .product-img:hover{
+  opacity: 0.4;
+}
+
+.img-container:hover .view-btn{
+  opacity: 1;
+}
+
+.product:hover{
+  text-decoration: underline;
+}
 

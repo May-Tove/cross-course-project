@@ -1,19 +1,25 @@
-/*import { coats } from "./jackets/products.js";
+import { coats } from "./jackets/products.js";
 
+// get popular products and display them on page
 const popularProducts = document.querySelector(".popular-products");
 
-// getting and displaying popular products
-coats.forEach(function (product) {
-  const img = product.image.fields.file.url;
+popularProducts.innerHTML = "";
+
+for (let i = 0; i < coats.length; i++) {
+  if (i === 4) {
+    break;
+  }
+  let popular = coats[i];
+  const img = popular.image.fields.file.url;
 
   popularProducts.innerHTML += `<article class="product">
-    <a href="detail.html?id=${product.id}">
-    <div class="img-container">
-    <img src=${img} alt="${product.title}" class="product-img"/>
-    </div>
-    <h3>${product.title}</h3>
-    <h4>$${product.price}</h4>
-    </a>
-    <button class="cta add-to-cart" data-product="${product.id}">Add to cart</button>
-    </article>`;
-});*/
+          <a href="detail.html?id=${popular.id}">
+          <div class="img-container">
+          <img src=${img} alt="${popular.title}" class="product-img"/>
+          <button class="view-btn">View</button>
+          </div>
+          <h3>${popular.title}</h3>
+          <h4>$${popular.price}</h4>
+          </a>
+          </article>`;
+}

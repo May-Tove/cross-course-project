@@ -40,22 +40,7 @@ h3 {
 }
 
 /* Order summary */
-.summary-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  border-bottom: 1px solid lightgray;
-  padding: 10px;
-}
 
-.summary-content {
-  display: grid;
-  grid-template-columns: 120px auto;
-  justify-content: center;
-  align-items: center;
-}
 
 .summary-content p{
   text-transform: capitalize;
@@ -63,24 +48,6 @@ h3 {
 
 .order-total h4{
   text-align: right;
-}
-
-.quantity {
-  display: flex;
-  align-items: center;
-}
-
-.quantity img {
-  max-width: 20px;
-}
-
-.quantity p {
-  margin: 15px;
-}
-
-.price-flex {
-  display: flex;
-  justify-content: space-between;
 }
 
 /* Forms */
@@ -134,15 +101,6 @@ select {
 .content{
   display: flex;
   flex-direction: column;
-}
-
-.cart-element{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  border-bottom: 1px solid lightgray;
-  padding: 10px;
 }
 
 .message-overlay {

@@ -11,12 +11,14 @@ if (cartItems) {
     total += cartElement.price;
     const cartImage = cartElement.image.fields.file.url;
 
-    orderSummary.innerHTML += `
-  <div class="cart-element">
-    <div style="background-image: url(${cartImage})" class="product-img"></div>
-    <p>${cartElement.title}</p>
-    <p>$${cartElement.price}</p>
-    </div>`;
+    orderSummary.innerHTML += `<div class="cart-element">
+                                <div style="background-image: url(${cartImage})" class="product-img"></div>
+                                <div>
+                                    <h3>${cartElement.title}</h3>
+                                    <p>$${cartElement.price}</p>
+                                </div>
+                                <button>Remove</button>
+                                </div>`;
   });
 
   totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
