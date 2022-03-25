@@ -257,14 +257,14 @@ footer {
 }
 
 .loader {
-  border: 10px solid lightgray;
-  border-top: 10px solid darkblue;
+  border: 10px solid #e4ebf2;
+  border-top: 10px solid var(--mainColor);
   border-radius: 50%;
   width: 100px;
   height: 100px;
   margin: 0 auto;
   margin-top: 30px;
-  animation: spin 1.5s infinite ease-in-out;
+  animation: spin 1s infinite ease-in-out;
 }
 
 @keyframes spin {

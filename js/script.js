@@ -16,12 +16,12 @@ showMenu();
 
 // show cart when icon is clicked
 const showCart = () => {
-  const cart = document.querySelector(".shopping-bag-icon");
-  const cartItems = document.querySelector(".cart");
+  const cartIcon = document.querySelector(".shopping-bag-icon");
+  const cart = document.querySelector(".cart");
   const cartOverlay = document.querySelector(".cart-overlay");
 
-  cart.addEventListener("click", () => {
-    cartItems.classList.add("showCart");
+  cartIcon.addEventListener("click", () => {
+    cart.classList.add("showCart");
     cartOverlay.classList.add("transparentBackground");
   });
 };
