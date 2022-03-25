@@ -23,6 +23,9 @@ const showCart = () => {
   cartIcon.addEventListener("click", () => {
     cart.classList.add("showCart");
     cartOverlay.classList.add("transparentBackground");
+    const cartProducts = JSON.parse(localStorage.getItem("cartList"));
+    showCartItems(cartProducts);
+    localStorage.setItem("cartList", JSON.stringify(cartProducts));
   });
 };
 

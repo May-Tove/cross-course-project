@@ -75,7 +75,7 @@ const totalContainer = document.querySelector(".total-container");
 
 addToCartButton.onclick = function (event) {
   const cartProducts = JSON.parse(localStorage.getItem("cartList"));
-  cartProducts.push(event);
+  cartProducts.push(product);
   showCartItems(cartProducts);
 
   localStorage.setItem("cartList", JSON.stringify(cartProducts));
