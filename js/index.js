@@ -1,4 +1,4 @@
-import { coats } from "./jackets/products.js";
+/*import { coats } from "./jackets/products.js";
 
 const popularProducts = document.querySelector(".popular-products");
 
@@ -16,4 +16,4 @@ coats.forEach(function (product) {
     </a>
     <button class="cta add-to-cart" data-product="${product.id}">Add to cart</button>
     </article>`;
-});
+});*/

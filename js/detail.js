@@ -54,37 +54,32 @@ function displayDetails() {
 
 displayDetails();
 
-// adding products to cart
-const addToCartButton = document.querySelector(".add-to-cart");
-const CartList = document.querySelector(".cart-list");
-const totalContainer = document.querySelector(".total-container");
-let cartArray = [];
-
-addToCartButton.onclick = function (product) {
-  const itemToAdd = product.id;
-  const cartProducts = JSON.parse(localStorage.getItem("cartList"));
-
-  if (cartProducts) {
-    cartArray.push(itemToAdd);
-  }
-  localStorage.setItem("cartList", JSON.stringify(cartArray));
-
-  showCartItems(cartArray);
-};
-
 // show cart when add to cart button is clicked
 function showCart() {
   const addToCartButton = document.querySelector(".add-to-cart");
-  const cartItems = document.querySelector(".cart");
+  const cart = document.querySelector(".cart");
   const cartOverlay = document.querySelector(".cart-overlay");
 
   addToCartButton.addEventListener("click", () => {
-    cartItems.classList.add("showCart");
+    cart.classList.add("showCart");
     cartOverlay.classList.add("transparentBackground");
   });
 }
 
 showCart();
+
+// adding products to cart
+const addToCartButton = document.querySelector(".add-to-cart");
+const CartList = document.querySelector(".cart-list");
+const totalContainer = document.querySelector(".total-container");
+
+addToCartButton.onclick = function (event) {
+  const cartProducts = JSON.parse(localStorage.getItem("cartList"));
+  cartProducts.push(event);
+  showCartItems(cartProducts);
+
+  localStorage.setItem("cartList", JSON.stringify(cartProducts));
+};
 
 // displaying products in cart
 function showCartItems(cartItems) {

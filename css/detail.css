@@ -25,6 +25,11 @@ h1, h2{
   width: 100%;
 }
 
+.detail-result .loader{
+  width: 100px;
+  height: 100px;
+}
+
 .img-container{
   width: 100%;
 }
@@ -39,6 +44,8 @@ h1, h2{
 .detail-result button{
   width: fit-content;
 }
+
+
 
 @media (min-width: 799px) {
   .detail-result{
