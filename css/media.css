@@ -1,0 +1,77 @@
+@media (min-width: 799px) {
+
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .hamburger{
+    display: none;
+}  
+
+.nav-links{
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links li{
+    opacity: 1;
+    position: relative;
+    padding: 30px;
+}
+
+.nav-links a.active::after,
+.nav-links a:hover::after{
+  content: "";
+  width: 30%;
+  height: 3px;
+  background: steelblue;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  border-radius: 5px;
+
+}
+
+.cart{
+  width: 40%;
+}
+
+  /* Homepage */
+
+
+  /* About */
+
+
+  
+
+  /* Shop */
+  /*.product-main-content {
+    margin-left: 20%;
+    margin-right: 20%;
+  }*/
+
+
+  /* Checkout */
+
+  .short-form {
+    display: flex;
+    gap: 20px;
+  }
+
+  .short-checkout {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    max-width: 120px;
+  }
+
+  li {
+    padding: 50px;
+  }
+}

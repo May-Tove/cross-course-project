@@ -1,0 +1,85 @@
+.home-hero {
+  min-height: 125vh;
+  background: url(../images/home-background2.jpg);
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
+}
+
+.hero-container{
+  text-align: center;
+}
+
+.hero-container h1{
+  margin-bottom: 1rem;
+}
+
+.hero-container p{
+  margin-bottom: 2.5rem;
+  font-size: 1.4rem;
+}
+
+/* New products */
+
+.products {
+  padding: 4rem 0;
+}
+
+.section-title h2 {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-transform: capitalize;
+}
+
+.popular-products {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+}
+
+.product-img {
+  display: block;
+  background-size: cover;
+  width: 100%;
+  min-height: 12rem;
+}
+
+.product h3 {
+  text-transform: capitalize;
+  margin-top: 1rem;
+}
+
+.product h4 {
+  margin-top: 0.5rem;
+  color: var(--mainColor);
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+/*.new-products {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 30px;
+  gap: 15px;
+}
+
+.news h2 {
+  margin: 30px;
+  text-transform: uppercase;
+}*/
+

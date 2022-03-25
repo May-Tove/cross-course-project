@@ -1,0 +1,6 @@
+:root {
+  --mainWhiteColor: #fff;
+  --mainColor: rgb(39, 62, 98);
+  --buttonTransition: all 0.2s linear;
+  --letterSpacing: 0.1rem;
+}

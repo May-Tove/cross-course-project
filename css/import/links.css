@@ -1,0 +1,54 @@
+/* Links */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links a{
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.active, .nav-links a:hover {
+  color: steelblue;
+}
+
+.breadcrumbs .active{
+  font-weight: bold;
+}
+
+/* Call to action buttons */
+.cta {
+  background-color: var(--mainColor);
+  text-transform: uppercase;
+  color: var(--mainWhiteColor);
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  border: 1px solid var(--mainColor);
+  transition: var(--buttonTransition);
+  cursor: pointer;
+}
+
+.cta:hover{
+  background: transparent;
+  color: var(--mainColor);
+  text-decoration: none;
+}
+
+
+/* Home page*/
+
+
+/* Shop */
+.shop-navigation a {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Add to bag */
+
+/* Checkout */
+.cta-payment {
+  display: inline-block;
+  margin: 20px 0px 20px 0px;
+}
