@@ -255,3 +255,20 @@ footer {
   text-align: center;
   margin-top: 5rem;
 }
+
+.loader {
+  border: 10px solid lightgray;
+  border-top: 10px solid darkblue;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+  animation: spin 1.5s infinite ease-in-out;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
