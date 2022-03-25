@@ -47,16 +47,6 @@ function displayDetails() {
 displayDetails();
 
 // validate select elements
-const sizeSelect = document.querySelector("#size-select");
-
-addToCartButton.addEventListener("click", () => {
-  if ((sizeSelect.value = "")) {
-    alert("please select size");
-    return false;
-  } else {
-    return true;
-  }
-});
 
 // show cart when add to cart button is clicked
 function showCart() {
