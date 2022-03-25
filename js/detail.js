@@ -30,20 +30,13 @@ function displayDetails() {
                                 <div class="product-details">
                                     <h1>${product.title}</h1>
                                     <h2>$${product.price}</h2>
-                                    <select name="color" required>
-                                        <option>Select color</option>
-                                        <option>${product.color[0]}</option>
-                                        <option>${product.color[1]}</option>
-                                        <option>${product.color[2]}</option>
-                                        <option>${product.color[3]}</option>
-                                    </select> 
-                                    <select name="size" required>
-                                        <option>Select size</option>
-                                        <option>${product.size[0]}</option>
-                                        <option>${product.size[1]}</option>
-                                        <option>${product.size[2]}</option>
-                                        <option>${product.size[3]}</option>
-                                        <option>${product.size[4]}</option>
+                                    <select name="size id="size-select" required>
+                                        <option value="">Select size</option>
+                                        <option value="1">${product.size[0]}</option>
+                                        <option value="2">${product.size[1]}</option>
+                                        <option value="3">${product.size[2]}</option>
+                                        <option value="4">${product.size[3]}</option>
+                                        <option value="5">${product.size[4]}</option>
                                     </select>
                                     <button class="cta add-to-cart" data-product="${product.id}">Add to cart</button>
                                     <h2>Product information</h2>
@@ -52,6 +45,18 @@ function displayDetails() {
 }
 
 displayDetails();
+
+// validate select elements
+const sizeSelect = document.querySelector("#size-select");
+
+addToCartButton.addEventListener("click", () => {
+  if ((sizeSelect.value = "")) {
+    alert("please select size");
+    return false;
+  } else {
+    return true;
+  }
+});
 
 // show cart when add to cart button is clicked
 function showCart() {
@@ -66,8 +71,6 @@ function showCart() {
 }
 
 showCart();
-
-// select tags need to be used
 
 // adding products to cart and showing cart
 const addToCartButton = document.querySelector(".add-to-cart");
@@ -97,7 +100,7 @@ function showCartItems(cartItems) {
                             <h3>${cartElement.title}</h3>
                             <p>$${cartElement.price}</p>
                             </div>
-                            <button>remove</button>
+                            <button class="remove-button">Remove</button>
                             </div>`;
   });
   totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;

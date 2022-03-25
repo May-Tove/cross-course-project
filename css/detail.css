@@ -34,6 +34,11 @@ h1, h2{
   width: 100%;
 }
 
+.select-elements{
+  display: flex;
+  flex-direction: row;
+}
+
 .detail-result select{
   width: 12rem;
   padding: 5px;

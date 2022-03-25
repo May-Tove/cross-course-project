@@ -1,4 +1,10 @@
-.shop {
+.shop-container{
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.shop-hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/shop-background2.jpg);
   background-position: center;
@@ -6,56 +12,56 @@
   height: 40vh;
 }
 
-.shop h1 {
+.shop-hero h1 {
   color: #fff;
   padding-top: 150px;
+}
+
+.navigation-container{
+  padding-top: 1rem;
 }
 
 .shop-navigation {
   display: flex;
   justify-content: center;
-  padding: 30px;
-  gap: 20px;
-  background-color: #f8f8f8;
-  box-shadow: 0px 0px 0px;
-  z-index: 0;
+  gap: 35px;
 }
+
+.shop-navigation a{
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.shop-navigation .active{
+  font-weight: bold;
+  color: aquamarine;
+}
+
+.breadcrumbs{
+  padding-top: 3rem;
+}
+
 
 /* Products */
 .list-of-products {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: 1170px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-column-gap: 1.5rem;
   grid-row-gap: 2rem;
+  padding-top: 3rem;
 }
 
-.product h3 {
-  text-transform: capitalize;
-  margin-top: 1rem;
+.product h3, .product h4{
+  margin-top: 0.5rem;
+  text-align: left;
 }
 
 .product h4 {
-  margin-top: 0.5rem;
   color: var(--mainColor);
-}
-
-.product{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 1rem;
-  position: relative;
 }
 
 /* Hover animation on product */
 .product-img {
-  display: block;
-  background-size: cover;
-  width: 100%;
   opacity: 1;
   transition: 0.6s ease;
 }
@@ -81,7 +87,7 @@
   transition: .6s ease;
 }
 
-.product-img:hover{
+.product .product-img:hover{
   opacity: 0.4;
 }
 

@@ -1,5 +1,5 @@
 .home-hero {
-  min-height: 120vh;
+  min-height: 70vh;
   background: url(../images/home-background2.jpg);
   background-position: bottom;
   background-size: cover;
@@ -94,3 +94,8 @@
   text-decoration: underline;
 }
 
+@media (min-width: 799px){
+  .home-hero {
+    min-height: 120vh;
+  }
+}

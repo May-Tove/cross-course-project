@@ -78,11 +78,23 @@ function showCartItems(cartItems) {
                                 <p>$${cartElement.price}</p>
                                 <p>Size:</p>
                             </div>
-                            <button>Remove</button>
+                            <button class="remove-button">Remove</button>
                             </div>`;
   });
   totalContainer.innerHTML = `<h3>Total: $${total}</h3>`;
 }
+
+//remove items from cart
+const removeButton = document.querySelector(".remove-button");
+
+removeButton.onclick = function (event) {
+  console.log("clicked");
+  /*const cartProducts = JSON.parse(localStorage.getItem("cartList"));
+  updateCartTotal();
+  localStorage.setItem("cartList", JSON.stringify(cartProducts));*/
+};
+
+function updateCartTotal() {}
 
 //show search input
 

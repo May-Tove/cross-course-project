@@ -17,7 +17,7 @@ if (cartItems) {
                                     <h3>${cartElement.title}</h3>
                                     <p>$${cartElement.price}</p>
                                 </div>
-                                <button>Remove</button>
+                                <button class="remove-button">Remove</button>
                                 </div>`;
   });
 
