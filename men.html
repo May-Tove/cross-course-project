@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Shop high quality jacket for men">
+    <meta name="description" content="Discover the newest collections from Rainydays">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rainydays | Shop men</title>
+    <title>Rainydays | Shop </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
@@ -70,20 +70,31 @@
             </div>
     </header>
     <main>
-        <section class="shop">
-            <h1>Shop men</h1>
+        <section class="shop-hero">
+            <h1>Shop</h1>
+            <div class="navigation-container">
+                <nav class="shop-navigation">
+                    <a href="shop.html">All</a>
+                    <a href="women.html">Women</a>
+                    <a href="men.html" class="active">Men</a>
+                </nav>
+            </div>
         </section>
-        <section class="shop-navigation">
-            <nav class="shop-navigation">
-                <a href="shop.html">News</a>
-                <a href="women.html">Women</a>
-                <a href="men.html" class="active">Men</a>
-            </nav>
-        </section>
-        <section class="list-of-products">
+        <section class="shop-container">
+            <div class="breadcrumbs">
+                <nav>
+                    <a href="index.html">Home /</a>
+                    <a href="shop.html" >Shop /</a>
+                    <a href="men.html" class="active">Shop men</a>
+                </nav>
+            </div>
+            <div class="list-of-products">
+                <div class="loader"></div>
+            </div>
         </section>
     </main>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" type="module"></script>
+    <script src="js/shop.js" type="module"></script>
     <footer>
         Copyright &copy;
     </footer>
