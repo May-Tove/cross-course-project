@@ -68,7 +68,7 @@ function showCart() {
 
 showCart();
 
-// adding products to cart
+// adding products to cart and showing cart
 const addToCartButton = document.querySelector(".add-to-cart");
 const CartList = document.querySelector(".cart-list");
 const totalContainer = document.querySelector(".total-container");
@@ -91,7 +91,7 @@ function showCartItems(cartItems) {
     const cartImage = cartElement.image.fields.file.url;
 
     CartList.innerHTML += `<div class="cart-element">
-    <div style="background-image: url${cartImage}" class="product-img"></div>
+    <div style="background-image: url(${cartImage})" class="product-img"></div>
       <h3>${cartElement.title}</h3>
       <p>$${cartElement.price}</p>
       </div>`;

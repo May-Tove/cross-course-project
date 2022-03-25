@@ -4,8 +4,10 @@ const allProducts = document.querySelector(".list-of-products");
 
 // getting and displaying popular products
 if (coats) {
+  //loader
   allProducts.innerHTML = "";
 
+  //display products
   coats.forEach(function (product) {
     const img = product.image.fields.file.url;
 
@@ -20,4 +22,6 @@ if (coats) {
           </a>
           </article>`;
   });
+} else {
+  allProducts.innerHTML = "error occurred";
 }

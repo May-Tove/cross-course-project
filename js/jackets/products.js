@@ -75,7 +75,7 @@ export const coats = [
     title: "skiing master",
     price: 65,
     description:
-      "jacket for men made in soft-shell is a lightweight and comfortable jacket made specifically for hiking and other outdoor activities",
+      "Quilted, technical 2-layer shell jacket developed for skiing. Skiing Master is made of windproof, waterproof and breathable material in soft and comfortable quality. The material is a synthetic padding material that retains its insulating properties even when it gets damp. High collar and helmet-fitted hood provide perfect protection against wind and snow. The jacket is designed to provide maximum freedom of movement and is suitable for moderate to high activity levels in harsh weather conditions.",
     size: ["xs", "s", "m", "l", "xl"],
     color: ["blue", "red", "green", "yellow"],
   },
