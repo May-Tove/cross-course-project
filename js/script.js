@@ -61,7 +61,6 @@ addToCartButtons.forEach(function (button) {
 });
 
 function showCartItems(cartItems) {
-  cart.style.display = "block";
   CartList.innerHTML = "";
   let total = 0;
 
@@ -93,8 +92,3 @@ const showSearch = () => {
 };
 
 showSearch();
-
-/*searchIcon.onclick = function () {
-  searchInput.style.display = "block";
-  searchButton.style.display = "block";
-};*/
