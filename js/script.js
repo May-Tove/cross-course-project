@@ -1,5 +1,10 @@
 import { coats } from "./jackets/products.js";
 
+// fikse disse show funksjonene og sett globale variabler så du ikke gjentar deg
+/*function toggleCheeseburgerMenu() {
+  menuItems.classList.toggle('hidden');
+}*/
+
 // showing menu when clicked on mobile version
 const showMenu = () => {
   const hamburger = document.querySelector(".hamburger");
@@ -13,6 +18,20 @@ const showMenu = () => {
 };
 
 showMenu();
+
+//close menu
+const closeMenu = () => {
+  const closeMenuButton = document.querySelector(".close-menu");
+  const mainMenu = document.querySelector(".nav-links");
+  const menuOverlay = document.querySelector(".menu-overlay");
+
+  closeMenuButton.addEventListener("click", () => {
+    mainMenu.classList.remove("show");
+    menuOverlay.classList.remove("transparentBackground");
+  });
+};
+
+closeMenu();
 
 // show cart when icon is clicked
 const showCart = () => {
@@ -63,6 +82,7 @@ addToCartButtons.forEach(function (button) {
   };
 });
 
+//display cart
 function showCartItems(cartItems) {
   CartList.innerHTML = "";
   let total = 0;
@@ -76,7 +96,6 @@ function showCartItems(cartItems) {
                             <div>  
                                 <h3>${cartElement.title}</h3>
                                 <p>$${cartElement.price}</p>
-                                <p>Size:</p>
                             </div>
                             <button class="remove-button">Remove</button>
                             </div>`;
@@ -85,16 +104,16 @@ function showCartItems(cartItems) {
 }
 
 //remove items from cart
-const removeButton = document.querySelector(".remove-button");
+/*const removeButton = document.querySelector(".remove-button");
 
 removeButton.onclick = function (event) {
   console.log("clicked");
-  /*const cartProducts = JSON.parse(localStorage.getItem("cartList"));
+  const cartProducts = JSON.parse(localStorage.getItem("cartList"));
   updateCartTotal();
-  localStorage.setItem("cartList", JSON.stringify(cartProducts));*/
+  localStorage.setItem("cartList", JSON.stringify(cartProducts));
 };
 
-function updateCartTotal() {}
+function updateCartTotal() {}*/
 
 //show search input
 

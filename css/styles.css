@@ -23,7 +23,7 @@ img {
 h1 {
   text-transform: uppercase;
   font-size: 2.8rem;
-  color:steelblue;
+  color:var(--mainColor);
 }
 
 h2, h3{
@@ -64,15 +64,15 @@ h2 {
 
 .nav-links{
   position: absolute;
-  left: 0;
-  top: 80px;
+  right: 0;
+  top: 0px;
   height: 100vh;
   background-color: #e4ebf2;
   display: flex;
   flex-direction: column;
   width: 80%;
-  transform: translateX(-100%);
-  transition: transform 0.5s ease-in;
+  transform: translateX(100%);
+  transition: all 0.7s ease-in-out;
   text-align: center;
   padding-top: 3rem;
 }
@@ -91,8 +91,30 @@ h2 {
   transform: translateX(0%);
 }
 
+.menu-overlay {
+  position: fixed;
+  top: 0px;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.5);
+  z-index: 2;
+  visibility: hidden;
+}
+
+.close-menu img{
+  cursor: pointer;
+  max-width: 17px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
 .logo {
   max-width: 110px;
+
+  
+
 }
 
 /* show cart*/
@@ -133,6 +155,7 @@ h2 {
 
 .close-cart img{
   cursor: pointer;
+  max-width: 17px;
 }
 
 .transparentBackground{
@@ -158,11 +181,6 @@ h2 {
 }
 
 .cart-element{
-  /*display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid lightgray;
-  padding: 10px;*/
   display: grid;
   align-items: center;
   grid-template-columns: auto 1fr auto;
@@ -177,9 +195,15 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 1rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.cart-cta{
+  width: 240px;
+  display: inline-block;
+  text-align: center;
 }
 
 .cart-icon{

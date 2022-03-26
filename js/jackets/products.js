@@ -55,7 +55,7 @@ export const coats = [
     title: "comfy skiing",
     price: 65,
     description:
-      "jacket for men made in soft-shell is a lightweight and comfortable jacket made Quilted, technical 2-layer shell jacket developed for skiing. Skiing Master is made of windproof, waterproof and breathable material in soft and comfortable quality. The material is a synthetic padding material that retains its insulating properties even when it gets damp. High collar and helmet-fitted hood provide perfect protection against wind and snow. The jacket is designed to provide maximum freedom of movement and is suitable for moderate to high activity levels in harsh weather conditions. for hiking and other outdoor activities",
+      "The box-shaped fit and innovative material combination make the Comfy Skiing Jacket a perfect blend of warmth and weather protection! The secret lies in the hood, shoulder area and sleeves where selected areas are quilted with good quality materials. These technical materials in combination with the outer material, means that the jacket retains its insulating ability even in humid weather. Comfy Skiing Jacket is technical and durable which allow you to enjoy nature all year round in all kinds of weather. The jacket is designed to give you the best possible protection without compromising on comfort.",
     size: ["xs", "s", "m", "l", "xl"],
     color: ["blue", "red", "green", "yellow"],
   },
@@ -72,7 +72,7 @@ export const coats = [
   {
     id: "8",
     image: { fields: { file: { url: "../images/product-8.jpg" } } },
-    title: "skiing master",
+    title: "skiing jacket pro",
     price: 65,
     description:
       "Quilted, technical 2-layer shell jacket developed for skiing. Skiing Master is made of windproof, waterproof and breathable material in soft and comfortable quality. The material is a synthetic padding material that retains its insulating properties even when it gets damp. High collar and helmet-fitted hood provide perfect protection against wind and snow. The jacket is designed to provide maximum freedom of movement and is suitable for moderate to high activity levels in harsh weather conditions.",
