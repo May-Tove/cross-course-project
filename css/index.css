@@ -25,7 +25,7 @@
 }
 
 .hero-container a{
-  width: 205px;
+  width: 200px;
   display: inline-block;
   text-align: center;
   margin: 5px 0px;
@@ -88,6 +88,7 @@
   padding: 0.7rem 2rem;
   font-size: 1rem;
   border: none;
+  border-radius: var(--borderRadius);
   cursor: pointer;
   transform: translate(-50%, -50%);
   transition: .6s ease;
@@ -106,7 +107,5 @@
 }
 
 @media (min-width: 799px){
-  .home-hero {
-    min-height: 120vh;
-  }
+  
 }

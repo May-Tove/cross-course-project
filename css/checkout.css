@@ -40,8 +40,6 @@ h3 {
 }
 
 /* Order summary */
-
-
 .summary-content p{
   text-transform: capitalize;
 }
@@ -67,9 +65,9 @@ label{
   margin-bottom: 30px;
 }
 
-input,
-select {
+input {
   border: 1px solid #c4c4c4;
+  border-radius: var(--borderRadius);
   padding: 10px;
   width: 100%;
   font-family: inherit;

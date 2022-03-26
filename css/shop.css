@@ -5,7 +5,7 @@
 }
 
 .shop-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
     url(../images/shop-background2.jpg);
   background-position: center;
   background-size: cover;
@@ -13,7 +13,6 @@
 }
 
 .shop-hero h1 {
-  color: #fff;
   padding-top: 150px;
 }
 
@@ -28,13 +27,18 @@
 }
 
 .shop-navigation a{
-  color: #fff;
   text-transform: capitalize;
+  transition: 0.3s ease;
+}
+
+.shop-navigation a:hover{
+  color: steelblue;
 }
 
 .shop-navigation .active{
   font-weight: bold;
-  color: aquamarine;
+  color: steelblue;
+  /* aquamarine*/
 }
 
 .breadcrumbs{

@@ -119,10 +119,12 @@ function updateCartTotal() {}*/
 
 const showSearch = () => {
   const searchIcon = document.querySelector(".search-icon");
+  const searchWrapper = document.querySelector(".search-wrapper");
   const searchInput = document.querySelector("#search-input");
   const searchButton = document.querySelector(".search-btn");
 
   searchIcon.addEventListener("click", () => {
+    searchWrapper.classList.toggle("showSearch");
     searchInput.classList.toggle("showSearch");
     searchButton.classList.toggle("showSearch");
   });

@@ -54,6 +54,7 @@ input, textarea{
   margin-top: 5px;
   outline: 0;
   border: 1px solid black;
+  border-radius: var(--borderRadius);
   background: transparent;
   cursor: text;
   font-family: inherit;

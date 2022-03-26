@@ -13,6 +13,7 @@ a {
   color: steelblue;
 }
 
+
 .breadcrumbs .active{
   font-weight: bold;
 }
@@ -22,9 +23,10 @@ a {
   background-color: var(--mainColor);
   text-transform: uppercase;
   color: var(--mainWhiteColor);
-  padding: 1rem 2.5rem;
+  padding: 1rem 2rem;
   font-size: 1rem;
   border: 1px solid var(--mainColor);
+  border-radius: var(--borderRadius);
   transition: var(--buttonTransition);
   cursor: pointer;
 }
@@ -35,17 +37,6 @@ a {
   text-decoration: none;
 }
 
-
-/* Home page*/
-
-
-/* Shop */
-.shop-navigation a {
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-/* Add to bag */
 
 /* Checkout */
 .cta-payment {
