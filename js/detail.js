@@ -81,7 +81,6 @@ addToCartButton.onclick = function (event) {
     (item) => item.id === event.target.dataset.product
   );
   cartArray.push(itemToAdd);
-  const cartArray = JSON.parse(localStorage.getItem("cartList"));
   showCart(cartArray);
   localStorage.setItem("cartList", JSON.stringify(cartArray));
 };
