@@ -38,7 +38,7 @@ const showCart = () => {
     cart.classList.add("showCart");
     cartOverlay.classList.add("transparentBackground");
     const cartProducts = JSON.parse(localStorage.getItem("cartList"));
-    const cartArray = JSON.parse(localStorage.getItem("cartList"));
+    const cartItems = JSON.parse(localStorage.getItem("cartList"));
     showCartItems(cartProducts);
     showCartItems(cartArray);
     localStorage.setItem("cartList", JSON.stringify(cartProducts));
@@ -80,7 +80,26 @@ addToCartButton.forEach(function (button) {
 });*/
 
 //display cart
-function showCartItems(cartItems) {
+if (cartItems) {
+  let total = 0;
+  cartItems.forEach(function (cartElement) {
+    total += cartElement.price;
+    const cartImage = cartElement.image.fields.file.url;
+
+    orderSummary.innerHTML += `<div class="cart-element">
+                                  <div style="background-image: url(${cartImage})" class="product-img"></div>
+                                  <div>
+                                      <h3>${cartElement.title}</h3>
+                                      <p>$${cartElement.price}</p>
+                                  </div>
+                                  <button class="remove-button">Remove</button>
+                                  </div>`;
+  });
+
+  totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
+}
+
+/*function showCartItems(cartItems) {
   CartList.innerHTML = "";
   let total = 0;
 
@@ -98,7 +117,7 @@ function showCartItems(cartItems) {
                             </div>`;
   });
   totalContainer.innerHTML = `<h3>Total: $${total}</h3>`;
-}
+}*/
 
 //remove items from cart
 /*const removeButton = document.querySelector(".remove-button");
