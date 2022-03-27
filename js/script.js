@@ -32,7 +32,6 @@ closeMenu();
 const CartList = document.querySelector(".cart-list");
 const totalContainer = document.querySelector(".total-container");
 const cartIcon = document.querySelector(".shopping-bag-icon");
-const cart = document.querySelector(".cart");
 const cartOverlay = document.querySelector(".cart-overlay");
 const cartItems = document.querySelector(".cart");
 
@@ -56,7 +55,7 @@ cart.classList.add("showCart");
 };*/
 
 //tidligere kode
-const showCart = () => {
+/*const showCart = () => {
   const cartIcon = document.querySelector(".shopping-bag-icon");
   const cart = document.querySelector(".cart");
   const cartOverlay = document.querySelector(".cart-overlay");
@@ -73,7 +72,7 @@ const showCart = () => {
   });
 };
 
-showCart();
+showCart();*/
 
 //close cart
 const closeCart = () => {
