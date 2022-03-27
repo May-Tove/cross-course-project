@@ -74,7 +74,7 @@ addToCartButton.onclick = function (event) {
   localStorage.setItem("cartList", JSON.stringify(cartArray));
 };
 
-addToCartButton.onclick = function (event) {
+/*addToCartButton.onclick = function (event) {
   cart.classList.add("showCart");
   cartOverlay.classList.add("transparentBackground");
   const cartProducts = JSON.parse(localStorage.getItem("cartList"));
@@ -82,7 +82,7 @@ addToCartButton.onclick = function (event) {
   showCart(cartProducts);
 
   localStorage.setItem("cartList", JSON.stringify(cartProducts));
-};
+};*/
 
 function showCart(cartItems) {
   cartList.innerHTML = "";
