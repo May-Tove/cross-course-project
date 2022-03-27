@@ -28,6 +28,13 @@ const closeMenu = () => {
 
 closeMenu();
 
+//accessible hamburger menu
+const hamburger = document.querySelector(".hamburger");
+hamburger.addEventListener("onkeydown", showMenu);
+
+const closeMenuIcon = document.querySelector(".close-menu");
+closeMenuIcon.addEventListener("onkeydown", closeCart);
+
 // cart variables
 const cartList = document.querySelector(".cart-list");
 const totalContainer = document.querySelector(".total-container");
@@ -100,3 +107,5 @@ function goBackA() {
 }
 
 backButton.addEventListener("onkeydown", goBackA);
+
+//accessible close icon
