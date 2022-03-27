@@ -35,36 +35,36 @@ const cartIcon = document.querySelector(".shopping-bag-icon");
 const cartOverlay = document.querySelector(".cart-overlay");
 const cart = document.querySelector(".cart");
 const closeCart = document.querySelector(".close-cart");
+const itemsInCart = JSON.parse(localStorage.getItem("cartList"));
 
 cartIcon.onclick = function (event) {
   cart.classList.add("showCart");
   cartOverlay.classList.add("transparentBackground");
-  const showProducts = JSON.parse(localStorage.getItem("cartList"));
+  //const itemsInCart = JSON.parse(localStorage.getItem("cartList"));
 
-  showCartItems(cartArray);
   //console.log("hello", cartItems);
 
-  localStorage.setItem("cartList", JSON.stringify(showProducts));
+  //localStorage.setItem("cartList", JSON.stringify(showProducts));
 };
 
-function showCartItems(cartItems) {
-  cartList.innerHTML = "";
+if (itemsInCart) {
   let total = 0;
-
-  cartItems.forEach(function (cartElement) {
-    const cartImage = cartElement.image.fields.file.url;
+  itemsInCart.forEach(function (cartElement) {
     total += cartElement.price;
+    const cartImage = cartElement.image.fields.file.url;
 
-    cartList.innerHTML += `<div class="cart-element">
-        <div style="background-image: url(${cartImage})" class="product-img"></div>
-        <div>
-        <h3>${cartElement.title}</h3>
-        <p>$${cartElement.price}</p>
-        </div>
-        <button class="remove-button">Remove</button>
-        </div>`;
+    orderSummary.innerHTML += `<div class="cart-element">
+                                  <div style="background-image: url(${cartImage})" class="product-img"></div>
+                                  <div>
+                                      <h3>${cartElement.title}</h3>
+                                      <p>$${cartElement.price}</p>
+                                  </div>
+                                  <button class="remove-button">Remove</button>
+                                  </div>`;
   });
-  totalContainer.innerHTML = `<h4>Total: ${total}</h4>`;
+
+  totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
+  confirmTotal.innerHTML = `<h3>Total: $${total}</h3>`;
 }
 
 //close cart
