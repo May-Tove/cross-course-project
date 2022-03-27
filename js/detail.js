@@ -84,6 +84,7 @@ addToCartButton.onclick = function (event) {
 
 // displaying products in cart
 function showCartItems(cartItems) {
+  CartList.innerHTML = "";
   let total = 0;
 
   cartItems.forEach(function (cartElement) {
