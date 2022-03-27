@@ -62,6 +62,7 @@ const totalContainer = document.querySelector(".total-container");
 let cartArray = [];
 
 //add to cart and show cart
+
 addToCartButton.onclick = function (event) {
   cart.classList.add("showCart");
   cartOverlay.classList.add("transparentBackground");
@@ -71,6 +72,16 @@ addToCartButton.onclick = function (event) {
   cartArray.push(itemToAdd);
   showCart(cartArray);
   localStorage.setItem("cartList", JSON.stringify(cartArray));
+};
+
+addToCartButton.onclick = function (event) {
+  cart.classList.add("showCart");
+  cartOverlay.classList.add("transparentBackground");
+  const cartProducts = JSON.parse(localStorage.getItem("cartList"));
+  cartProducts.push(product);
+  showCart(cartProducts);
+
+  localStorage.setItem("cartList", JSON.stringify(cartProducts));
 };
 
 function showCart(cartItems) {
@@ -92,16 +103,6 @@ function showCart(cartItems) {
   });
   totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
 }
-
-addToCartButton.onclick = function (event) {
-  cart.classList.add("showCart");
-  cartOverlay.classList.add("transparentBackground");
-  const cartProducts = JSON.parse(localStorage.getItem("cartList"));
-  cartProducts.push(product);
-  showCart(cartProducts);
-
-  localStorage.setItem("cartList", JSON.stringify(cartProducts));
-};
 
 //test
 
