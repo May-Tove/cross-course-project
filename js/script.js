@@ -107,7 +107,7 @@ addToCartButton.forEach(function (button) {
 });*/
 
 //display cart
-if (cartItems) {
+/*if (cartItems) {
   const cartList = document.querySelector(".cart-list");
   let total = 0;
   cartItems.forEach(function (cartElement) {
@@ -125,9 +125,9 @@ if (cartItems) {
   });
 
   totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
-}
+}*/
 
-/*const cartItems = document.querySelector(".cart");
+const cartItems = document.querySelector(".cart");
 
 function showCartItems(cartItems) {
   const cartList = document.querySelector(".cart-list");
@@ -148,7 +148,7 @@ function showCartItems(cartItems) {
                             </div>`;
   });
   totalContainer.innerHTML = `<h3>Total: $${total}</h3>`;
-}*/
+}
 
 //remove items from cart
 /*const removeButton = document.querySelector(".remove-button");

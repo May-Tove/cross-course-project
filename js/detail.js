@@ -54,7 +54,7 @@ function displayDetails() {
 displayDetails();
 
 // show cart when add to cart button is clicked
-function showCart() {
+/*function showCart() {
   const addToCartButton = document.querySelector(".add-to-cart");
   const cart = document.querySelector(".cart");
   const cartOverlay = document.querySelector(".cart-overlay");
@@ -65,11 +65,47 @@ function showCart() {
   });
 }
 
-showCart();
-
-// adding products to cart and showing cart
+showCart();*/
 
 const addToCartButton = document.querySelector(".add-to-cart");
+const cart = document.querySelector(".cart");
+const cartList = document.querySelector(".cart-list");
+const cartOverlay = document.querySelector(".cart-overlay");
+let cartArray = [];
+
+addToCartButton.onclick = function (event) {
+  cart.classList.add("showCart");
+  cartOverlay.classList.add("transparentBackground");
+
+  const itemToAdd = coats.find(
+    (item) => item.id === event.target.dataset.product
+  );
+  cartArray.push(itemToAdd);
+  showCart(cartArray);
+};
+
+function showCart(cartItems) {
+  cartList.innerHTML = "";
+
+  cartItems.forEach(function (cartElement) {
+    const cartImage = cartElement.image.fields.file.url;
+
+    cartList.innerHTML += `<div class="cart-element">
+      <div style="background-image: url(${cartImage})" class="product-img"></div>
+      <div>
+      <h3>${cartElement.title}</h3>
+      <p>$${cartElement.price}</p>
+      </div>
+      <button class="remove-button">Remove</button>
+      </div>`;
+  });
+}
+
+//testing
+
+// adding products to cart and showing cart!!!!!!
+
+/*const addToCartButton = document.querySelector(".add-to-cart");
 const cartList = document.querySelector(".cart-list");
 const totalContainer = document.querySelector(".total-container");
 let cartArray = [];
@@ -91,14 +127,14 @@ addToCartButton.onclick = function (event) {
   showCartItems(cartProducts);
 
   localStorage.setItem("cartList", JSON.stringify(cartProducts));
-};
+};*/
 
 // displaying products in cart
-function showCartItems(cartItems) {
+/*function showCartItems(cartProducts) {
   cartList.innerHTML = "";
   let total = 0;
 
-  cartItems.forEach(function (cartElement) {
+  cartProducts.forEach(function (cartElement) {
     total += cartElement.price;
     const cartImage = cartElement.image.fields.file.url;
 
@@ -112,4 +148,4 @@ function showCartItems(cartItems) {
                             </div>`;
   });
   totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
-}
+}*/
