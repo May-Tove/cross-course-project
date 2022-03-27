@@ -53,7 +53,7 @@ if (itemsInCart) {
     total += cartElement.price;
     const cartImage = cartElement.image.fields.file.url;
 
-    orderSummary.innerHTML += `<div class="cart-element">
+    cartList.innerHTML += `<div class="cart-element">
                                   <div style="background-image: url(${cartImage})" class="product-img"></div>
                                   <div>
                                       <h3>${cartElement.title}</h3>
@@ -64,7 +64,6 @@ if (itemsInCart) {
   });
 
   totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
-  confirmTotal.innerHTML = `<h3>Total: $${total}</h3>`;
 }
 
 //close cart
