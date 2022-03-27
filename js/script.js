@@ -38,6 +38,7 @@ const showCart = () => {
     cart.classList.add("showCart");
     cartOverlay.classList.add("transparentBackground");
     const cartProducts = JSON.parse(localStorage.getItem("cartList"));
+    const cartArray = JSON.parse(localStorage.getItem("cartList"));
     showCartItems(cartProducts);
     showCartItems(cartArray);
     localStorage.setItem("cartList", JSON.stringify(cartProducts));
