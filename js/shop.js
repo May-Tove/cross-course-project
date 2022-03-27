@@ -20,9 +20,6 @@ if (coats) {
           <h3>${product.title}</h3>
           <h4>$${product.price}</h4>
           </a>
-          <button class="cta add-to-cart">Add to cart</button>
           </article>`;
   });
-} else {
-  allProducts.innerHTML = "error occurred";
 }
