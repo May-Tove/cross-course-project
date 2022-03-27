@@ -1,10 +1,5 @@
 import { coats } from "./jackets/products.js";
 
-// fikse disse show funksjonene og sett globale variabler så du ikke gjentar deg
-/*function toggleCheeseburgerMenu() {
-  menuItems.classList.toggle('hidden');
-}*/
-
 // showing menu when clicked on mobile version
 const showMenu = () => {
   const hamburger = document.querySelector(".hamburger");
@@ -117,7 +112,7 @@ function updateCartTotal() {}*/
 
 //show search input
 
-const showSearch = () => {
+/*const showSearch = () => {
   const searchIcon = document.querySelector(".search-icon");
   const searchWrapper = document.querySelector(".search-wrapper");
   const searchInput = document.querySelector("#search-input");
@@ -128,7 +123,7 @@ const showSearch = () => {
     searchInput.classList.toggle("showSearch");
     searchButton.classList.toggle("showSearch");
   });
-};
+};*/
 
 showSearch();
 
