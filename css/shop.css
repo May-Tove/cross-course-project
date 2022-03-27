@@ -2,6 +2,7 @@
   width: 90vw;
   margin: 0 auto;
   max-width: 1170px;
+  margin-bottom: 4rem;
 }
 
 .shop-hero {
@@ -23,6 +24,7 @@
   display: flex;
   justify-content: center;
   gap: 35px;
+  font-size: 1.3rem;
 }
 
 .shop-navigation a{
@@ -31,7 +33,7 @@
 }
 
 .shop-navigation a:hover{
-  color: darkcyan;
+  color: steelblue;
 }
 
 .shop-navigation .active{

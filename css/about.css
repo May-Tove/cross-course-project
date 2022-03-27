@@ -1,5 +1,6 @@
 .about-container {
-  background:url(../images/welcome-background.jpg);
+  background:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1)),
+  url(../images/about-background.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -20,12 +21,16 @@
 
 .about-wrapper{
   width: 90vw;
+  margin: 0 auto;
   max-width: 600px;
-  padding-top: 10rem;
-  padding-left: 5rem;
+  padding-top: 130px;
 }
 
 .about-wrapper h1, .about-wrapper h2{
   text-align: left;
   padding: 0.5rem 0rem;
+}
+
+.about-wrapper h2{
+  padding-top: 1.3rem;
 }

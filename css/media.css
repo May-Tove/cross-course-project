@@ -1,8 +1,15 @@
 @media (min-width: 799px) {
 
+  h1{
+    font-size: 2.8rem;
+  }
 
   h2 {
     font-size: 1.5em;
+  }
+
+  .cta{
+    font-size: 1rem;
   }
 
   .hamburger{
@@ -54,6 +61,10 @@
   .home-hero{
     min-height: 105vh;
   }
+
+  .hero-container p{
+    font-size: 1.4rem;
+  }
   /*.hero-container{
     text-align: center;
   }*/
@@ -71,7 +82,10 @@
 
   /* About */
 
-
+/* Contact*/
+.contact-hero {
+  height: 40vh;
+}
   
 
   /* Shop */

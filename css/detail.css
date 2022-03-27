@@ -23,6 +23,7 @@ h1, h2{
   justify-content: center;
   gap: 10px;
   width: 100%;
+  margin-bottom: 4rem;
 }
 
 .detail-result .loader{
@@ -34,16 +35,15 @@ h1, h2{
   width: 100%;
 }
 
-.select-elements{
-  display: flex;
-  flex-direction: row;
-}
-
 .detail-result select{
   width: 12rem;
   padding: 5px;
   text-transform: uppercase;
   font-family: inherit;
+}
+
+.product-info{
+  padding-top: 1rem;
 }
 
 .detail-result button{

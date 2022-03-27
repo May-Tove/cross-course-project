@@ -30,6 +30,7 @@ function displayDetails() {
                                 <div class="product-details">
                                     <h1>${product.title}</h1>
                                     <h2>$${product.price}</h2>
+                                    <p>Color: ${product.color}</p>
                                     <select name="size id="size-select" required>
                                         <option value="">Select size</option>
                                         <option value="1">${product.size[0]}</option>
@@ -39,8 +40,14 @@ function displayDetails() {
                                         <option value="5">${product.size[4]}</option>
                                     </select>
                                     <button class="cta add-to-cart" data-product="${product.id}">Add to cart</button>
-                                    <h2>Product information</h2>
+                                    <h3 class="product-info">Product information</h3>
                                     <p>${product.description}</p>
+                                    <h4>Shipping</h4>
+                                    <p>${product.shipping}</p>
+                                    <h4>Designed for</h4>
+                                    <p>${product.designedFor}</p>
+                                    <h4>Materials</h4>
+                                    <p>${product.material}</p>
                                     </div>`;
 }
 
@@ -95,12 +102,3 @@ function showCartItems(cartItems) {
   });
   totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
 }
-
-//back button
-const backButton = document.querySelector(".back-button");
-
-function goBack() {
-  history.back();
-}
-
-backButton.addEventListener("click", goBack);
