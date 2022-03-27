@@ -79,7 +79,6 @@ addToCartButtons.forEach(function (button) {
 
 //display cart
 function showCartItems(cartItems) {
-  CartList.innerHTML = "";
   let total = 0;
 
   cartItems.forEach(function (cartElement) {
