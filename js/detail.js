@@ -76,7 +76,10 @@ let cartArray = [];
 
 addToCartButton.onclick = function (event) {
   //const cartArray = JSON.parse(localStorage.getItem("cartList"));
-  cartArray.push(product);
+  const itemToAdd = coats.find(
+    (item) => item.id === event.target.dataset.product
+  );
+  cartArray.push(itemToAdd);
   showCartItems(cartArray);
 
   localStorage.setItem("cartList", JSON.stringify(cartArray));
