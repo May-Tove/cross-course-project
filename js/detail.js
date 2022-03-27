@@ -98,38 +98,8 @@ function showCart(cartItems) {
       <h3>${cartElement.title}</h3>
       <p>$${cartElement.price}</p>
       </div>
-      <button class="remove-button">Remove</button>
+      <img src="../images/Icon feather-trash-2.svg" alt="trashcan icon">
       </div>`;
   });
   totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
 }
-
-//test
-
-//testing
-
-// adding products to cart and showing cart!!!!!!
-
-/*const addToCartButton = document.querySelector(".add-to-cart");
-const cartList = document.querySelector(".cart-list");
-const totalContainer = document.querySelector(".total-container");
-let cartArray = [];
-
-addToCartButton.onclick = function (event) {
-  //const cartArray = JSON.parse(localStorage.getItem("cartList"));
-  const itemToAdd = coats.find(
-    (item) => item.id === event.target.dataset.product
-  );
-  cartArray.push(itemToAdd);
-  showCartItems(cartArray);
-
-  localStorage.setItem("cartList", JSON.stringify(cartArray));
-};
-
-addToCartButton.onclick = function (event) {
-  const cartProducts = JSON.parse(localStorage.getItem("cartList"));
-  cartProducts.push(product);
-  showCartItems(cartProducts);
-
-  localStorage.setItem("cartList", JSON.stringify(cartProducts));
-};*/

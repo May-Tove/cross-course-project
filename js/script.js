@@ -28,7 +28,7 @@ const closeMenu = () => {
 
 closeMenu();
 
-// show cart when icon is clicked
+// cart variables
 const cartList = document.querySelector(".cart-list");
 const totalContainer = document.querySelector(".total-container");
 const cartIcon = document.querySelector(".shopping-bag-icon");
@@ -37,16 +37,13 @@ const cart = document.querySelector(".cart");
 const closeCart = document.querySelector(".close-cart");
 const itemsInCart = JSON.parse(localStorage.getItem("cartList"));
 
+// show cart when icon is clicked
 cartIcon.onclick = function (event) {
   cart.classList.add("showCart");
   cartOverlay.classList.add("transparentBackground");
-  //const itemsInCart = JSON.parse(localStorage.getItem("cartList"));
-
-  //console.log("hello", cartItems);
-
-  //localStorage.setItem("cartList", JSON.stringify(showProducts));
 };
 
+//let item added in cart stay in cart even if you visit other pages
 if (itemsInCart) {
   let total = 0;
   itemsInCart.forEach(function (cartElement) {
@@ -59,7 +56,7 @@ if (itemsInCart) {
                                       <h3>${cartElement.title}</h3>
                                       <p>$${cartElement.price}</p>
                                   </div>
-                                  <button class="remove-button">Remove</button>
+                                  <img src="../images/Icon feather-trash-2.svg" alt="trashcan icon">
                                   </div>`;
   });
 
@@ -72,110 +69,7 @@ closeCart.onclick = function (event) {
   cartOverlay.classList.remove("transparentBackground");
 };
 
-/*cartIcon.onclick = function (event) {
-cart.classList.add("showCart");
-    cartOverlay.classList.add("transparentBackground");
-    const cartItems = JSON.parse(localStorage.getItem("cartList"));
-  showCartItems(cartArray);
-
-  localStorage.setItem("cartList", JSON.stringify(cartArray));
-};*/
-
-//tidligere kode
-/*const showCart = () => {
-  const cartIcon = document.querySelector(".shopping-bag-icon");
-  const cart = document.querySelector(".cart");
-  const cartOverlay = document.querySelector(".cart-overlay");
-
-  cartIcon.addEventListener("click", () => {
-    cart.classList.add("showCart");
-    cartOverlay.classList.add("transparentBackground");
-    const cartProducts = JSON.parse(localStorage.getItem("cartList"));
-    const cartItems = JSON.parse(localStorage.getItem("cartList"));
-    showCartItems(cartProducts);
-    showCartItems(cartArray);
-    localStorage.setItem("cartList", JSON.stringify(cartProducts));
-    localStorage.setItem("cartList", JSON.stringify(cartArray));
-  });
-};
-
-showCart();*/
-
-// adding products to cart
-/*const addToCartButton = document.querySelectorAll(".add-to-cart");
-const CartList = document.querySelector(".cart-list");
-const totalContainer = document.querySelector(".total-container");
-let cartArray = [];
-
-addToCartButton.forEach(function (button) {
-  button.onclick = function (event) {
-    const itemToAdd = coats.find(
-      (item) => item.id === event.target.dataset.product
-    );
-    cartArray.push(itemToAdd);
-    showCartItems(cartArray);
-    localStorage.setItem("cartList", JSON.stringify(cartArray));
-  };
-});*/
-
-//display cart
-/*if (cartItems) {
-  const cartList = document.querySelector(".cart-list");
-  let total = 0;
-  cartItems.forEach(function (cartElement) {
-    total += cartElement.price;
-    const cartImage = cartElement.image.fields.file.url;
-
-    cartList.innerHTML += `<div class="cart-element">
-                                  <div style="background-image: url(${cartImage})" class="product-img"></div>
-                                  <div>
-                                      <h3>${cartElement.title}</h3>
-                                      <p>$${cartElement.price}</p>
-                                  </div>
-                                  <button class="remove-button">Remove</button>
-                                  </div>`;
-  });
-
-  totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
-}*/
-
-/*const cartItems = document.querySelector(".cart");
-
-function showCartItems(cartItems) {
-  const cartList = document.querySelector(".cart-list");
-  cartList.innerHTML = "";
-  let total = 0;
-
-  cartItems.forEach(function (cartElement) {
-    total += cartElement.price;
-    const cartImage = cartElement.image.fields.file.url;
-
-    cartList.innerHTML += `<div class="cart-element">
-                            <div style="background-image: url(${cartImage})" class="product-img"></div>
-                            <div>  
-                                <h3>${cartElement.title}</h3>
-                                <p>$${cartElement.price}</p>
-                            </div>
-                            <button class="remove-button">Remove</button>
-                            </div>`;
-  });
-  totalContainer.innerHTML = `<h3>Total: $${total}</h3>`;
-}*/
-
-//remove items from cart
-/*const removeButton = document.querySelector(".remove-button");
-
-removeButton.onclick = function (event) {
-  console.log("clicked");
-  const cartProducts = JSON.parse(localStorage.getItem("cartList"));
-  updateCartTotal();
-  localStorage.setItem("cartList", JSON.stringify(cartProducts));
-};
-
-function updateCartTotal() {}*/
-
 //show search input
-
 const showSearch = () => {
   const searchIcon = document.querySelector(".search-icon");
   const searchWrapper = document.querySelector(".search-wrapper");
@@ -199,3 +93,10 @@ function goBack() {
 }
 
 backButton.addEventListener("click", goBack);
+
+//accessible back button
+function goBackA() {
+  history.back();
+}
+
+backButton.addEventListener("onkeydown", goBackA);

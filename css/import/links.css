@@ -10,7 +10,7 @@ a {
 }
 
 .active, .nav-links a:hover {
-  color: steelblue;
+  color: rgb(40, 99, 147);
 }
 
 

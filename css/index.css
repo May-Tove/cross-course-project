@@ -21,6 +21,7 @@
 .hero-container p{
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
+  max-width: 600px;
 }
 
 .hero-container a{

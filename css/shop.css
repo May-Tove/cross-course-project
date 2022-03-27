@@ -33,12 +33,12 @@
 }
 
 .shop-navigation a:hover{
-  color: steelblue;
+  color: rgb(40, 99, 147);
 }
 
 .shop-navigation .active{
   font-weight: bold;
-  color: steelblue;
+  color: rgb(40, 99, 147);
   /* aquamarine*/
 }
 

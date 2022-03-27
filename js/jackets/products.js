@@ -5,7 +5,7 @@ export const coats = [
     title: "Classic Coat",
     price: 70,
     description:
-      "Quilted, technical 2-layer shell jacket developed for skiing. Skiing Master is made of windproof, waterproof and breathable material in soft and comfortable quality. The material is a synthetic padding material that retains its insulating properties even when it gets damp. High collar and helmet-fitted hood provide perfect protection against wind and snow. The jacket is designed to provide maximum freedom of movement and is suitable for moderate to high activity levels in harsh weather conditions.",
+      "Quilted, technical 2-layer shell jacket developed for outdoor activity. Jacket is made of windproof, waterproof and breathable material in soft and comfortable quality. The material is a synthetic padding material that retains its insulating properties even when it gets damp. High collar and helmet-fitted hood provide perfect protection against wind and snow. The jacket is designed to provide maximum freedom of movement and is suitable for moderate to high activity levels in harsh weather conditions.",
     shipping: "Free shipping",
     material: "80% polyester, 20% nylon",
     designedFor: "Allround",
@@ -18,10 +18,10 @@ export const coats = [
     title: "Windproof Jacket",
     price: 75,
     description:
-      "Quilted, technical 2-layer shell jacket developed for skiing. Skiing Master is made of windproof, waterproof and breathable material in soft and comfortable quality. The material is a synthetic padding material that retains its insulating properties even when it gets damp. High collar and helmet-fitted hood provide perfect protection against wind and snow. The jacket is designed to provide maximum freedom of movement and is suitable for moderate to high activity levels in harsh weather conditions.",
+      "Quilted, technical 2-layer shell jacket developed for outdoor activity. Jacket is made of windproof, waterproof and breathable material in soft and comfortable quality. The material is a synthetic padding material that retains its insulating properties even when it gets damp. High collar and helmet-fitted hood provide perfect protection against wind and snow. The jacket is designed to provide maximum freedom of movement and is suitable for moderate to high activity levels in harsh weather conditions.",
     shipping: "Free shipping",
     material: "80% polyester, 20% nylon",
-    designedFor: "Allround",
+    designedFor: "Allround, hiking, skiing",
     size: ["xs", "s", "m", "l", "xl"],
     color: "teal blue",
   },
@@ -34,7 +34,7 @@ export const coats = [
       "Quilted, technical 2-layer shell jacket developed for skiing. Skiing Master is made of windproof, waterproof and breathable material in soft and comfortable quality. The material is a synthetic padding material that retains its insulating properties even when it gets damp. High collar and helmet-fitted hood provide perfect protection against wind and snow. The jacket is designed to provide maximum freedom of movement and is suitable for moderate to high activity levels in harsh weather conditions.",
     shipping: "Free shipping",
     material: "80% polyester, 20% nylon",
-    designedFor: "Allround",
+    designedFor: "Allround, hiking, camping, skiing",
     size: ["xs", "s", "m", "l", "xl"],
     color: "blue, orange",
   },
@@ -44,10 +44,10 @@ export const coats = [
     title: "Camper",
     price: 65,
     description:
-      "Quilted, technical 2-layer shell jacket developed for skiing. Skiing Master is made of windproof, waterproof and breathable material in soft and comfortable quality. The material is a synthetic padding material that retains its insulating properties even when it gets damp. High collar and helmet-fitted hood provide perfect protection against wind and snow. The jacket is designed to provide maximum freedom of movement and is suitable for moderate to high activity levels in harsh weather conditions.",
+      "Quilted, technical 2-layer shell jacket developed for outdoor activity. Jacket is made of windproof, waterproof and breathable material in soft and comfortable quality. The material is a synthetic padding material that retains its insulating properties even when it gets damp. High collar and helmet-fitted hood provide perfect protection against wind and snow. The jacket is designed to provide maximum freedom of movement and is suitable for moderate to high activity levels in harsh weather conditions.",
     shipping: "Free shipping",
     material: "80% polyester, 20% nylon",
-    designedFor: "Allround",
+    designedFor: "Allround, hiking, camping",
     size: ["xs", "s", "m", "l", "xl"],
     color: "dark green",
   },
@@ -57,10 +57,10 @@ export const coats = [
     title: "Everyday Coat",
     price: 65,
     description:
-      "Quilted, technical 2-layer shell jacket developed for skiing. Skiing Master is made of windproof, waterproof and breathable material in soft and comfortable quality. The material is a synthetic padding material that retains its insulating properties even when it gets damp. High collar and helmet-fitted hood provide perfect protection against wind and snow. The jacket is designed to provide maximum freedom of movement and is suitable for moderate to high activity levels in harsh weather conditions.",
+      "Quilted, technical 2-layer shell jacket developed for outdoor activity. Jacket is made of windproof, waterproof and breathable material in soft and comfortable quality. The material is a synthetic padding material that retains its insulating properties even when it gets damp. High collar and helmet-fitted hood provide perfect protection against wind and snow. The jacket is designed to provide maximum freedom of movement and is suitable for moderate to high activity levels in harsh weather conditions.",
     shipping: "Free shipping",
     material: "80% polyester, 20% nylon",
-    designedFor: "Allround",
+    designedFor: "Allround, hiking, camping",
     size: ["xs", "s", "m", "l", "xl"],
     color: "black",
   },
@@ -83,10 +83,10 @@ export const coats = [
     title: "Waterproof Jacket",
     price: 65,
     description:
-      "Quilted, technical 2-layer shell jacket developed for skiing. Skiing Master is made of windproof, waterproof and breathable material in soft and comfortable quality. The material is a synthetic padding material that retains its insulating properties even when it gets damp. High collar and helmet-fitted hood provide perfect protection against wind and snow. The jacket is designed to provide maximum freedom of movement and is suitable for moderate to high activity levels in harsh weather conditions.",
+      "Quilted, technical 2-layer shell jacket developed for outdoor activity. Jacket is made of windproof, waterproof and breathable material in soft and comfortable quality. The material is a synthetic padding material that retains its insulating properties even when it gets damp. High collar and helmet-fitted hood provide perfect protection against wind and snow. The jacket is designed to provide maximum freedom of movement and is suitable for moderate to high activity levels in harsh weather conditions.",
     shipping: "Free shipping",
     material: "80% polyester, 20% nylon",
-    designedFor: "Allround",
+    designedFor: "Allround, canoeing",
     size: ["xs", "s", "m", "l", "xl"],
     color: "red",
   },
@@ -96,7 +96,7 @@ export const coats = [
     title: "Skiing Jacket Pro",
     price: 65,
     description:
-      "Quilted, technical 2-layer shell jacket developed for skiing. Skiing Master is made of windproof, waterproof and breathable material in soft and comfortable quality. The material is a synthetic padding material that retains its insulating properties even when it gets damp. High collar and helmet-fitted hood provide perfect protection against wind and snow. The jacket is designed to provide maximum freedom of movement and is suitable for moderate to high activity levels in harsh weather conditions.",
+      "Quilted, technical 2-layer shell jacket developed for outdoor activity. Jacket is made of windproof, waterproof and breathable material in soft and comfortable quality. The material is a synthetic padding material that retains its insulating properties even when it gets damp. High collar and helmet-fitted hood provide perfect protection against wind and snow. The jacket is designed to provide maximum freedom of movement and is suitable for moderate to high activity levels in harsh weather conditions.",
     shipping: "Free shipping",
     material: "80% polyester, 20% nylon",
     designedFor: "Skiing, cold weather",
@@ -104,5 +104,3 @@ export const coats = [
     color: "multicolor",
   },
 ];
-
-console.log(coats);
