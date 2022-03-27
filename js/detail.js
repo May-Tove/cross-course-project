@@ -53,20 +53,7 @@ function displayDetails() {
 
 displayDetails();
 
-// show cart when add to cart button is clicked
-/*function showCart() {
-  const addToCartButton = document.querySelector(".add-to-cart");
-  const cart = document.querySelector(".cart");
-  const cartOverlay = document.querySelector(".cart-overlay");
-
-  addToCartButton.addEventListener("click", () => {
-    cart.classList.add("showCart");
-    cartOverlay.classList.add("transparentBackground");
-  });
-}
-
-showCart();*/
-
+//cart variables
 const addToCartButton = document.querySelector(".add-to-cart");
 const cart = document.querySelector(".cart");
 const cartList = document.querySelector(".cart-list");
@@ -74,6 +61,7 @@ const cartOverlay = document.querySelector(".cart-overlay");
 const totalContainer = document.querySelector(".total-container");
 let cartArray = [];
 
+//add to cart and show cart
 addToCartButton.onclick = function (event) {
   cart.classList.add("showCart");
   cartOverlay.classList.add("transparentBackground");
@@ -105,6 +93,16 @@ function showCart(cartItems) {
   totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
 }
 
+addToCartButton.onclick = function (event) {
+  cart.classList.add("showCart");
+  cartOverlay.classList.add("transparentBackground");
+  const cartProducts = JSON.parse(localStorage.getItem("cartList"));
+  cartProducts.push(product);
+  showCart(cartProducts);
+
+  localStorage.setItem("cartList", JSON.stringify(cartProducts));
+};
+
 //test
 
 //testing
@@ -134,24 +132,3 @@ addToCartButton.onclick = function (event) {
 
   localStorage.setItem("cartList", JSON.stringify(cartProducts));
 };*/
-
-// displaying products in cart
-/*function showCartItems(cartProducts) {
-  cartList.innerHTML = "";
-  let total = 0;
-
-  cartProducts.forEach(function (cartElement) {
-    total += cartElement.price;
-    const cartImage = cartElement.image.fields.file.url;
-
-    cartList.innerHTML += `<div class="cart-element">
-                            <div style="background-image: url(${cartImage})" class="product-img"></div>
-                            <div>
-                            <h3>${cartElement.title}</h3>
-                            <p>$${cartElement.price}</p>
-                            </div>
-                            <button class="remove-button">Remove</button>
-                            </div>`;
-  });
-  totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
-}*/
