@@ -72,12 +72,12 @@ const cart = document.querySelector(".cart");
 const cartList = document.querySelector(".cart-list");
 const cartOverlay = document.querySelector(".cart-overlay");
 const totalContainer = document.querySelector(".total-container");
+const itemsInCart = JSON.parse(localStorage.getItem("cartList"));
 let cartArray = [];
 
 addToCartButton.onclick = function (event) {
   cart.classList.add("showCart");
   cartOverlay.classList.add("transparentBackground");
-  //const cartArray = JSON.parse(localStorage.getItem("cartList"));
   const itemToAdd = coats.find(
     (item) => item.id === event.target.dataset.product
   );
@@ -105,6 +105,27 @@ function showCart(cartItems) {
   });
   totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
 }
+
+if (itemsInCart) {
+  let total = 0;
+  itemsInCart.forEach(function (cartElement) {
+    total += cartElement.price;
+    const cartImage = cartElement.image.fields.file.url;
+
+    cartList.innerHTML += `<div class="cart-element">
+                                    <div style="background-image: url(${cartImage})" class="product-img"></div>
+                                    <div>
+                                        <h3>${cartElement.title}</h3>
+                                        <p>$${cartElement.price}</p>
+                                    </div>
+                                    <button class="remove-button">Remove</button>
+                                    </div>`;
+  });
+
+  totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
+}
+
+//test
 
 //testing
 
