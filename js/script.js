@@ -133,10 +133,10 @@ const showSearch = () => {
 showSearch();
 
 //back button
-/*const backButton = document.querySelector(".back-button");
+const backButton = document.querySelector(".back-button");
 
 function goBack() {
   history.back();
 }
 
-backButton.addEventListener("click", goBack);*/
+backButton.addEventListener("click", goBack);
