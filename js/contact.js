@@ -22,26 +22,38 @@ function validateForm(event) {
 
   if (checkLength(fullName.value, 0) === true) {
     nameError.style.display = "none";
+    fullName.style.borderColor = "#caeec2";
+    fullName.style.backgroundColor = "#e5f5df";
   } else {
     nameError.style.display = "block";
+    fullName.style.border = "1px solid red";
   }
 
   if (validateEmail(email.value) === true) {
     emailError.style.display = "none";
+    email.style.borderColor = "#caeec2";
+    email.style.backgroundColor = "#e5f5df";
   } else {
     emailError.style.display = "block";
+    email.style.border = "1px solid red";
   }
 
   if (validatePhoneNumber(phoneNumber.value) === true) {
     phoneNumberError.style.display = "none";
+    phoneNumber.style.borderColor = "#caeec2";
+    phoneNumber.style.backgroundColor = "#e5f5df";
   } else {
     phoneNumberError.style.display = "block";
+    phoneNumber.style.border = "1px solid red";
   }
 
   if (checkLength(message.value, 10) === true) {
     messageError.style.display = "none";
+    message.style.borderColor = "#caeec2";
+    message.style.backgroundColor = "#e5f5df";
   } else {
     messageError.style.display = "block";
+    message.style.border = "1px solid red";
   }
 }
 
@@ -68,20 +80,76 @@ function validatePhoneNumber(phoneNumber) {
   return patternMatches;
 }
 
+//Check if input field is valid while typing
+function checkName() {
+  if (checkLength(fullName.value, 0) === true) {
+    nameError.style.display = "none";
+    fullName.style.border = "1px solid #caeec2";
+    fullName.style.backgroundColor = "#e5f5df";
+  } else {
+    nameError.style.display = "block";
+    fullName.style.border = "1px solid red";
+  }
+}
+
+function checkEmail() {
+  if (validateEmail(email.value) === true) {
+    emailError.style.display = "none";
+    email.style.border = "1px solid #caeec2";
+    email.style.backgroundColor = "#e5f5df";
+  } else {
+    emailError.style.display = "block";
+    email.style.border = "1px solid red";
+  }
+}
+
+function checkPhone() {
+  if (validatePhoneNumber(phoneNumber.value, 8) === true) {
+    phoneNumberError.style.display = "none";
+    phoneNumber.style.border = "1px solid #caeec2";
+    phoneNumber.style.backgroundColor = "#e5f5df";
+  } else {
+    phoneNumberError.style.display = "block";
+    phoneNumber.style.border = "1px solid red";
+  }
+}
+
+function checkMessage() {
+  if (checkLength(message.value, 10) === true) {
+    messageError.style.display = "none";
+    message.style.border = "1px solid #caeec2";
+    message.style.backgroundColor = "#e5f5df";
+  } else {
+    messageError.style.display = "block";
+    message.style.border = "1px solid red";
+  }
+}
+
+fullName.addEventListener("keyup", checkName);
+email.addEventListener("keyup", checkEmail);
+phoneNumber.addEventListener("keyup", checkPhone);
+message.addEventListener("keyup", checkMessage);
+
 //Form submit success
 function showSuccess() {
   if (
     checkLength(fullName.value, 0) &&
     validateEmail(email.value) &&
-    validatePhoneNumber(phoneNumber.value) &&
+    validatePhoneNumber(phoneNumber.value, 7) &&
     checkLength(message.value, 10)
   ) {
-    successMessage.innerHTML = `
-    <h2>Your message has been sent!</h2>
-    <p>Thank you for contacting us, we will get back to you within 48h</p>`;
+    successMessage.style.display = "block";
     form.reset();
+    fullName.style.border = "1px solid black";
+    fullName.style.backgroundColor = "transparent";
+    email.style.border = "1px solid black";
+    email.style.backgroundColor = "transparent";
+    phoneNumber.style.border = "1px solid black";
+    phoneNumber.style.backgroundColor = "transparent";
+    message.style.border = "1px solid black";
+    message.style.backgroundColor = "transparent";
   } else {
-    successMessage.innerHTML = "";
+    successMessage.style.display = "none";
   }
 }
 showSuccess();

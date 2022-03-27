@@ -26,23 +26,22 @@
 <body>
     <header class="navbar">
         <div class="navbar-center">
-            <div class="hamburger" id="hamburger">
-                <img src="images/menu.svg" alt="menu icon">
-            </div>
             <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Rainydays logo" class="logo"></a>
-            <div class="menu-overlay">
-                <nav class="main-menu">
+                <nav class="main-menu menu-overlay">
                     <ul class="nav-links">
+                        <span class="close-menu">
+                            <img src="./images/Iconclose.svg" alt="">
+                        </span>
                         <li><a href="index.html" class="active">Home</a></li>
                         <li><a href="shop.html">Shop</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-            </div>
             <div class="nav-icons">
                 <img src="images/search.svg" alt="" class="search-icon">
                 <img src="images/shopping-bag.svg" alt="shopping bag icon" class="shopping-bag-icon">
+                <img src="images/menu.svg" alt="menu icon" class="hamburger" id="hamburger">
             </div>
             <div class="cart-overlay">
                 <div class="cart">
@@ -53,21 +52,21 @@
                     <div class="cart-list"></div>
                     <div class="cart-bottom">
                         <div class="total-container"></div>
-                    <div>
-                        <a href="checkout.html" class="cta cart-cta">Go to checkout</a>
-                    </div>
-                    <div>
-                        <a href="shop.html" class="cta cart-cta">Continue shopping</a>
-                    </div>
+                        <div>
+                            <a href="checkout.html" class="cta cart-cta">Go to checkout</a>
+                        </div>
+                        <div>
+                            <a href="shop.html" class="cta cart-cta">Shop more</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-            <div class="search-wrapper">
-                <label for="search-input"></label>
-                <input type="search" name="search" id="search-input" placeholder="Search...">
-                <button class="search-btn">Search</button>
-            </div>
+        <div class="search-wrapper">
+            <label for="search-input"></label>
+            <input type="search" name="search" id="search-input" placeholder="Search...">
+            <button class="search-btn">Search</button>
+        </div>
     </header>
     <main>
         <section class="shop-hero">

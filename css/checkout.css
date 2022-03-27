@@ -39,6 +39,15 @@ h3 {
   margin: 40px;
 }
 
+.cta-payment{
+  background-color: darkgreen;
+  border: 1px solid darkgreen;
+}
+
+.cta-payment:hover{
+  color: darkgreen;
+}
+
 /* Order summary */
 .summary-content p{
   text-transform: capitalize;
@@ -114,8 +123,9 @@ input {
 
 .message-container{
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
+  transition: 0.3s ease;
 }
 
 .order-confirmed{
@@ -126,9 +136,14 @@ input {
   gap: 3rem;
   background-color: #e4ebf2;
   margin-top: 200px;
-  padding: 50px;
+  padding: 60px;
+  border-radius: var(--borderRadius);
 }
 
 .order-confirmed h1{
+  text-align: center;
+}
+
+.order-confirmed p{
   text-align: center;
 }

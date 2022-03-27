@@ -26,23 +26,22 @@
 <body>
     <header class="navbar">
         <div class="navbar-center">
-            <div class="hamburger" id="hamburger">
-                <img src="images/menu.svg" alt="menu icon">
-            </div>
             <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Rainydays logo" class="logo"></a>
-            <div class="menu-overlay">
-                <nav class="main-menu">
+                <nav class="main-menu menu-overlay">
                     <ul class="nav-links">
+                        <span class="close-menu">
+                            <img src="./images/Iconclose.svg" alt="">
+                        </span>
                         <li><a href="index.html" class="active">Home</a></li>
                         <li><a href="shop.html">Shop</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-            </div>
             <div class="nav-icons">
                 <img src="images/search.svg" alt="" class="search-icon">
                 <img src="images/shopping-bag.svg" alt="shopping bag icon" class="shopping-bag-icon">
+                <img src="images/menu.svg" alt="menu icon" class="hamburger" id="hamburger">
             </div>
             <div class="cart-overlay">
                 <div class="cart">
@@ -53,61 +52,55 @@
                     <div class="cart-list"></div>
                     <div class="cart-bottom">
                         <div class="total-container"></div>
-                    <div>
-                        <a href="checkout.html" class="cta cart-cta">Go to checkout</a>
-                    </div>
-                    <div>
-                        <a href="shop.html" class="cta cart-cta">Continue shopping</a>
-                    </div>
+                        <div>
+                            <a href="checkout.html" class="cta cart-cta">Go to checkout</a>
+                        </div>
+                        <div>
+                            <a href="shop.html" class="cta cart-cta">Shop more</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-            <div class="search-wrapper">
-                <label for="search-input"></label>
-                <input type="search" name="search" id="search-input" placeholder="Search...">
-                <button class="search-btn">Search</button>
-            </div>
+        <div class="search-wrapper">
+            <label for="search-input"></label>
+            <input type="search" name="search" id="search-input" placeholder="Search...">
+            <button class="search-btn">Search</button>
+        </div>
     </header>
     <main>
-        <div class="contact-container">
-            <section class="contact-intro">
+            <section class="contact-hero">
                 <h1>Get in touch with us</h1>
-                <p>We would love to hear from you! Come visit us at our location or send us a message below. Our opening hours are between 09:00 - 16:00 Mon - Sat</p>
-                <span>
-                    <img src="./images/Icon feather-map-pin.svg" alt="" class="contact-icon"> 
-                    <p>Trondheim</p>
-                </span>
-                <span>
-                    <img src="./images/Icon feather-phone.svg" alt="" class="contact-icon">
-                    <p>90802292</p> 
-                </span>
-                <span>
-                    <img src="./images/mailIcon.svg" alt="" class="contact-icon">
-                    <p>contact@rainydays.com</p> 
-                </span>
+                <p>We would love to hear from you! Send us a message below and we will get back to you within 48h. Our opening hours are between 09:00 - 16:00 Mon - Sat</p>
             </section>
-            <div class="success-message"></div>
+        <div class="contact-container">
+            <div class="success-message">
+                <h2>Your message has been sent!</h2>
+                <p>Thank you for contacting us, we will get back to you within 48h</p>
+            </div>
+            <div class="section-title">
+                <h2>Send us a message</h2>
+            </div>
             <form class="contact-form">
                 <div class="input-group">
-                    <label for="name">Full name *</label>
+                    <label for="name">Full name (required)</label>
                     <input type="text" name="name" id="name">
                     <div class="form-error" id="name-error">Please enter your name</div>
                 </div>
                 <div class="input-group">
-                    <label for="email">Email *</label>
-                    <input type="email" name="email" id="email" >
+                    <label for="email">Email (required)</label>
+                    <input type="email" name="email" id="email">
                     <div class="form-error" id="email-error">Please enter a valid email address</div>
                 </div>
                 <div class="input-group">
-                    <label for="phone">Phone number *</label>
-                    <input type="tel" name="phone" id="phone" >
+                    <label for="phone">Phone number (required)</label>
+                    <input type="tel" name="phone" id="phone">
                     <div class="form-error" id="phone-error">Please enter a valid phone number</div>
                 </div>
                 <div class="input-group">
-                    <label for="message">Message *</label>
-                    <textarea id="message"></textarea >
-                    <div class="form-error" id="message-error">Field must contain a message</div>
+                    <label for="message">Message (must contain at least 10 characters)</label>
+                    <textarea id="message"></textarea>
+                    <div class="form-error" id="message-error">Field must contain a message of at least 10 characters</div>
                 </div>
                 <button class="cta">Submit</button>
             </form>

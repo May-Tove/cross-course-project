@@ -5,8 +5,7 @@
 }
 
 .shop-hero {
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-    url(../images/shop-background2.jpg);
+  background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(../images/background4.jpg);
   background-position: center;
   background-size: cover;
   height: 40vh;
@@ -83,6 +82,7 @@
   background-color: var(--mainColor);
   text-transform: uppercase;
   color: var(--mainWhiteColor);
+  border-radius: var(--borderRadius);
   padding: 0.7rem 2rem;
   font-size: 1rem;
   border: none;

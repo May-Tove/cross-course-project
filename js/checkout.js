@@ -57,6 +57,7 @@ function validateForm(event) {
     fullName.style.backgroundColor = "#e5f5df";
   } else {
     nameError.style.display = "block";
+    fullName.style.border = "1px solid red";
   }
 
   if (validateEmail(email.value) === true) {
@@ -65,6 +66,7 @@ function validateForm(event) {
     email.style.backgroundColor = "#e5f5df";
   } else {
     emailError.style.display = "block";
+    email.style.border = "1px solid red";
   }
 
   if (validatePhoneNumber(phoneNumber.value) === true) {
@@ -73,14 +75,16 @@ function validateForm(event) {
     phoneNumber.style.backgroundColor = "#e5f5df";
   } else {
     phoneNumberError.style.display = "block";
+    phoneNumber.style.border = "1px solid red";
   }
 
-  if (checkLength(address.value, 0) === true) {
+  if (checkLength(address.value, 5) === true) {
     addressError.style.display = "none";
     address.style.borderColor = "#caeec2";
     address.style.backgroundColor = "#e5f5df";
   } else {
     addressError.style.display = "block";
+    address.style.border = "1px solid red";
   }
 
   if (checkLength(zip.value, 3) === true) {
@@ -89,6 +93,7 @@ function validateForm(event) {
     zip.style.backgroundColor = "#e5f5df";
   } else {
     zipError.style.display = "block";
+    zip.style.border = "1px solid red";
   }
 
   if (checkLength(city.value, 0) === true) {
@@ -97,12 +102,11 @@ function validateForm(event) {
     city.style.backgroundColor = "#e5f5df";
   } else {
     cityError.style.display = "block";
+    city.style.border = "1px solid red";
   }
 }
 
 confirmButton.addEventListener("click", validateForm);
-
-//infoForm.addEventListener("submit", validateForm);
 
 //Payment details form
 const paymentForm = document.querySelector(".payment-form");
@@ -124,6 +128,7 @@ function validatePaymentForm(event) {
     creditCard.style.backgroundColor = "#e5f5df";
   } else {
     cardError.style.display = "block";
+    creditCard.style.border = "1px solid red";
   }
 
   if (checkLength(expiration.value, 3) === true) {
@@ -132,6 +137,7 @@ function validatePaymentForm(event) {
     expiration.style.backgroundColor = "#e5f5df";
   } else {
     expirationError.style.display = "block";
+    expiration.style.border = "1px solid red";
   }
 
   if (checkLength(cvc.value, 2) === true) {
@@ -140,12 +146,11 @@ function validatePaymentForm(event) {
     cvc.style.backgroundColor = "#e5f5df";
   } else {
     cvcError.style.display = "block";
+    cvc.style.border = "1px solid red";
   }
 }
 
 confirmButton.addEventListener("click", validatePaymentForm);
-
-//paymentForm.addEventListener("submit", validatePaymentForm);
 
 // Checking length of input
 function checkLength(value, len) {
@@ -169,6 +174,116 @@ function validatePhoneNumber(phoneNumber) {
   const patternMatches = regEx.test(phoneNumber);
   return patternMatches;
 }
+
+//Check if input field is valid while typing
+function checkName() {
+  if (checkLength(fullName.value, 0) === true) {
+    nameError.style.display = "none";
+    fullName.style.border = "1px solid #caeec2";
+    fullName.style.backgroundColor = "#e5f5df";
+  } else {
+    nameError.style.display = "block";
+    fullName.style.border = "1px solid red";
+  }
+}
+
+function checkEmail() {
+  if (validateEmail(email.value) === true) {
+    emailError.style.display = "none";
+    email.style.border = "1px solid #caeec2";
+    email.style.backgroundColor = "#e5f5df";
+  } else {
+    emailError.style.display = "block";
+    email.style.border = "1px solid red";
+  }
+}
+
+function checkPhone() {
+  if (validatePhoneNumber(phoneNumber.value) === true) {
+    phoneNumberError.style.display = "none";
+    phoneNumber.style.border = "1px solid #caeec2";
+    phoneNumber.style.backgroundColor = "#e5f5df";
+  } else {
+    phoneNumberError.style.display = "block";
+    phoneNumber.style.border = "1px solid red";
+  }
+}
+
+function checkAddress() {
+  if (checkLength(address.value, 5) === true) {
+    addressError.style.display = "none";
+    address.style.border = "1px solid #caeec2";
+    address.style.backgroundColor = "#e5f5df";
+  } else {
+    addressError.style.display = "block";
+    address.style.border = "1px solid red";
+  }
+}
+
+function checkZip() {
+  if (checkLength(zip.value, 3) === true) {
+    zipError.style.display = "none";
+    zip.style.border = "1px solid #caeec2";
+    zip.style.backgroundColor = "#e5f5df";
+  } else {
+    zipError.style.display = "block";
+    zip.style.border = "1px solid red";
+  }
+}
+
+function checkCity() {
+  if (checkLength(city.value, 0) === true) {
+    cityError.style.display = "none";
+    city.style.border = "1px solid #caeec2";
+    city.style.backgroundColor = "#e5f5df";
+  } else {
+    cityError.style.display = "block";
+    city.style.border = "1px solid red";
+  }
+}
+
+function checkCreditCard() {
+  if (checkLength(creditCard.value, 16) === true) {
+    cardError.style.display = "none";
+    creditCard.style.border = "1px solid #caeec2";
+    creditCard.style.backgroundColor = "#e5f5df";
+  } else {
+    cardError.style.display = "block";
+    creditCard.style.border = "1px solid red";
+  }
+}
+
+function checkExp() {
+  if (checkLength(expiration.value, 3) === true) {
+    expirationError.style.display = "none";
+    expiration.style.border = "1px solid #caeec2";
+    expiration.style.backgroundColor = "#e5f5df";
+  } else {
+    expirationError.style.display = "block";
+    expiration.style.border = "1px solid red";
+  }
+}
+
+function checkCvc() {
+  if (checkLength(cvc.value, 2) === true) {
+    cvcError.style.display = "none";
+    cvc.style.border = "1px solid #caeec2";
+    cvc.style.backgroundColor = "#e5f5df";
+  } else {
+    cvcError.style.display = "block";
+    cvc.style.border = "1px solid red";
+  }
+}
+
+fullName.addEventListener("keyup", checkName);
+email.addEventListener("keyup", checkEmail);
+phoneNumber.addEventListener("keyup", checkPhone);
+address.addEventListener("keyup", checkAddress);
+zip.addEventListener("keyup", checkZip);
+city.addEventListener("keyup", checkCity);
+creditCard.addEventListener("keyup", checkCreditCard);
+expiration.addEventListener("keyup", checkExp);
+cvc.addEventListener("keyup", checkCvc);
 
 //show order confirmation
 const orderConfirmed = document.querySelector(".order-confirmed");
