@@ -36,7 +36,7 @@ const cartOverlay = document.querySelector(".cart-overlay");
 const cartItems = document.querySelector(".cart");
 
 cartIcon.onclick = function (event) {
-  cart.classList.add("showCart");
+  cartItems.classList.add("showCart");
   cartOverlay.classList.add("transparentBackground");
   const cartProducts = JSON.parse(localStorage.getItem("cartList"));
 
@@ -125,7 +125,7 @@ if (cartItems) {
   totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
 }
 
-/*function showCartItems(cartItems) {
+function showCartItems(cartItems) {
   CartList.innerHTML = "";
   let total = 0;
 
@@ -143,7 +143,7 @@ if (cartItems) {
                             </div>`;
   });
   totalContainer.innerHTML = `<h3>Total: $${total}</h3>`;
-}*/
+}
 
 //remove items from cart
 /*const removeButton = document.querySelector(".remove-button");
