@@ -1,7 +1,7 @@
 import { coats } from "./jackets/products.js";
 
 // showing menu when clicked on mobile version
-const showMenu = () => {
+/*const showMenu = () => {
   const hamburger = document.querySelector(".hamburger");
   const mainMenu = document.querySelector(".nav-links");
   const menuOverlay = document.querySelector(".menu-overlay");
@@ -12,10 +12,10 @@ const showMenu = () => {
   });
 };
 
-showMenu();
+showMenu();*/
 
 //close menu
-const closeMenu = () => {
+c; /*onst closeMenu = () => {
   const closeMenuButton = document.querySelector(".close-menu");
   const mainMenu = document.querySelector(".nav-links");
   const menuOverlay = document.querySelector(".menu-overlay");
@@ -26,7 +26,7 @@ const closeMenu = () => {
   });
 };
 
-closeMenu();
+closeMenu();*/
 
 // show cart when icon is clicked
 const showCart = () => {
