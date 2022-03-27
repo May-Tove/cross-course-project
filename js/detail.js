@@ -77,7 +77,7 @@ let cartArray = [];
 addToCartButton.onclick = function (event) {
   cart.classList.add("showCart");
   cartOverlay.classList.add("transparentBackground");
-  const cartArray = JSON.parse(localStorage.getItem("cartList"));
+  //const cartArray = JSON.parse(localStorage.getItem("cartList"));
   const itemToAdd = coats.find(
     (item) => item.id === event.target.dataset.product
   );
@@ -103,7 +103,7 @@ function showCart(cartItems) {
       <button class="remove-button">Remove</button>
       </div>`;
   });
-  totalContainer.innerHTML = `<h4>Total: ${total}</h4>`;
+  totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
 }
 
 //testing
