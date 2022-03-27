@@ -29,6 +29,33 @@ const closeMenu = () => {
 closeMenu();
 
 // show cart when icon is clicked
+const CartList = document.querySelector(".cart-list");
+const totalContainer = document.querySelector(".total-container");
+const cartIcon = document.querySelector(".shopping-bag-icon");
+const cart = document.querySelector(".cart");
+const cartOverlay = document.querySelector(".cart-overlay");
+const cartItems = document.querySelector(".cart");
+
+cartIcon.onclick = function (event) {
+  cart.classList.add("showCart");
+  cartOverlay.classList.add("transparentBackground");
+  const cartProducts = JSON.parse(localStorage.getItem("cartList"));
+
+  showCartItems(cartProducts);
+
+  localStorage.setItem("cartList", JSON.stringify(cartProducts));
+};
+
+/*cartIcon.onclick = function (event) {
+cart.classList.add("showCart");
+    cartOverlay.classList.add("transparentBackground");
+    const cartItems = JSON.parse(localStorage.getItem("cartList"));
+  showCartItems(cartArray);
+
+  localStorage.setItem("cartList", JSON.stringify(cartArray));
+};*/
+
+//tidligere kode
 const showCart = () => {
   const cartIcon = document.querySelector(".shopping-bag-icon");
   const cart = document.querySelector(".cart");
