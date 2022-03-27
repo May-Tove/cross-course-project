@@ -72,18 +72,6 @@ showCart();
 const addToCartButton = document.querySelector(".add-to-cart");
 const CartList = document.querySelector(".cart-list");
 const totalContainer = document.querySelector(".total-container");
-let cartArray = [];
-
-addToCartButton.forEach(function (button) {
-  button.onclick = function (event) {
-    const itemToAdd = coats.find(
-      (item) => item.id === event.target.dataset.product
-    );
-    cartArray.push(itemToAdd);
-    showCartItems(cartArray);
-    localStorage.setItem("cartList", JSON.stringify(cartArray));
-  };
-});
 
 addToCartButton.onclick = function (event) {
   const cartProducts = JSON.parse(localStorage.getItem("cartList"));

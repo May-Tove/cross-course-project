@@ -60,13 +60,12 @@ const closeCart = () => {
 closeCart();
 
 // adding products to cart
-const addToCartButtons = document.querySelectorAll(".add-to-cart");
-const cart = document.querySelector(".cart");
+const addToCartButton = document.querySelectorAll(".add-to-cart");
 const CartList = document.querySelector(".cart-list");
 const totalContainer = document.querySelector(".total-container");
 let cartArray = [];
 
-addToCartButtons.forEach(function (button) {
+addToCartButton.forEach(function (button) {
   button.onclick = function (event) {
     const itemToAdd = coats.find(
       (item) => item.id === event.target.dataset.product
