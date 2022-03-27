@@ -47,6 +47,25 @@ cartIcon.onclick = function (event) {
   //localStorage.setItem("cartList", JSON.stringify(showProducts));
 };
 
+if (itemsInCart) {
+  let total = 0;
+  itemsInCart.forEach(function (cartElement) {
+    total += cartElement.price;
+    const cartImage = cartElement.image.fields.file.url;
+
+    cartList.innerHTML += `<div class="cart-element">
+                                  <div style="background-image: url(${cartImage})" class="product-img"></div>
+                                  <div>
+                                      <h3>${cartElement.title}</h3>
+                                      <p>$${cartElement.price}</p>
+                                  </div>
+                                  <button class="remove-button">Remove</button>
+                                  </div>`;
+  });
+
+  totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
+}
+
 //close cart
 closeCart.onclick = function (event) {
   cart.classList.remove("showCart");
