@@ -125,7 +125,7 @@ if (cartItems) {
   totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
 }
 
-function showCartItems(cartItems) {
+/*function showCartItems(cartItems) {
   CartList.innerHTML = "";
   let total = 0;
 
@@ -143,7 +143,7 @@ function showCartItems(cartItems) {
                             </div>`;
   });
   totalContainer.innerHTML = `<h3>Total: $${total}</h3>`;
-}
+}*/
 
 //remove items from cart
 /*const removeButton = document.querySelector(".remove-button");
