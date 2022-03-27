@@ -26,19 +26,22 @@
 
 .nav-links li{
     opacity: 1;
-    position: relative;
     padding: 30px;
+}
+
+.nav-links a{
+  position: relative;
 }
 
 .nav-links a.active::after,
 .nav-links a:hover::after{
   content: "";
-  width: 30%;
+  width: 40%;
   height: 3px;
   background: steelblue;
   position: absolute;
-  top: 50px;
-  left: 30px;
+  top: 22px;
+  left: 0px;
   border-radius: 5px;
 
 }

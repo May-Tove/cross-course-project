@@ -42,6 +42,17 @@ h2 {
   text-transform: capitalize;
 }
 
+.back-container{
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.back-button{
+  cursor: pointer;
+  max-height: 17px;
+}
+
 .navbar {
   display: flex;
   align-items: center;

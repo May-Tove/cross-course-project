@@ -95,3 +95,12 @@ function showCartItems(cartItems) {
   });
   totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
 }
+
+//back button
+const backButton = document.querySelector(".back-button");
+
+function goBack() {
+  history.back();
+}
+
+backButton.addEventListener("click", goBack);

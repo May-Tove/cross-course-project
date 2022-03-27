@@ -12,7 +12,7 @@ export const coats = [
   {
     id: "2",
     image: { fields: { file: { url: "../images/product-2.jpg" } } },
-    title: "windproof deluxe",
+    title: "windproof jacket",
     price: 75,
     description:
       "Quilted, technical 2-layer shell jacket developed for skiing. Skiing Master is made of windproof, waterproof and breathable material in soft and comfortable quality. The material is a synthetic padding material that retains its insulating properties even when it gets damp. High collar and helmet-fitted hood provide perfect protection against wind and snow. The jacket is designed to provide maximum freedom of movement and is suitable for moderate to high activity levels in harsh weather conditions.",
@@ -62,7 +62,7 @@ export const coats = [
   {
     id: "7",
     image: { fields: { file: { url: "../images/product-7.jpg" } } },
-    title: "waterproof deluxe",
+    title: "waterproof jacket",
     price: 65,
     description:
       "Quilted, technical 2-layer shell jacket developed for skiing. Skiing Master is made of windproof, waterproof and breathable material in soft and comfortable quality. The material is a synthetic padding material that retains its insulating properties even when it gets damp. High collar and helmet-fitted hood provide perfect protection against wind and snow. The jacket is designed to provide maximum freedom of movement and is suitable for moderate to high activity levels in harsh weather conditions.",
