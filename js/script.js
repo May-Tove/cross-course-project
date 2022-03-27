@@ -35,6 +35,7 @@ const cartIcon = document.querySelector(".shopping-bag-icon");
 const cartOverlay = document.querySelector(".cart-overlay");
 const cart = document.querySelector(".cart");
 const closeCart = document.querySelector(".close-cart");
+let cartArray = [];
 
 cartIcon.onclick = function (event) {
   cart.classList.add("showCart");
