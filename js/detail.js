@@ -72,13 +72,14 @@ showCart();
 const addToCartButton = document.querySelector(".add-to-cart");
 const CartList = document.querySelector(".cart-list");
 const totalContainer = document.querySelector(".total-container");
+let cartArray = [];
 
 addToCartButton.onclick = function (event) {
-  const cartProducts = JSON.parse(localStorage.getItem("cartList"));
-  cartProducts.push(product);
-  showCartItems(cartProducts);
+  const cartArray = JSON.parse(localStorage.getItem("cartList"));
+  cartArray.push(product);
+  showCartItems(cartArray);
 
-  localStorage.setItem("cartList", JSON.stringify(cartProducts));
+  localStorage.setItem("cartList", JSON.stringify(cartArray));
 };
 
 // displaying products in cart

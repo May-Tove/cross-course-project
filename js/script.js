@@ -60,7 +60,7 @@ const closeCart = () => {
 closeCart();
 
 // adding products to cart
-const addToCartButton = document.querySelectorAll(".add-to-cart");
+/*const addToCartButton = document.querySelectorAll(".add-to-cart");
 const CartList = document.querySelector(".cart-list");
 const totalContainer = document.querySelector(".total-container");
 let cartArray = [];
@@ -74,7 +74,7 @@ addToCartButton.forEach(function (button) {
     showCartItems(cartArray);
     localStorage.setItem("cartList", JSON.stringify(cartArray));
   };
-});
+});*/
 
 //display cart
 function showCartItems(cartItems) {
