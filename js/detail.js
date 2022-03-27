@@ -31,7 +31,7 @@ function displayDetails() {
                                     <h1>${product.title}</h1>
                                     <h2>$${product.price}</h2>
                                     <p>Color: ${product.color}</p>
-                                    <select name="size id="size-select" required>
+                                    <select name="size id="size-select">
                                         <option value="">Select size</option>
                                         <option value="1">${product.size[0]}</option>
                                         <option value="2">${product.size[1]}</option>
@@ -52,8 +52,6 @@ function displayDetails() {
 }
 
 displayDetails();
-
-// validate select elements
 
 // show cart when add to cart button is clicked
 function showCart() {
