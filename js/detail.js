@@ -81,6 +81,7 @@ addToCartButton.onclick = function (event) {
     (item) => item.id === event.target.dataset.product
   );
   cartArray.push(itemToAdd);
+  const cartArray = JSON.parse(localStorage.getItem("cartList"));
   showCart(cartArray);
   localStorage.setItem("cartList", JSON.stringify(cartArray));
 };
@@ -104,29 +105,6 @@ function showCart(cartItems) {
   });
   totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
 }
-
-addToCartButton.onclick = function (event) {
-  const itemsInCart = JSON.parse(localStorage.getItem("cartList"));
-
-  if (itemsInCart) {
-    let total = 0;
-    itemsInCart.forEach(function (cartElement) {
-      total += cartElement.price;
-      const cartImage = cartElement.image.fields.file.url;
-
-      cartList.innerHTML += `<div class="cart-element">
-                                          <div style="background-image: url(${cartImage})" class="product-img"></div>
-                                          <div>
-                                              <h3>${cartElement.title}</h3>
-                                              <p>$${cartElement.price}</p>
-                                          </div>
-                                          <button class="remove-button">Remove</button>
-                                          </div>`;
-    });
-
-    totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
-  }
-};
 
 //test
 
