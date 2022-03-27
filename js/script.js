@@ -35,17 +35,16 @@ const cartIcon = document.querySelector(".shopping-bag-icon");
 const cartOverlay = document.querySelector(".cart-overlay");
 const cart = document.querySelector(".cart");
 const closeCart = document.querySelector(".close-cart");
-let cartArray = [];
 
 cartIcon.onclick = function (event) {
   cart.classList.add("showCart");
   cartOverlay.classList.add("transparentBackground");
-  const cartArray = JSON.parse(localStorage.getItem("cartList"));
+  const showProducts = JSON.parse(localStorage.getItem("cartList"));
 
   showCartItems(cartArray);
   //console.log("hello", cartItems);
 
-  localStorage.setItem("cartList", JSON.stringify(cartArray));
+  localStorage.setItem("cartList", JSON.stringify(showProducts));
 };
 
 function showCartItems(cartItems) {
