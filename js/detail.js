@@ -85,6 +85,14 @@ addToCartButton.onclick = function (event) {
   localStorage.setItem("cartList", JSON.stringify(cartArray));
 };
 
+addToCartButton.onclick = function (event) {
+  const cartProducts = JSON.parse(localStorage.getItem("cartList"));
+  cartProducts.push(product);
+  showCartItems(cartProducts);
+
+  localStorage.setItem("cartList", JSON.stringify(cartProducts));
+};
+
 // displaying products in cart
 function showCartItems(cartItems) {
   CartList.innerHTML = "";
