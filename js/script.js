@@ -112,7 +112,7 @@ function updateCartTotal() {}*/
 
 //show search input
 
-/*const showSearch = () => {
+const showSearch = () => {
   const searchIcon = document.querySelector(".search-icon");
   const searchWrapper = document.querySelector(".search-wrapper");
   const searchInput = document.querySelector("#search-input");
@@ -123,7 +123,7 @@ function updateCartTotal() {}*/
     searchInput.classList.toggle("showSearch");
     searchButton.classList.toggle("showSearch");
   });
-};*/
+};
 
 showSearch();
 
