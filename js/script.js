@@ -33,17 +33,44 @@ const cartList = document.querySelector(".cart-list");
 const totalContainer = document.querySelector(".total-container");
 const cartIcon = document.querySelector(".shopping-bag-icon");
 const cartOverlay = document.querySelector(".cart-overlay");
-const cartItems = document.querySelector(".cart");
+const cart = document.querySelector(".cart");
+const closeCart = document.querySelector(".close-cart");
 
 cartIcon.onclick = function (event) {
-  cartItems.classList.add("showCart");
+  cart.classList.add("showCart");
   cartOverlay.classList.add("transparentBackground");
-  const cartProducts = JSON.parse(localStorage.getItem("cartList"));
+  const cartArray = JSON.parse(localStorage.getItem("cartList"));
 
-  showCartItems(cartProducts);
-  console.log("hello", cartItems);
+  showCartItems(cartArray);
+  //console.log("hello", cartItems);
 
-  localStorage.setItem("cartList", JSON.stringify(cartProducts));
+  localStorage.setItem("cartList", JSON.stringify(cartArray));
+};
+
+function showCartItems(cartItems) {
+  cartList.innerHTML = "";
+  let total = 0;
+
+  cartItems.forEach(function (cartElement) {
+    const cartImage = cartElement.image.fields.file.url;
+    total += cartElement.price;
+
+    cartList.innerHTML += `<div class="cart-element">
+        <div style="background-image: url(${cartImage})" class="product-img"></div>
+        <div>
+        <h3>${cartElement.title}</h3>
+        <p>$${cartElement.price}</p>
+        </div>
+        <button class="remove-button">Remove</button>
+        </div>`;
+  });
+  totalContainer.innerHTML = `<h4>Total: ${total}</h4>`;
+}
+
+//close cart
+closeCart.onclick = function (event) {
+  cart.classList.remove("showCart");
+  cartOverlay.classList.remove("transparentBackground");
 };
 
 /*cartIcon.onclick = function (event) {
@@ -74,20 +101,6 @@ cart.classList.add("showCart");
 };
 
 showCart();*/
-
-//close cart
-const closeCart = () => {
-  const closeCartButton = document.querySelector(".close-cart");
-  const cartItems = document.querySelector(".cart");
-  const cartOverlay = document.querySelector(".cart-overlay");
-
-  closeCartButton.addEventListener("click", () => {
-    cartItems.classList.remove("showCart");
-    cartOverlay.classList.remove("transparentBackground");
-  });
-};
-
-closeCart();
 
 // adding products to cart
 /*const addToCartButton = document.querySelectorAll(".add-to-cart");
@@ -127,7 +140,7 @@ addToCartButton.forEach(function (button) {
   totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
 }*/
 
-const cartItems = document.querySelector(".cart");
+/*const cartItems = document.querySelector(".cart");
 
 function showCartItems(cartItems) {
   const cartList = document.querySelector(".cart-list");
@@ -148,7 +161,7 @@ function showCartItems(cartItems) {
                             </div>`;
   });
   totalContainer.innerHTML = `<h3>Total: $${total}</h3>`;
-}
+}*/
 
 //remove items from cart
 /*const removeButton = document.querySelector(".remove-button");

@@ -1,13 +1,13 @@
 // order summary
-const cartItems = JSON.parse(localStorage.getItem("cartList"));
+const itemsInCart = JSON.parse(localStorage.getItem("cartList"));
 const orderSummary = document.querySelector(".summary-content");
 const totalContainer = document.querySelector(".order-total");
 const confirmTotal = document.querySelector(".confirm-total");
-console.log(cartItems);
+console.log(itemsInCart);
 
-if (cartItems) {
+if (itemsInCart) {
   let total = 0;
-  cartItems.forEach(function (cartElement) {
+  itemsInCart.forEach(function (cartElement) {
     total += cartElement.price;
     const cartImage = cartElement.image.fields.file.url;
 
