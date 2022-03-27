@@ -29,7 +29,7 @@ const closeMenu = () => {
 closeMenu();
 
 // show cart when icon is clicked
-const CartList = document.querySelector(".cart-list");
+const cartList = document.querySelector(".cart-list");
 const totalContainer = document.querySelector(".total-container");
 const cartIcon = document.querySelector(".shopping-bag-icon");
 const cartOverlay = document.querySelector(".cart-overlay");
@@ -107,13 +107,14 @@ addToCartButton.forEach(function (button) {
 });*/
 
 //display cart
-/*if (cartItems) {
+if (cartItems) {
+  const cartList = document.querySelector(".cart-list");
   let total = 0;
   cartItems.forEach(function (cartElement) {
     total += cartElement.price;
     const cartImage = cartElement.image.fields.file.url;
 
-    orderSummary.innerHTML += `<div class="cart-element">
+    cartList.innerHTML += `<div class="cart-element">
                                   <div style="background-image: url(${cartImage})" class="product-img"></div>
                                   <div>
                                       <h3>${cartElement.title}</h3>
@@ -124,17 +125,20 @@ addToCartButton.forEach(function (button) {
   });
 
   totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
-}*/
+}
+
+/*const cartItems = document.querySelector(".cart");
 
 function showCartItems(cartItems) {
-  CartList.innerHTML = "";
+  const cartList = document.querySelector(".cart-list");
+  cartList.innerHTML = "";
   let total = 0;
 
   cartItems.forEach(function (cartElement) {
     total += cartElement.price;
     const cartImage = cartElement.image.fields.file.url;
 
-    CartList.innerHTML += `<div class="cart-element">
+    cartList.innerHTML += `<div class="cart-element">
                             <div style="background-image: url(${cartImage})" class="product-img"></div>
                             <div>  
                                 <h3>${cartElement.title}</h3>
@@ -144,7 +148,7 @@ function showCartItems(cartItems) {
                             </div>`;
   });
   totalContainer.innerHTML = `<h3>Total: $${total}</h3>`;
-}
+}*/
 
 //remove items from cart
 /*const removeButton = document.querySelector(".remove-button");

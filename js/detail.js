@@ -70,7 +70,7 @@ showCart();
 // adding products to cart and showing cart
 
 const addToCartButton = document.querySelector(".add-to-cart");
-const CartList = document.querySelector(".cart-list");
+const cartList = document.querySelector(".cart-list");
 const totalContainer = document.querySelector(".total-container");
 let cartArray = [];
 
@@ -95,14 +95,14 @@ addToCartButton.onclick = function (event) {
 
 // displaying products in cart
 function showCartItems(cartItems) {
-  CartList.innerHTML = "";
+  cartList.innerHTML = "";
   let total = 0;
 
   cartItems.forEach(function (cartElement) {
     total += cartElement.price;
     const cartImage = cartElement.image.fields.file.url;
 
-    CartList.innerHTML += `<div class="cart-element">
+    cartList.innerHTML += `<div class="cart-element">
                             <div style="background-image: url(${cartImage})" class="product-img"></div>
                             <div>
                             <h3>${cartElement.title}</h3>
