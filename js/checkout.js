@@ -17,7 +17,7 @@ if (itemsInCart) {
                                     <h3>${cartElement.title}</h3>
                                     <p>$${cartElement.price}</p>
                                 </div>
-                                <img src="../images/Icon feather-trash-2.svg" alt="">
+                                <img src="../images/Icon feather-trash-2.svg" alt="trashcan icon">
                                 </div>`;
   });
 

@@ -33,7 +33,7 @@ const hamburger = document.querySelector(".hamburger");
 hamburger.addEventListener("onkeydown", showMenu);
 
 const closeMenuIcon = document.querySelector(".close-menu");
-closeMenuIcon.addEventListener("onkeydown", closeCart);
+closeMenuIcon.addEventListener("onkeydown", closeMenu);
 
 // cart variables
 const cartList = document.querySelector(".cart-list");
