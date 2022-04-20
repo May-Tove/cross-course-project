@@ -1,25 +1,30 @@
-import { coats } from "./jackets/products.js";
-
-// get popular products and display them on page
+const baseUrl =
+  "https://mayth.one/rainydays/wp-json/wc/store/products?featured=true";
 const popularProducts = document.querySelector(".popular-products");
 
-popularProducts.innerHTML = "";
+async function getProducts(url) {
+  try {
+    const response = await fetch(url);
+    const products = await response.json();
+    console.log(products);
+    popularProducts.innerHTML = "";
 
-for (let i = 0; i < coats.length; i++) {
-  if (i === 4) {
-    break;
+    products.forEach(function (product) {
+      popularProducts.innerHTML += `<article class="product">
+      <a href="detail.html?id=${product.id}">
+      <div class="img-container">
+      <img src=${product.images[0].src} alt="${product.images[0].alt}" class="product-img"/>
+      <button class="view-btn">View</button>
+      </div>
+      <h3>${product.name}</h3>
+      <h4>kr ${product.prices.price}</h4>
+      </a>
+      </article>`;
+    });
+  } catch (error) {
+    console.log(error);
+    popularProducts.innerHTML = "an error occurred";
   }
-  let popular = coats[i];
-  const img = popular.image.fields.file.url;
-
-  popularProducts.innerHTML += `<article class="product">
-          <a href="detail.html?id=${popular.id}">
-          <div class="img-container">
-          <img src=${img} alt="${popular.title}" class="product-img"/>
-          <button class="view-btn">View</button>
-          </div>
-          <h3>${popular.title}</h3>
-          <h4>$${popular.price}</h4>
-          </a>
-          </article>`;
 }
+
+getProducts(baseUrl);

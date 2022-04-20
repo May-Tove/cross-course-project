@@ -1,5 +1,3 @@
-import { coats } from "./jackets/products.js";
-
 // showing menu when clicked on mobile version
 const showMenu = () => {
   const hamburger = document.querySelector(".hamburger");
@@ -28,13 +26,6 @@ const closeMenu = () => {
 
 closeMenu();
 
-//accessible hamburger menu
-const hamburger = document.querySelector(".hamburger");
-hamburger.addEventListener("onkeydown", showMenu);
-
-const closeMenuIcon = document.querySelector(".close-menu");
-closeMenuIcon.addEventListener("onkeydown", closeMenu);
-
 // cart variables
 const cartList = document.querySelector(".cart-list");
 const totalContainer = document.querySelector(".total-container");
@@ -50,8 +41,32 @@ cartIcon.onclick = function (event) {
   cartOverlay.classList.add("transparentBackground");
 };
 
+//close cart
+closeCart.onclick = function (event) {
+  cart.classList.remove("showCart");
+  cartOverlay.classList.remove("transparentBackground");
+};
+
 //let item added in cart stay in cart even if you visit other pages
 if (itemsInCart) {
+  let total = 0;
+  itemsInCart.forEach(function (cartElement) {
+    total += cartElement.prices.price;
+
+    cartList.innerHTML += `<div class="cart-element">
+                                  <img src=${product.images[0].src} alt="${product.images[0].alt}" class="product-img"/>
+                                  <div>
+                                      <h3>${cartElement.name}</h3>
+                                      <p>$${cartElement.prices.price}</p>
+                                  </div>
+                                  <img src="../images/Icon feather-trash-2.svg" alt="trashcan icon">
+                                  </div>`;
+  });
+
+  totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
+}
+
+/*if (itemsInCart) {
   let total = 0;
   itemsInCart.forEach(function (cartElement) {
     total += cartElement.price;
@@ -68,13 +83,7 @@ if (itemsInCart) {
   });
 
   totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
-}
-
-//close cart
-closeCart.onclick = function (event) {
-  cart.classList.remove("showCart");
-  cartOverlay.classList.remove("transparentBackground");
-};
+}*/
 
 //show search input
 const showSearch = () => {
@@ -101,11 +110,8 @@ function goBack() {
 
 backButton.addEventListener("click", goBack);
 
-//accessible back button
 function goBackA() {
   history.back();
 }
 
 backButton.addEventListener("onkeydown", goBackA);
-
-//accessible close icon
