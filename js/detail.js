@@ -50,22 +50,19 @@ function displayDetails(details) {
   const totalContainer = document.querySelector(".total-container");
   let cartArray = [];
 
-  addToCartButton.forEach(function (button) {
-    button.onclick = function (event) {
-      cart.classList.add("showCart");
-      cartOverlay.classList.add("transparentBackground");
-      console.log("clicked");
-      console.log(button);
-      cartArray.push(event.target.dataset.product);
-      console.log(cartArray);
-      const itemToAdd = details.find(
-        (item) => item.id === event.target.dataset.product
-      );
-      cartArray.push(itemToAdd);
-      showCart(cartArray);
-      localStorage.setItem("cartList", JSON.stringify(cartArray));
-    };
-  });
+  addToCartButton.onclick = function (event) {
+    cart.classList.add("showCart");
+    cartOverlay.classList.add("transparentBackground");
+    console.log("clicked");
+    cartArray.push(event.target.dataset.product);
+    console.log(cartArray);
+    const itemToAdd = details.find(
+      (item) => item.id === event.target.dataset.product
+    );
+    cartArray.push(itemToAdd);
+    showCart(cartArray);
+    localStorage.setItem("cartList", JSON.stringify(cartArray));
+  };
 
   function showCart(cartItems) {
     cartList.innerHTML = "";
@@ -78,7 +75,7 @@ function displayDetails(details) {
       <img src=${details.images[0].src} alt="${details.images[0].alt}" class="product-img"/>
         <div>
         <h3>${cartElement.name}</h3>
-        <p>$${cartElement.prics.price}</p>
+        <p>$${cartElement.prices.price}</p>
         </div>
         <img src="../images/Icon feather-trash-2.svg" alt="trashcan icon">
         </div>`;
