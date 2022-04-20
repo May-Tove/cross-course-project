@@ -42,33 +42,50 @@ function displayDetails(details) {
                                 <button class="cta add-to-cart" data-product="${details.id}">Add to cart</button>
                                 <p>${details.description}</p>
                                 </div>`;
+
+  const addToCartButton = document.querySelector(".add-to-cart");
+  const cart = document.querySelector(".cart");
+  const cartList = document.querySelector(".cart-list");
+  const cartOverlay = document.querySelector(".cart-overlay");
+  const totalContainer = document.querySelector(".total-container");
+  let cartArray = [];
+
+  addToCartButton.forEach(function (button) {
+    button.onclick = function (event) {
+      cart.classList.add("showCart");
+      cartOverlay.classList.add("transparentBackground");
+      console.log("clicked");
+      console.log(button);
+      cartArray.push(event.target.dataset.product);
+      console.log(cartArray);
+      const itemToAdd = details.find(
+        (item) => item.id === event.target.dataset.product
+      );
+      cartArray.push(itemToAdd);
+      showCart(cartArray);
+      localStorage.setItem("cartList", JSON.stringify(cartArray));
+    };
+  });
+
+  function showCart(cartItems) {
+    cartList.innerHTML = "";
+    let total = 0;
+
+    cartItems.forEach(function (cartElement) {
+      total += cartElement.prices.price;
+
+      cartList.innerHTML += `<div class="cart-element">
+      <img src=${details.images[0].src} alt="${details.images[0].alt}" class="product-img"/>
+        <div>
+        <h3>${cartElement.name}</h3>
+        <p>$${cartElement.prics.price}</p>
+        </div>
+        <img src="../images/Icon feather-trash-2.svg" alt="trashcan icon">
+        </div>`;
+    });
+    totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
+  }
 }
-
-displayDetails();
-
-const addToCartButton = document.querySelector(".add-to-cart");
-const cart = document.querySelector(".cart");
-const cartList = document.querySelector(".cart-list");
-const cartOverlay = document.querySelector(".cart-overlay");
-const totalContainer = document.querySelector(".total-container");
-let cartArray = [];
-
-addToCartButton.forEach(function (button) {
-  button.onclick = function (event) {
-    cart.classList.add("showCart");
-    cartOverlay.classList.add("transparentBackground");
-    console.log("clicked");
-    console.log(button);
-    cartArray.push(event.target.dataset.product);
-    console.log(cartArray);
-    const itemToAdd = details.find(
-      (item) => item.id === event.target.dataset.product
-    );
-    cartArray.push(itemToAdd);
-    showCart(cartArray);
-    localStorage.setItem("cartList", JSON.stringify(cartArray));
-  };
-});
 
 /*function showCart(cartItems) {
   cartList.innerHTML = "";
@@ -129,23 +146,3 @@ addToCartButton.onclick = function (event) {
 
   localStorage.setItem("cartList", JSON.stringify(cartProducts));
 };*/
-
-/*function showCart(cartItems) {
-  cartList.innerHTML = "";
-  let total = 0;
-
-  cartItems.forEach(function (cartElement) {
-    const cartImage = cartElement.image.fields.file.url;
-    total += cartElement.price;
-
-    cartList.innerHTML += `<div class="cart-element">
-      <div style="background-image: url(${cartImage})" class="product-img"></div>
-      <div>
-      <h3>${cartElement.title}</h3>
-      <p>$${cartElement.price}</p>
-      </div>
-      <img src="../images/Icon feather-trash-2.svg" alt="trashcan icon">
-      </div>`;
-  });
-  totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
-}*/
