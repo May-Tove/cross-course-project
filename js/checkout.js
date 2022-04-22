@@ -1,5 +1,3 @@
-import { getProducts } from "./shop.js";
-
 // order summary
 const itemsInCart = JSON.parse(localStorage.getItem("cartList"));
 const orderSummary = document.querySelector(".summary-content");
@@ -15,7 +13,7 @@ if (itemsInCart) {
     orderSummary.innerHTML += `<div class="cart-element">
                               <img src=${cartElement.images[0].src} alt="${cartElement.images[0].alt}" class="product-img"/>
                                 <div>
-                                    <h3>${cartElement.name}</h3>
+                                <a href="detail.html?id=${cartElement.id}"><h3>${cartElement.name}</h3></a>
                                     <p>$${cartElement.prices.price}</p>
                                 </div>
                                 <img src="../images/Icon feather-trash-2.svg" alt="trashcan icon">

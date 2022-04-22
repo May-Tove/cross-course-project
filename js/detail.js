@@ -73,9 +73,9 @@ function displayDetails(details) {
     total = details.prices.price;
 
     cartList.innerHTML = `<div class="cart-element">
-        <img src=${details.images[0].src} alt="${details.images[0].alt}" class="product-img"/>
+        <div style="background-image: url(${details.images[0].src})" class="product-img"></div>
           <div>
-          <h3>${details.name}</h3>
+          <a href="detail.html?id=${details.id}"><h3>${details.name}</h3></a>
           <p>kr ${details.prices.price}</p>
           </div>
           <img src="../images/Icon feather-trash-2.svg" alt="trashcan icon">
