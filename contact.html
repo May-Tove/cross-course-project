@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Get in touch with Rainydays, we would love to answer your questions.">
@@ -7,37 +8,40 @@
     <title>Rainydays | Contact </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/media.css">
     <!-- Hotjar Tracking Code for https://optimistic-mirzakhani-245dcf.netlify.app/ -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2857109,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 2857109, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
 </head>
+
 <body>
     <header class="navbar">
         <div class="navbar-center">
             <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Rainydays logo" class="logo"></a>
-                <nav class="main-menu menu-overlay">
-                    <ul class="nav-links">
-                        <span class="close-menu">
-                            <img src="./images/Iconclose.svg" alt="close icon" tabindex="0">
-                        </span>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html" class="active">Contact</a></li>
-                    </ul>
-                </nav>
+            <nav class="main-menu menu-overlay">
+                <ul class="nav-links">
+                    <span class="close-menu">
+                        <img src="./images/Iconclose.svg" alt="close icon" tabindex="0">
+                    </span>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
             <div class="nav-icons">
                 <img src="images/search.svg" alt="Search Icon" class="search-icon" tabindex="0">
                 <img src="images/shopping-bag.svg" alt="shopping bag icon" class="shopping-bag-icon" tabindex="0">
@@ -69,14 +73,25 @@
         </div>
     </header>
     <main>
-            <section class="contact-hero">
-                <h1>Get in touch with us</h1>
-                <p>We would love to hear from you! Send us a message below and we will get back to you within 48h. Our opening hours are between 09:00 - 16:00 Mon - Sat</p>
-            </section>
-        <div class="contact-container">
-            <div class="section-title">
-                <h2>Send us a message</h2>
+        <section class="contact-hero">
+            <h1>Get in touch with us</h1>
+            <p>We would love to hear from you! Send us a message below and we will get back to you within 48h. Our
+                opening hours are between 09:00 - 16:00 Mon - Sat</p>
+        </section>
+        <section class="breadcrumbs-container">
+            <div class="breadcrumbs">
+                <nav>
+                    <a href="index.html">Home /</a>
+                    <a href="contact.html" class="active">Contact</a>
+                </nav>
             </div>
+            <div class="back-container">
+                <img src="./images/backArrow.svg" alt="Back button" class="back-button" tabindex="0">
+                <p>Back</p>
+            </div>
+        </section>
+        <h2 class="section-title">Send us a message</h2>
+        <div class="contact-container">
             <form class="contact-form">
                 <div class="input-group">
                     <label for="name">Full name (required)</label>
@@ -96,7 +111,8 @@
                 <div class="input-group">
                     <label for="message">Message (must contain at least 10 characters)</label>
                     <textarea id="message"></textarea>
-                    <div class="form-error" id="message-error">Field must contain a message of at least 10 characters</div>
+                    <div class="form-error" id="message-error">Field must contain a message of at least 10 characters
+                    </div>
                 </div>
                 <button class="cta">Submit</button>
             </form>
@@ -112,4 +128,5 @@
         Copyright &copy;
     </footer>
 </body>
+
 </html>

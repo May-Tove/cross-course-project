@@ -24,6 +24,24 @@
   max-width: 700px;
 }
 
+.breadcrumbs-container{
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.breadcrumbs{
+  padding-top: 3rem;
+}
+
+.section-title{
+  text-align: left;
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 600px;
+  padding-top: 3rem;
+}
+
 .contact-container{
   width: 90vw;
   margin: 0 auto;
@@ -35,19 +53,15 @@
 }
 
 .contact-container{
-  padding-top: 3rem;
+  padding-top: 1.2rem;
   text-align: left;
-}
-
-.contact-form{
-  padding-top: 3rem;
 }
 
 .input-group{
   margin-bottom: 30px;
 }
 
-input, textarea{
+.input-group input, textarea{
   width: 100%;
   padding: 10px;
   margin-top: 5px;

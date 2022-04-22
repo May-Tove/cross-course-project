@@ -38,7 +38,7 @@ h1, h2{
 .detail-result select{
   width: 12rem;
   padding: 5px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-family: inherit;
 }
 
@@ -49,6 +49,7 @@ h1, h2{
 .detail-result button{
   width: fit-content;
 }
+
 
 
 

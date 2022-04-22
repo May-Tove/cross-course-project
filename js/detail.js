@@ -42,6 +42,7 @@ function displayDetails(details) {
                                 </select>
                                 <button class="cta add-to-cart" data-product="${details.id}">Add to cart</button>
                                 <p>${details.description}</p>
+                                <p class="category-description">Categories: ${details.categories[1].name}, ${details.categories[2].name}</p>
                                 </div>`;
 
   const addToCartButton = document.querySelector(".add-to-cart");

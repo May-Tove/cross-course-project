@@ -47,9 +47,9 @@ button{
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  cursor: pointer;
 }
 .back-button{
-  cursor: pointer;
   max-height: 17px;
 }
 

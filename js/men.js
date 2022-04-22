@@ -29,12 +29,11 @@ export async function getProducts(url) {
 
 getProducts(baseUrl);
 
-const secondUrl = "https://mayth.one/rainydays/wp-json/wc/store/products";
 categories.onchange = function () {
   let newUrl;
   const categoryChosen = categories.value;
   if (categories.value === "true") {
-    newUrl = secondUrl + "?featured=true";
+    newUrl = baseUrl + "&?featured=true";
   } else if (categories.value === "24") {
     newUrl = baseUrl;
   } else {

@@ -117,12 +117,16 @@
   font-size: 14px;
 }
 
+.back-container{
+padding-top: 0;
+}
+
 /* categories */
 .category-container{
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  padding-top: 1.5rem;
 }
 
 .category-select{
