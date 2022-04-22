@@ -14,7 +14,7 @@ h1, h2{
 }
 
 .detail-result{
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .detail-result div{
@@ -23,7 +23,7 @@ h1, h2{
   justify-content: center;
   gap: 10px;
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 1.5rem;
 }
 
 .detail-result .loader{

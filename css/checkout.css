@@ -78,13 +78,17 @@ label{
   margin-bottom: 30px;
 }
 
+.input-group label{
+  font-size: 0.9rem;
+}
+
 input {
   border: 1px solid #c4c4c4;
   border-radius: var(--borderRadius);
   padding: 10px;
   width: 100%;
   font-family: inherit;
-  font-size: 15px;
+  font-size: 0.9rem;
 }
 
 .short-form input {
