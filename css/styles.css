@@ -213,7 +213,6 @@ button{
   min-width: 80px;
   width: 80px;
   height: 80px;
-  background-size: cover;
   object-fit: cover;
 }
 
