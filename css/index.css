@@ -20,22 +20,22 @@
 
 .hero-container p{
   margin-bottom: 1.5rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   max-width: 600px;
 }
 
 .hero-container a{
-  width: 200px;
+  width: 160px;
   display: inline-block;
   text-align: center;
-  margin: 5px 0px;
+  margin: 0px 3px;
 }
 
 /* Popular products */
 .section-title h2 {
   text-align: center;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .popular-products {
@@ -49,7 +49,7 @@
 }
 
 .product h3, .product h4{
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
   text-align: left;
 }
 
@@ -63,8 +63,8 @@
   justify-content: center;
   width: fit-content;
   margin: 0 auto;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 /* Hover animation on product */
@@ -86,8 +86,8 @@
   background-color: var(--mainColor);
   text-transform: uppercase;
   color: var(--mainWhiteColor);
-  padding: 0.7rem 2rem;
-  font-size: 1rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 0.8rem;
   border: none;
   border-radius: var(--borderRadius);
   cursor: pointer;

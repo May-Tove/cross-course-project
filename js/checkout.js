@@ -11,7 +11,7 @@ if (itemsInCart) {
     total += cartElement.prices.price;
 
     orderSummary.innerHTML += `<div class="cart-element">
-                              <img src=${cartElement.images[0].src} alt="${cartElement.images[0].alt}" class="product-img"/>
+                                <div style="background-image: url(${cartElement.images[0].src})" class="product-img"></div>
                                 <div>
                                 <a href="detail.html?id=${cartElement.id}"><h3>${cartElement.name}</h3></a>
                                     <p>$${cartElement.prices.price}</p>

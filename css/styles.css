@@ -23,12 +23,28 @@ img {
 h1 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 2.3rem;
+  font-size: 1.9rem;
   color:var(--mainColor);
 }
 
 h2, h3{
   text-transform: capitalize;
+}
+
+h2{
+  font-size: 1.2rem;
+}
+
+h3{
+  font-size: 1rem;
+}
+
+h4{
+  font-size: 0.8rem;
+}
+
+p{
+  font-size: 0.9rem;
 }
 
 button{
@@ -237,7 +253,7 @@ button{
 }
 
 .cart-cta{
-  width: 240px;
+  width: 210px;
   display: inline-block;
   text-align: center;
 }

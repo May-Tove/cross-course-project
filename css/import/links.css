@@ -23,8 +23,8 @@ a {
   background-color: var(--mainColor);
   text-transform: uppercase;
   color: var(--mainWhiteColor);
-  padding: 1rem 2rem;
-  font-size: 0.9rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 0.8rem;
   border: 1px solid var(--mainColor);
   border-radius: var(--borderRadius);
   transition: var(--buttonTransition);

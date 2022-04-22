@@ -19,7 +19,7 @@ cartIcon.onclick = function (event) {
       total += cartElement.prices.price;
 
       cartList.innerHTML += `<div class="cart-element">
-                                <img src=${cartElement.images[0].src} alt="${cartElement.images[0].alt}" class="product-img"/>
+                                  <div style="background-image: url(${cartElement.images[0].src})" class="product-img"></div>
                                   <div>
                                       <h3>${cartElement.name}</h3>
                                       <p>$${cartElement.prices.price}</p>
