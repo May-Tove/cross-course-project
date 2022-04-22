@@ -1,3 +1,5 @@
+import { getProducts } from "./shop.js";
+
 // order summary
 const itemsInCart = JSON.parse(localStorage.getItem("cartList"));
 const orderSummary = document.querySelector(".summary-content");
@@ -8,14 +10,13 @@ console.log(itemsInCart);
 if (itemsInCart) {
   let total = 0;
   itemsInCart.forEach(function (cartElement) {
-    total += cartElement.price;
-    const cartImage = cartElement.image.fields.file.url;
+    total += cartElement.prices.price;
 
     orderSummary.innerHTML += `<div class="cart-element">
-                                <div style="background-image: url(${cartImage})" class="product-img"></div>
+                              <img src=${cartElement.images[0].src} alt="${cartElement.images[0].alt}" class="product-img"/>
                                 <div>
-                                    <h3>${cartElement.title}</h3>
-                                    <p>$${cartElement.price}</p>
+                                    <h3>${cartElement.name}</h3>
+                                    <p>$${cartElement.prices.price}</p>
                                 </div>
                                 <img src="../images/Icon feather-trash-2.svg" alt="trashcan icon">
                                 </div>`;

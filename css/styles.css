@@ -131,6 +131,28 @@ button{
   gap: 15px;
 }
 
+/* cart counter */
+.shopping-bag-icon{
+  position: relative;
+}
+
+.cart-counter{
+  position: absolute;
+  user-select: none;
+  background-color: var(--mainColor);
+  color: var(--mainWhiteColor);
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: .2rem;
+  right: .3rem;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+}
+
 /* show cart*/
 .shopping-bag-icon{
   cursor: pointer;
@@ -192,6 +214,7 @@ button{
   width: 80px;
   height: 80px;
   background-size: cover;
+  object-fit: cover;
 }
 
 .cart-element{

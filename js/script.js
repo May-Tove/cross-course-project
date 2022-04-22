@@ -1,3 +1,43 @@
+const closeCart = document.querySelector(".close-cart");
+const cartIcon = document.querySelector(".shopping-bag-icon");
+const cartOverlay = document.querySelector(".cart-overlay");
+const cart = document.querySelector(".cart");
+
+//show cart with items in cart
+cartIcon.onclick = function (event) {
+  cart.classList.add("showCart");
+  cartOverlay.classList.add("transparentBackground");
+
+  const itemsInCart = JSON.parse(localStorage.getItem("cartList"));
+  const cartList = document.querySelector(".cart-list");
+  const totalContainer = document.querySelector(".total-container");
+  console.log(itemsInCart);
+
+  if (itemsInCart) {
+    let total = 0;
+    itemsInCart.forEach(function (cartElement) {
+      total += cartElement.prices.price;
+
+      cartList.innerHTML += `<div class="cart-element">
+                                <img src=${cartElement.images[0].src} alt="${cartElement.images[0].alt}" class="product-img"/>
+                                  <div>
+                                      <h3>${cartElement.name}</h3>
+                                      <p>$${cartElement.prices.price}</p>
+                                  </div>
+                                  <img src="../images/Icon feather-trash-2.svg" alt="trashcan icon">
+                                  </div>`;
+    });
+
+    totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
+  }
+};
+
+//close cart
+closeCart.onclick = function (event) {
+  cart.classList.remove("showCart");
+  cartOverlay.classList.remove("transparentBackground");
+};
+
 // showing menu when clicked on mobile version
 const showMenu = () => {
   const hamburger = document.querySelector(".hamburger");
@@ -26,65 +66,6 @@ const closeMenu = () => {
 
 closeMenu();
 
-// cart variables
-const cartList = document.querySelector(".cart-list");
-const totalContainer = document.querySelector(".total-container");
-const cartIcon = document.querySelector(".shopping-bag-icon");
-const cartOverlay = document.querySelector(".cart-overlay");
-const cart = document.querySelector(".cart");
-const closeCart = document.querySelector(".close-cart");
-const itemsInCart = JSON.parse(localStorage.getItem("cartList"));
-
-// show cart when icon is clicked
-cartIcon.onclick = function (event) {
-  cart.classList.add("showCart");
-  cartOverlay.classList.add("transparentBackground");
-};
-
-//close cart
-closeCart.onclick = function (event) {
-  cart.classList.remove("showCart");
-  cartOverlay.classList.remove("transparentBackground");
-};
-
-//let item added in cart stay in cart even if you visit other pages
-if (itemsInCart) {
-  let total = 0;
-  itemsInCart.forEach(function (cartElement) {
-    total += cartElement.prices.price;
-
-    cartList.innerHTML += `<div class="cart-element">
-                                  <img src=${product.images[0].src} alt="${product.images[0].alt}" class="product-img"/>
-                                  <div>
-                                      <h3>${cartElement.name}</h3>
-                                      <p>$${cartElement.prices.price}</p>
-                                  </div>
-                                  <img src="../images/Icon feather-trash-2.svg" alt="trashcan icon">
-                                  </div>`;
-  });
-
-  totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
-}
-
-/*if (itemsInCart) {
-  let total = 0;
-  itemsInCart.forEach(function (cartElement) {
-    total += cartElement.price;
-    const cartImage = cartElement.image.fields.file.url;
-
-    cartList.innerHTML += `<div class="cart-element">
-                                  <div style="background-image: url(${cartImage})" class="product-img"></div>
-                                  <div>
-                                      <h3>${cartElement.title}</h3>
-                                      <p>$${cartElement.price}</p>
-                                  </div>
-                                  <img src="../images/Icon feather-trash-2.svg" alt="trashcan icon">
-                                  </div>`;
-  });
-
-  totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
-}*/
-
 //show search input
 const showSearch = () => {
   const searchIcon = document.querySelector(".search-icon");
@@ -109,9 +90,3 @@ function goBack() {
 }
 
 backButton.addEventListener("click", goBack);
-
-function goBackA() {
-  history.back();
-}
-
-backButton.addEventListener("onkeydown", goBackA);

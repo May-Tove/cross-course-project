@@ -31,6 +31,7 @@ function displayDetails(details) {
                               <div class="product-details">
                                 <h1>${details.name}</h1>
                                 <h2>kr ${details.prices.price}</h2>
+                                <P>Color: ${details.attributes[1].terms[0].name}</p>
                                 <select name="size" id="size-select">
                                 <option value="">Select size</option>
                                 <option value="xs">${details.attributes[0].terms[0].name}</option>
@@ -51,35 +52,34 @@ function displayDetails(details) {
   let cartArray = [];
 
   addToCartButton.onclick = function (event) {
+    // displaying the cart itself
     cart.classList.add("showCart");
     cartOverlay.classList.add("transparentBackground");
-    console.log("clicked");
-    cartArray.push(event.target.dataset.product);
-    console.log(cartArray);
+
+    //adding product to cart
     const itemToAdd = details.find(
       (item) => item.id === event.target.dataset.product
     );
     cartArray.push(itemToAdd);
-    showCart(cartArray);
+    console.log(itemToAdd);
     localStorage.setItem("cartList", JSON.stringify(cartArray));
   };
 
-  function showCart(cartItems) {
+  function showCart() {
     cartList.innerHTML = "";
     let total = 0;
 
-    cartItems.forEach(function (cartElement) {
-      total += cartElement.prices.price;
+    total = details.prices.price;
 
-      cartList.innerHTML += `<div class="cart-element">
-      <img src=${details.images[0].src} alt="${details.images[0].alt}" class="product-img"/>
-        <div>
-        <h3>${cartElement.name}</h3>
-        <p>$${cartElement.prices.price}</p>
-        </div>
-        <img src="../images/Icon feather-trash-2.svg" alt="trashcan icon">
-        </div>`;
-    });
-    totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
+    cartList.innerHTML = `<div class="cart-element">
+        <img src=${details.images[0].src} alt="${details.images[0].alt}" class="product-img"/>
+          <div>
+          <h3>${details.name}</h3>
+          <p>kr ${details.prices.price}</p>
+          </div>
+          <img src="../images/Icon feather-trash-2.svg" alt="trashcan icon">
+          </div>`;
+    totalContainer.innerHTML = `<h4>Total: kr ${total}</h4>`;
   }
+  showCart(cartArray);
 }

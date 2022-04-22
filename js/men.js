@@ -1,9 +1,9 @@
 const baseUrl =
-  "https://mayth.one/rainydays/wp-json/wc/store/products?per_page=12";
+  "https://mayth.one/rainydays/wp-json/wc/store/products?category=25";
 const productContainer = document.querySelector(".list-of-products");
-const categories = document.querySelector(".category-select");
+const categories = document.querySelectorAll(".category");
 
-async function getProducts(url) {
+export async function getProducts(url) {
   try {
     const response = await fetch(url);
     const products = await response.json();
