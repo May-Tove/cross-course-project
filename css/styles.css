@@ -1,3 +1,6 @@
+@import "import/error.css";
+@import "import/success.css";
+@import "import/loader.css";
 @import "import/links.css";
 @import "import/variables.css";
 
@@ -44,6 +47,10 @@ h4{
 }
 
 p{
+  font-size: 0.9rem;
+}
+
+label{
   font-size: 0.9rem;
 }
 
@@ -147,28 +154,6 @@ button{
   gap: 15px;
 }
 
-/* cart counter */
-.shopping-bag-icon{
-  position: relative;
-}
-
-.cart-counter{
-  position: absolute;
-  user-select: none;
-  background-color: var(--mainColor);
-  color: var(--mainWhiteColor);
-  text-align: center;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: .2rem;
-  right: .3rem;
-  height: 1.3rem;
-  width: 1.3rem;
-  border-radius: 50%;
-}
-
 /* show cart*/
 .shopping-bag-icon{
   cursor: pointer;
@@ -239,7 +224,10 @@ button{
   grid-column-gap: 1.5rem;
   padding: 1rem 0rem;
   border-bottom: 1px solid lightgray;
+}
 
+.total-container h4{
+  font-size: 0.9rem;
 }
 
 .cart-bottom{
@@ -309,38 +297,9 @@ button.showSearch{
   display: block;
 }
 
-
 /* Footer */
-
 footer {
   background-color: #e4ebf2;
   padding: 30px 0px 30px 0px;
   text-align: center;
-}
-
-/* Fetch error */
-.fetchError {
-  background-color: #ffcccb;
-  padding: 20px;
-  color: darkred;
-  width: fit-content;
-  border: 1px solid darkred;
-}
-
-/* loader */
-.loader {
-  border: 10px solid #e4ebf2;
-  border-top: 10px solid var(--mainColor);
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-  margin-top: 30px;
-  animation: spin 1s infinite ease-in-out;
-}
-
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
 }

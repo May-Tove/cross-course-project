@@ -109,5 +109,20 @@
 }
 
 @media (min-width: 799px){
+    .home-hero{
+      min-height: 105vh;
+    }
   
+    .hero-container p{
+      font-size: 1.4rem;
+    }
+  
+    .hero-container h1{
+      font-size: 2.8rem;
+      padding-top: 2rem;
+    }
+  
+    .hero-container a{
+      width: 200px;
+    }
 }

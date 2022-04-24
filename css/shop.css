@@ -39,9 +39,9 @@
 .shop-navigation .active{
   font-weight: bold;
   color: rgb(40, 99, 147);
-  /* aquamarine*/
 }
 
+/* breadcrumbs */
 .breadcrumbs{
   padding-top: 3rem;
 }
@@ -105,18 +105,6 @@
   text-decoration: underline;
 }
 
-.product{
-  position: relative;
-}
-
-.product .quick-add{
-  position: absolute;
-  right: 0;
-  bottom: 10px;
-  padding: 10px;
-  font-size: 14px;
-}
-
 .back-container{
 padding-top: 0;
 }
@@ -138,5 +126,9 @@ padding-top: 0;
 @media (min-width: 799px){
   .list-of-products{
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  .shop-navigation a{
+    font-size: 1.2rem;
   }
 }

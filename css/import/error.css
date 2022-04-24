@@ -1,0 +1,16 @@
+/* form error */
+.form-error{
+    display: none;
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 3px;
+  }
+
+/* Fetch error */
+.fetchError {
+    background-color: #ffcccb;
+    padding: 20px;
+    color: darkred;
+    width: fit-content;
+    border: 1px solid darkred;
+  }

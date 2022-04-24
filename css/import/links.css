@@ -10,6 +10,10 @@ a {
   transition: 0.3s ease;
 }
 
+.breadcrumbs a{
+  font-size: 0.9rem;
+}
+
 .active, .nav-links a:hover {
   color: rgb(40, 99, 147);
 }
@@ -38,9 +42,19 @@ a {
   text-decoration: none;
 }
 
-
 /* Checkout */
 .cta-payment {
   display: inline-block;
   margin: 20px 0px 20px 0px;
+}
+
+@media (min-width: 799px) {
+
+  a{
+    font-size: 1rem;
+  }
+
+  .cta{
+    font-size: 0.9rem;
+  }
 }

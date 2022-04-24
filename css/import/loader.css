@@ -1,0 +1,17 @@
+/* loader */
+.loader {
+    border: 10px solid #e4ebf2;
+    border-top: 10px solid var(--mainColor);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    animation: spin 1s infinite ease-in-out;
+  }
+  
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }

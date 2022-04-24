@@ -1,0 +1,15 @@
+/* contact success */
+.success-message{
+    display: none;
+    width: 100%;
+    max-width: 700px;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: var(--borderRadius);
+    background-color: #caeec2;
+  }
+  
+  .success-message h3{
+    color: green;
+    text-align: left;
+  }
