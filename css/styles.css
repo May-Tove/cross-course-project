@@ -318,6 +318,15 @@ footer {
   text-align: center;
 }
 
+/* Fetch error */
+.fetchError {
+  background-color: #ffcccb;
+  padding: 20px;
+  color: darkred;
+  width: fit-content;
+  border: 1px solid darkred;
+}
+
 /* loader */
 .loader {
   border: 10px solid #e4ebf2;

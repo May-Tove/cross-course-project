@@ -1,5 +1,5 @@
 .home-hero {
-  min-height: 100vh;
+  min-height: 90vh;
   background: url(../images/home-background2.jpg);
   background-position: bottom;
   background-size: cover;
@@ -15,6 +15,7 @@
 
 .hero-container h1{
   margin-bottom: 1rem;
+  padding-top: 3rem;
   text-align: left;
 }
 

@@ -1,5 +1,5 @@
 // order summary
-const itemsInCart = JSON.parse(localStorage.getItem("cartList"));
+/*const itemsInCart = JSON.parse(localStorage.getItem("cartList"));
 const orderSummary = document.querySelector(".summary-content");
 const totalContainer = document.querySelector(".order-total");
 const confirmTotal = document.querySelector(".confirm-total");
@@ -22,7 +22,7 @@ if (itemsInCart) {
 
   totalContainer.innerHTML = `<h4>Total: $${total}</h4>`;
   confirmTotal.innerHTML = `<h3>Total: $${total}</h3>`;
-}
+}*/
 
 // details form
 const infoForm = document.querySelector(".info-form");

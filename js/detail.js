@@ -16,7 +16,7 @@ async function fetchProduct() {
     displayDetails(details);
   } catch (error) {
     console.log(error);
-    detailContainer.innerHTML = "an error occurred";
+    detailContainer.innerHTML = displayError("An error occurred");
   }
 }
 

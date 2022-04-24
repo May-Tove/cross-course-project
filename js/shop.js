@@ -23,7 +23,7 @@ async function getProducts(url) {
     });
   } catch (error) {
     console.log(error);
-    productContainer.innerHTML = "an error occurred";
+    productContainer.innerHTML = displayError("An error occurred");
   }
 }
 

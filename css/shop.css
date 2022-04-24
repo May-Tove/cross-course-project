@@ -85,8 +85,8 @@
   text-transform: uppercase;
   color: var(--mainWhiteColor);
   border-radius: var(--borderRadius);
-  padding: 0.7rem 2rem;
-  font-size: 1rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 0.8rem;
   border: none;
   cursor: pointer;
   transform: translate(-50%, -50%);
