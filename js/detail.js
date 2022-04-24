@@ -66,6 +66,7 @@ function displayDetails(details) {
     localStorage.setItem("cartList", JSON.stringify(cartArray));
   };
 
+  // displaying cart with item inside
   function showCart() {
     cartList.innerHTML = "";
     let total = 0;

@@ -28,17 +28,3 @@ export async function getProducts(url) {
 }
 
 getProducts(baseUrl);
-
-categories.onchange = function () {
-  let newUrl;
-  const categoryChosen = categories.value;
-  if (categories.value === "true") {
-    newUrl = baseUrl + "&?featured=true";
-  } else if (categories.value === "24") {
-    newUrl = baseUrl;
-  } else {
-    newUrl = secondUrl + `?category=${categoryChosen}`;
-  }
-  productContainer.innerHTML = "";
-  getProducts(newUrl);
-};

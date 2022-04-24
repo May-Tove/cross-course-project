@@ -29,6 +29,7 @@ async function getProducts(url) {
 
 getProducts(baseUrl);
 
+// categories
 const secondUrl = "https://mayth.one/rainydays/wp-json/wc/store/products";
 categories.onchange = function () {
   let newUrl;

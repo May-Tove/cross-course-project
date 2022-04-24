@@ -1,3 +1,4 @@
+// get popular products
 const baseUrl =
   "https://mayth.one/rainydays/wp-json/wc/store/products?featured=true";
 const popularProducts = document.querySelector(".popular-products");
