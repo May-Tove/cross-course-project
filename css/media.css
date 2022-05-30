@@ -8,10 +8,6 @@
     font-size: 1.5em;
   }
 
-  .cta{
-    font-size: 0.9rem;
-  }
-
   .hamburger{
     display: none;
 }  
@@ -57,33 +53,7 @@
   width: 40%;
 }
 
-  /* Homepage */
-  .home-hero{
-    min-height: 105vh;
-  }
-
-  .hero-container p{
-    font-size: 1.4rem;
-  }
-
-  .hero-container h1{
-    font-size: 2.8rem;
-    padding-top: 2rem;
-  }
-
-  .hero-container a{
-    width: 200px;
-  }
-
-
-/* Contact*/
-.contact-hero {
-  height: 40vh;
-}
-
-
   /* Checkout */
-
   .short-form {
     display: flex;
     gap: 20px;
