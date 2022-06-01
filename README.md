@@ -8,6 +8,8 @@ This project was a cross course project that I have worked on throughout the ent
 
 The products for the website are stored on a WordPress installation used as a Headless CMS. The website itself is built using HTML, CSS and JavaScript and making a call to the WordPress REST API to fetch the data.
 
+
+
 The frontEnd should contain the following pages:
 
 - Home page
@@ -16,6 +18,7 @@ The frontEnd should contain the following pages:
 - Checkout page showing what products are added to the cart
 - About page
 - Contact page written with JavaScript form validation
+
 
 
 The project includes the following tasks:
@@ -41,4 +44,8 @@ The project includes the following tasks:
 
 - [My LinkedIn page](www.linkedin.com/in/may-tove-hovdal-24b406153)
 - maytoveh@gmail.com
+
+## Live site
+
+https://optimistic-mirzakhani-245dcf.netlify.app
 
