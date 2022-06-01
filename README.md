@@ -6,9 +6,9 @@ A simple overview of the use/purpose of the project.
 
 ## Description
 
-This project was a cross course project that I have worked on during most of the courses of the first year on Noroff Front End Development studies. Courses that the project was being worked on were design 1, HTML and CSS, interaction design and content management systems. The assignment was to develop an e-commerce site for a fictional company called Rainydays, that sells outdoor jackets. The target audience is men and women aged 30 to 50 whose interests are: being outdoors, hiking, exploring, skiing, camping, canoeing.
+This project was a cross course project that I have worked on throughout the entire first year on Noroff Front End Development studies. The assignment was to develop an e-commerce site for a fictional company called Rainydays, that sells outdoor jackets. The target audience is men and women aged 30 to 50 whose interests are: being outdoors, hiking, exploring, skiing, camping, canoeing.
 
-The site should be responsive and gather data from a headless CMS. I have used Wordpress in this project. The site is developed with vanilla JavaScript using no frameworks. The assignment should contain good user experience (UX) and user interface (UI), contextual inquiry interviews should be conducted for user research and analysis.
+The site should be responsive and display data collected from a headless CMS. The site is developed with vanilla JavaScript using no frameworks. The assignment should contain good user experience (UX) and user interface (UI), contextual inquiry interviews should be conducted for user research and analysis.
 
 The frontEnd should contain the following pages:
 
@@ -38,10 +38,6 @@ The project includes the following tasks:
 - HTML
 - CSS
 - JavaScript
-
-## Contributing
-
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
 
 ## Contact
 
