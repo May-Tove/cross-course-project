@@ -2,18 +2,16 @@
 
 <img width="1440" alt="Rainydays landingpage" src="https://user-images.githubusercontent.com/89157761/170984387-b653344c-6367-4c86-a184-7443c8fc232e.png">
 
-A simple overview of the use/purpose of the project.
-
 ## Description
 
-This project was a cross course project that I have worked on throughout the entire first year on Noroff Front End Development studies. The assignment was to develop an e-commerce site for a fictional company called Rainydays, that sells outdoor jackets. The target audience is men and women aged 30 to 50 whose interests are: being outdoors, hiking, exploring, skiing, camping, canoeing.
+This project was a cross course project that I have worked on throughout the entire first year on Noroff Front-end Development studies. The assignment was to develop an e-commerce site for a fictional company called Rainydays, that sells outdoor jackets. The target audience is men and women aged 30 to 50 whose interests are: being outdoors, hiking, exploring, skiing, camping, canoeing.
 
-The site should be responsive and display data collected from a headless CMS. The site is developed with vanilla JavaScript using no frameworks. The assignment should contain good user experience (UX) and user interface (UI), contextual inquiry interviews should be conducted for user research and analysis.
+The products for the website are stored on a WordPress installation used as a Headless CMS. The website itself is built using HTML, CSS and JavaScript and making a call to the WordPress REST API to fetch the data.
 
 The frontEnd should contain the following pages:
 
 - Home page
-- Product page with a list showing all products (gathered from the headless CMS)
+- Product page with a list showing all products.
 - Page with product details - made with JavaScript once clicked on each product. It should also be possible to add products to cart.
 - Checkout page showing what products are added to the cart
 - About page
@@ -30,7 +28,7 @@ The project includes the following tasks:
 - Usa a headless CMS (in this case Wordpress) to get products from an WP Rest API
 - Conducting contextual inquiry interviews and gather user data through Hotjar
 - Analyze the result from user testing and do adjustments to the site if needed
-- Testing of the site
+- Testing of the site (WCAG guidelines and SEO)
 - Documentation of the process
 
 ## Built With
