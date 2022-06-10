@@ -42,7 +42,7 @@ The project includes the following tasks:
 
 ## Contact
 
-- [My LinkedIn page](www.linkedin.com/in/may-tove-hovdal-24b406153)
+- [My LinkedIn page](www.linkedin.com/in/may-tove-hovdal-24b406153/)
 - maytoveh@gmail.com
 
 ## Link to website
