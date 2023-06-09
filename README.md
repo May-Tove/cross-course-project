@@ -2,6 +2,10 @@
 
 <img width="1440" alt="Rainydays landingpage" src="https://user-images.githubusercontent.com/89157761/170984387-b653344c-6367-4c86-a184-7443c8fc232e.png">
 
+### Hosted on Netlify
+
+[Live site](https://rainydays-mt.netlify.app/)
+
 ## Description
 
 This project was a cross course project that I have worked on throughout the entire first year on Noroff Front-end Development studies. The assignment was to develop an e-commerce site for a fictional company called Rainydays, that sells outdoor jackets. The target audience is men and women aged 30 to 50 whose interests are: being outdoors, hiking, exploring, skiing, camping, canoeing.
@@ -44,8 +48,4 @@ The project includes the following tasks:
 
 - [Linkedin](https://www.linkedin.com/in/may-tove-hovdal-24b406153/)
 - maytoveh@gmail.com
-
-## Link to website
-
-https://optimistic-mirzakhani-245dcf.netlify.app
 
